@@ -12338,3 +12338,65 @@ Stack Trace:
 Request URL: /admin/tables.html
 Referer URL: http://localhost:8765/admin/
 Client IP: 127.0.0.1
+2023-05-04 23:54:17 error: [Cake\Controller\Exception\MissingActionException] Action PagesController::index.html() could not be found, or is not accessible. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php on line 526
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index.html',
+  'prefix' => 'Admin',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/pages/index.html
+Referer URL: http://localhost:8765/admin/pages/index
+Client IP: 127.0.0.1
+2023-05-04 23:55:38 error: [Cake\Controller\Exception\MissingActionException] Action PagesController::buttons.html() could not be found, or is not accessible. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php on line 526
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'buttons.html',
+  'prefix' => 'Admin',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/pages/buttons.html
+Referer URL: http://localhost:8765/admin/pages/index
+Client IP: 127.0.0.1
