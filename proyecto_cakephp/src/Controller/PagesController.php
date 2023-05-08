@@ -15,6 +15,7 @@ declare(strict_types=1);
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
 namespace App\Controller;
+use Cake\ORM\TableRegistry;
 
 use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
@@ -31,43 +32,26 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-    /**
-     * Displays a view
-     *
-     * @param string ...$path Path segments.
-     * @return \Cake\Http\Response|null
-     * @throws \Cake\Http\Exception\ForbiddenException When a directory traversal attempt.
-     * @throws \Cake\View\Exception\MissingTemplateException When the view file could not
-     *   be found and in debug mode.
-     * @throws \Cake\Http\Exception\NotFoundException When the view file could not
-     *   be found and not in debug mode.
-     * @throws \Cake\View\Exception\MissingTemplateException In debug mode.
-     */
-    public function display(string ...$path): ?Response
-    {
-        if (!$path) {
-            return $this->redirect('/');
-        }
-        if (in_array('..', $path, true) || in_array('.', $path, true)) {
-            throw new ForbiddenException();
-        }
-        $page = $subpage = null;
+    public function index(){
 
-        if (!empty($path[0])) {
-            $page = $path[0];
-        }
-        if (!empty($path[1])) {
-            $subpage = $path[1];
-        }
-        $this->set(compact('page', 'subpage'));
+        //$articles = $this->getTableLocator()->get('Users');
+//COMPROBAR QUE NO EXISTE USUARIO PARA CREA UNO POR DEFECTO
+        date_default_timezone_set("Europe/Madrid");
+        $this->fetchTable('Users');
+        $data = [
+            'es_admin' => true,
+            'correo' => 'noeliacortijo@gmail.com',
+            'password'  => 'admin',
+            'nombre'=> 'Noelia',
+            'apellidos' => 'Cortijo Durán',
+            'telefono' => '679663692'
+        ];
+        $articles = $this->getTableLocator()->get('Users');
+        $entity = $articles->newEntity($data);
+        $articles->save($entity);
+        //$users = $this->Users->newEntity($data);
+        dd($entity); //@TODO
 
-        try {
-            return $this->render(implode('/', $path));
-        } catch (MissingTemplateException $exception) {
-            if (Configure::read('debug')) {
-                throw $exception;
-            }
-            throw new NotFoundException();
-        }
+      //  $this->Users->save($user);
     }
 }

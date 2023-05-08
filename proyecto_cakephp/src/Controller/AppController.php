@@ -17,6 +17,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\EventInterface;
 
 /**
  * Application Controller
@@ -49,5 +50,22 @@ class AppController extends Controller
          * see https://book.cakephp.org/4/en/controllers/components/form-protection.html
          */
         //$this->loadComponent('FormProtection');
+    }
+
+    public function beforeRender(EventInterface $event)
+    {
+        //Establecemos el tema que utilizará el prefijo Admin
+        $this->viewBuilder()->setTheme('FrontTheme');
+    }
+
+    public function obtener_meses($month_format = "M")
+    {
+        date_default_timezone_set ('Europe/Madrid');
+        setlocale(LC_ALL,'es_ES');
+        $months =  [];
+        for ($i = 1; $i <= 12; $i++) {
+            $months[] = date($month_format, mktime(0, 0, 0, $i));
+        }
+        return $months;
     }
 }

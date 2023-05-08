@@ -17,7 +17,12 @@
     <!-- Custom styles for this template
     <link href="css/sb-admin-2.min.css" rel="stylesheet">-->
 
-
+    <?= $this->Html->meta(
+        'favicon.ico',
+        'BackTheme./img/favicon.ico',
+        ['type' => 'icon']
+    );
+    ?>
     <?= $this->Html->css([
         'BackTheme./css/sb-admin-2.min',
         'BackTheme./css/fontawesome.min'
@@ -33,12 +38,12 @@
             <div id="content">
                 <!-- Menu -->
                 <?= $this->Element('BackTheme.layout/topbar'); ?>
-                 <!-- Contenido de la página  -->
-                 <div class="container-fluid">
+                <!-- Contenido de la página  -->
+                <div class="container-fluid">
                     <?= $this->fetch('content'); ?>
-                 </div>
+                </div>
             </div>
-             <!-- Pie de página -->
+            <!-- Pie de página -->
             <?= $this->Element('BackTheme.layout/footer'); ?>
         </div>
     </div>
@@ -50,9 +55,9 @@
         'BackTheme./js/jquery.easing.min',
         'BackTheme./js/sb-admin-2.min',
         'BackTheme./js/custom',
-    ]);?>
+    ]); ?>
 
-     <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
      <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 -->
@@ -71,4 +76,5 @@
  -->
 
 </body>
+
 </html>

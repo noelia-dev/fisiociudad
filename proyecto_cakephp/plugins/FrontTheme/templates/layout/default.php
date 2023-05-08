@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <title>Calendar 04</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>FISIOCIUDAD - Pide cita según disponibilidad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   
+    <link href="" rel="stylesheet">
+    <?= $this->Html->meta(
+        'favicon.ico',
+        'BackTheme./img/favicon.ico',
+        ['type' => 'icon']
+    );?>
     <?= $this->Html->css([
-        'BackTheme./css/sb-admin-2.min',
-        'BackTheme./css/fontawesome.min'
+        'FrontTheme./css/style',
+        'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min',
+        'https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap'
     ]); ?>
 </head>
 
-<body id="page-top">
-    <div id="wrapper">
-        <!-- Menu -->
-        <?= $this->Element('BackTheme.layout/menu'); ?>
-        <div id="content-wrapper" class="d-flex flex-column">
-            <div id="content">
-                <!-- Topbar -->
-                <?= $this->Element('BackTheme.layout/topbar'); ?>
-                <div class="container-fluid">
-                    <!-- Content -->
-                    <?= $this->fetch('content'); ?>
-                </div>
-            </div>
-            <!-- Footer -->
-            <?= $this->Element('BackTheme.layout/footer'); ?>
-        </div>
-    </div>
+<body>
+    <?= $this->Element('FrontTheme.layout/topbar'); ?>
+    <!-- Content -->
+    <?= $this->fetch('content'); ?>
+
+    <?= $this->Element('BackTheme.layout/footer'); ?>
 
     <!-- Script-->
     <?= $this->Html->script([
- 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js',        'BackTheme./js/jquery.min',
-        'BackTheme./js/bootstrap.bundle.min',
-        'BackTheme./js/jquery.easing.min',
-        'BackTheme./js/sb-admin-2.min',
+        'FrontTheme./js/jquery.min',
+        'FrontTheme./js/popper',
+        'FrontTheme./js/bootstrap.min',
+        'FrontTheme./js/main'
     ]); ?>
 </body>
 
