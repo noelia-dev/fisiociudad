@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
-//use Cake\Event\EventInterface;
+use Cake\Event\EventInterface;
 
 /**
  * Users Controller
@@ -16,45 +16,50 @@ use App\Controller\Admin\AppController;
 class UsersController extends AppController
 {
     //Sistema de permisos de acceso a acciones.
-  /*  public function beforeFilter(EventInterface $event)
+    public function beforeFilter(EventInterface $event)
     {
-       // parent::beforeFilter($event);
+        parent::beforeFilter($event);
         //Permite al usuario no autenticado acceder al apartado login
-       // $this->Authentication->addUnauthenticatedActions(['login']);
-    }*/
+        $this->Authentication->allowUnauthenticated(['login']);
+    }
 
     /**
      * Establece la conexión del usuario
      */
-  /*  public function login()
+    public function login()
     {
         //Aceptamos ambos métodos para poder obtener los datos del formulario.
         $this->getRequest()->allowMethod(['get', 'post']);
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
-            return $this->redirect(['controller' => 'comandos', 'action' => 'index']);
+           /* $target = $this->Authentication->getLoginRedirect() ?? '/admin';
+            return $this->redirect($target);*/
+
+            return $this->redirect(['controller' => 'Commandes', 'action' => 'index']);
         }
         if ($this->getRequest()->is('post') && !$resultado->isValid()) {
             $this->Flash->error('Conexión no establecida');
+        }else{
+            $this->Flash->error('Conexión SI establecida');
         }
-
+        //Cambiamos el theme a utilizar
         $this->viewBuilder()->setLayout('BackTheme.login');
-    }*/
+    }
 
     /**
      * Desconexión del usuario
      */
- /*   public function logout()
+    public function logout()
     {
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
             $this->Authentication->logout();
-            return $this->redirect(['controller' => 'users', 'action' => 'login']);
+            return $this->redirect(['controller' => 'Users', 'action' => 'login']);
         }
         $this->Flash->error('Desconexión imposible.');
         //Enviamos al usuario a la página en la que se encontraba antes de desconectarse.
         return $this->redirect($this->referer());
-    }*/
+    }
 
 
     /**

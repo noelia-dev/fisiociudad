@@ -41,8 +41,8 @@ class AppController extends ControllerPrincipal
      */
     public function initialize(): void
     {
-        parent::initialize();
-
+        parent::initialize();    
+        
     }
 
     public function beforeRender(EventInterface $event)

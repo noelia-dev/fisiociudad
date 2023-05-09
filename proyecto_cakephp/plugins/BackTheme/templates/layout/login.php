@@ -29,16 +29,15 @@
     ]); ?>
 </head>
 
-<body id="page-top">
+<body id="bg-gradient-primary">
     <!-- Contenido página -->
-    <div id="wrapper">
+    <div class="container"> 
 
-        <div id="content-wrapper" class="d-flex flex-column">
             <?= $this->fetch('content'); ?>
-            <!-- Pie de página -->
-            <?= $this->Element('BackTheme.layout/footer'); ?>
-        </div>
+           
     </div>
+     <!-- Pie de página -->
+    <?= $this->Element('BackTheme.layout/footer'); ?>
 
     <!-- Carga de scripts -->
     <?= $this->Html->script([

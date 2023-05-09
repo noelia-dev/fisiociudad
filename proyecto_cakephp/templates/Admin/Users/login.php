@@ -1,31 +1,31 @@
-<!--================Login Box Area =================-->
-<section class="login_box_area section_gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="login_form_inner">
-                    <h3>Log in to enter</h3>
-                    <?= $this->Form->create()?>
-                    <form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                        <div class="col-md-12 form-group">
-                            <input name="correo" type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <input name="password" type="text" class="form-control" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <div class="creat_account">
-                                <input type="checkbox" id="f-option2" name="selector">
-                                <label for="f-option2">Keep me logged in</label>
+<!--================Cuadro de login =================-->
+<div class="row justify-content-center">
+    <div class="col-xl-10 col-lg-12 col-md-9">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Bienvenido</h1>
                             </div>
+                            <?= $this->Form->create() ?>
+                            <div class="form-group">
+                                <?= $this->Form->control('correo')?>
+                                <!--input name="correo" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..."-->
+                            </div>
+                            <div class="form-group">
+                                <?= $this->Form->control('password') ?>
+                                <!--input name="password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password"-->
+                            </div>
+                            <?= $this->Form->submit('Acceder', ['class' => 'btn btn-primary btn-user btn-block']); ?>
+                            <?= $this->Form->end(); ?>
                         </div>
-                        <div class="col-md-12 form-group">
-                            <?= $this->Form->submit('Acceder',['class'=>'primary-btn']);?>
-                            <a href="#">Forgot Password?</a>
-                        </div>
-                    <?= $this->Form->end(); ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>

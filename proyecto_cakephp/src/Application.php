@@ -30,12 +30,12 @@ use Cake\ORM\Locator\TableLocator;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
 use Cake\Routing\Router;
-/*use Authentication\AuthenticationService;
+use Authentication\AuthenticationService;
 use Authentication\AuthenticationServiceInterface;
 use Authentication\AuthenticationServiceProviderInterface;
 use Authentication\Identifier\IdentifierInterface;
 use Authentication\Middleware\AuthenticationMiddleware;
-use Psr\Http\Message\ServerRequestInterface;*/
+use Psr\Http\Message\ServerRequestInterface;
 
 
 /**
@@ -44,8 +44,7 @@ use Psr\Http\Message\ServerRequestInterface;*/
  * This defines the bootstrapping logic and middleware layers you
  * want to use in your application.
  */
-class Application extends BaseApplication 
-//implements AuthenticationServiceProviderInterface
+class Application extends BaseApplication implements AuthenticationServiceProviderInterface
 {
     /**
      * Load all the application configuration and bootstrap logic.
@@ -57,7 +56,7 @@ class Application extends BaseApplication
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
-     //   $this->addPlugin('Authentication');
+        $this->addPlugin('Authentication');
 
         if (PHP_SAPI === 'cli') {
             $this->bootstrapCli();
@@ -95,9 +94,9 @@ class Application extends BaseApplication
             ->add(new ErrorHandlerMiddleware(Configure::read('Error')))
 
             // Handle plugin/theme assets like CakePHP normally does.
-            ->add(new AssetMiddleware([
-                'cacheTime' => Configure::read('Asset.cacheTime'),
-            ]))
+            ->add(new AssetMiddleware(
+                //['cacheTime' => Configure::read('Asset.cacheTime'),]
+            ))
 
             // Add routing middleware.
             // If you have a large number of routes connected, turning on routes
@@ -106,7 +105,6 @@ class Application extends BaseApplication
             // using it's second constructor argument:
             // `new RoutingMiddleware($this, '_cake_routes_')`
             ->add(new RoutingMiddleware($this))
-            //->add(new AuthenticationMiddleware($this))
 
             // Parse various types of encoded request bodies so that they are
             // available as array through $request->getData()
@@ -115,9 +113,11 @@ class Application extends BaseApplication
 
             // Cross Site Request Forgery (CSRF) Protection Middleware
             // https://book.cakephp.org/4/en/security/csrf.html#cross-site-request-forgery-csrf-middleware
-            ->add(new CsrfProtectionMiddleware([
-                'httponly' => true,
-            ]));
+            //->add(new CsrfProtectionMiddleware([                'httponly' => true,           ]))
+
+            // Add the AuthenticationMiddleware. It should be
+            // after routing and body parser.
+            ->add(new AuthenticationMiddleware($this));
 
         return $middlewareQueue;
     }
@@ -150,31 +150,36 @@ class Application extends BaseApplication
         // Load more plugins here
     }
 
-    //Redirigimos al usuario a la página de login cuando no tiene el loguin realizado
-    /*public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface
+    /**
+     * Returns a service provider instance.
+     *
+     * @param \Psr\Http\Message\ServerRequestInterface $request Request
+     * @return \Authentication\AuthenticationServiceInterface
+     */
+    public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface
     {
-      /*  $serviciosAutenticacion = new AuthenticationService([
-            'authenticatedRedirect' => Router::url('/admin/user/login'),
-            'queryParam' => 'redirect'
-        ]);
-        //Fields - permite parametrizar nuestro formulario de conexión
-        $serviciosAutenticacion->loadIdentifier('Authentication.Password', [
-            'fields' => [
-                'correo' => 'correo',
-                'password' => 'password'
-            ]
-        ]);
-        $serviciosAutenticacion->loadAuthenticator('Authentication.Session');
-
-        //los nombres que vamos a dar a nuestros campos
-        $serviciosAutenticacion->loadAuthenticator('Authentication.Form', [
-            'fields' => [
-                'correo' => 'correo',
-                'password' => 'password'
-            ],
-            'loginUrl' => Router::url('/admin/user/login')
+        $service = new AuthenticationService();
+        //Redirigimos al usuario a la página de login cuando no tiene el loguin realizado
+        // Define where users should be redirected to when they are not authenticated
+        $service->setConfig([
+            'unauthenticatedRedirect' => Router::url('/admin/users/login'),
+            'queryParam' => 'redirect',
         ]);
 
-        return $serviciosAutenticacion;*/
-    //}*/
+        $fields = [
+            IdentifierInterface::CREDENTIAL_USERNAME => 'correo',
+            IdentifierInterface::CREDENTIAL_PASSWORD => 'password'
+        ];
+        // Load the authenticators. Session should be first.
+        $service->loadAuthenticator('Authentication.Session');
+        $service->loadAuthenticator('Authentication.Form', [
+            'fields' => $fields,
+            'loginUrl' => Router::url('/admin/users/login'),
+        ]);
+
+        // Load identifiers
+        $service->loadIdentifier('Authentication.Password', compact('fields'));
+
+        return $service;
+    }
 }
