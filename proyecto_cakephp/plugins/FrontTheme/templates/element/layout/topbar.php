@@ -3,7 +3,7 @@
     <?= $this->Html->link(
         'Administrar',
         [
-            'controller' => 'Admin', 'action' => 'index'
+            'controller' => 'Admin', 'action' => '/users/login'
         ],
         ['class' => 'd-none d-sm-inline-block btn btn-sm btn-primary shadow-sm']
     ); ?>

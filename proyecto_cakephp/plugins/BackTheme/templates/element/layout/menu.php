@@ -14,15 +14,12 @@
 
    
     <li class="nav-item active">
-         <!-- Nav Item - Dashboard -->
-        <a class="nav-link" href="index.html">
-            <i class="fas fa-user fa-tachometer-alt"></i>
-            <span>Usuarios</span></a>
-        <!-- < ?  = $this->Html->link(
+         <!-- Elemento - Usuarios -->
+        <?= $this->Html->link(
             '<i class="fas fa-user fa-tachometer-alt"></i>Usuarios',
             ['controller' => 'Users', 'action' => 'index'],
             ['class'=>'nav-link','escape' => false]
-        ); ?>-->
+        ); ?>
    </li>
 
 

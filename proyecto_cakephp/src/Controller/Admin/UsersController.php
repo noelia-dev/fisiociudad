@@ -35,7 +35,7 @@ class UsersController extends AppController
            /* $target = $this->Authentication->getLoginRedirect() ?? '/admin';
             return $this->redirect($target);*/
 
-            return $this->redirect(['controller' => 'Commandes', 'action' => 'index']);
+            return $this->redirect(['controller' => 'Users', 'action' => 'index']);
         }
         if ($this->getRequest()->is('post') && !$resultado->isValid()) {
             $this->Flash->error('Conexión no establecida');
@@ -70,7 +70,7 @@ class UsersController extends AppController
     public function index()
     {
         //Condiciones AND sobre la condición where
-        $users = $this->paginate($this->Users->find()->where(['eliminado is' => null, 'es_admin is not' => null, 'es_admin is not' => '0']));
+        $users = $this->paginate($this->Users->find()->where(['eliminado is' => null, 'es_admin is not' => 'null', 'es_admin is not' => '1']));
         //crea una tabla con el contenido con todas las lineas resultantes
         $this->set(compact('users'));
     }
