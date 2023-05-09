@@ -24,3 +24,27 @@
 2023-03-27 07:06:59 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2023-03-27 07:07:17 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2023-04-03 10:37:02 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-05-09 01:52:19 error: [Cake\Core\Exception\MissingPluginException] Plugin Authorization could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Authorization',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Application.php:59
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Console/CommandRunner.php:195
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Console/CommandRunner.php:133
+- /srv/project_nco/fisiociudad/proyecto_cakephp/bin/cake.php:12
+
+2023-05-09 01:52:51 error: [Cake\Core\Exception\MissingPluginException] Plugin Authorization could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Authorization',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Application.php:59
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Console/CommandRunner.php:195
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Console/CommandRunner.php:133
+- /srv/project_nco/fisiociudad/proyecto_cakephp/bin/cake.php:12
+

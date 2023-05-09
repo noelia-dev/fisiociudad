@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,7 +15,9 @@ declare(strict_types=1);
  * @since     0.2.9
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\Controller;
+
 use Cake\ORM\TableRegistry;
 
 use Cake\Core\Configure;
@@ -32,26 +35,30 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-    public function index(){
-
-        //$articles = $this->getTableLocator()->get('Users');
-//COMPROBAR QUE NO EXISTE USUARIO PARA CREA UNO POR DEFECTO
-        date_default_timezone_set("Europe/Madrid");
-        $this->fetchTable('Users');
-        $data = [
-            'es_admin' => true,
-            'correo' => 'noeliacortijo@gmail.com',
-            'password'  => 'admin',
-            'nombre'=> 'Noelia',
-            'apellidos' => 'Cortijo Durán',
-            'telefono' => '679663692'
-        ];
-        $articles = $this->getTableLocator()->get('Users');
-        $entity = $articles->newEntity($data);
-        $articles->save($entity);
-        //$users = $this->Users->newEntity($data);
-        dd($entity); //@TODO
-
-      //  $this->Users->save($user);
+    /**
+     * Creación de usuario inicalmente si no está creado (PTE)
+     */
+    public function index()
+    {
+        $this->fetchTable('Users'); //$this->loadModel('Users');
+        $users = $this->getTableLocator()->get('Users');
+        $result_datos = $users->find()->where(['es_admin =' => 1]);
+        if (!$result_datos) {
+            //No hay admin, creamos un usuario por defecto
+            date_default_timezone_set("Europe/Madrid");
+            $data = [
+                'es_admin' => 1,
+                'correo' => 'noeliacortijo@gmail.com',
+                'password'  => 'admin',
+                'nombre' => 'Noelia',
+                'apellidos' => 'Cortijo Durán',
+                'telefono' => '679663692'
+            ];
+            $users = $this->getTableLocator()->get('Users');
+            $entity = $users->newEntity($data);
+            $users->save($entity);
+        } else {
+            // YA EXISTE EL ADMIN dd($result_datos);
+        }
     }
 }

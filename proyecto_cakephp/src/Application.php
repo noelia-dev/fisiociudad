@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,6 +15,7 @@ declare(strict_types=1);
  * @since     3.3.0
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App;
 
 use Cake\Core\Configure;
@@ -27,6 +29,14 @@ use Cake\Http\MiddlewareQueue;
 use Cake\ORM\Locator\TableLocator;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
+use Cake\Routing\Router;
+/*use Authentication\AuthenticationService;
+use Authentication\AuthenticationServiceInterface;
+use Authentication\AuthenticationServiceProviderInterface;
+use Authentication\Identifier\IdentifierInterface;
+use Authentication\Middleware\AuthenticationMiddleware;
+use Psr\Http\Message\ServerRequestInterface;*/
+
 
 /**
  * Application setup class.
@@ -34,7 +44,8 @@ use Cake\Routing\Middleware\RoutingMiddleware;
  * This defines the bootstrapping logic and middleware layers you
  * want to use in your application.
  */
-class Application extends BaseApplication
+class Application extends BaseApplication 
+//implements AuthenticationServiceProviderInterface
 {
     /**
      * Load all the application configuration and bootstrap logic.
@@ -45,6 +56,8 @@ class Application extends BaseApplication
     {
         // Call parent to load bootstrap from files.
         parent::bootstrap();
+
+     //   $this->addPlugin('Authentication');
 
         if (PHP_SAPI === 'cli') {
             $this->bootstrapCli();
@@ -62,10 +75,10 @@ class Application extends BaseApplication
         if (Configure::read('debug')) {
             $this->addPlugin('DebugKit');
         }
-        
+
         // Load more plugins here
-        $this->addPlugin('BackTheme'); 
-        $this->addPlugin('FrontTheme'); 
+        $this->addPlugin('BackTheme');
+        $this->addPlugin('FrontTheme');
     }
 
     /**
@@ -93,6 +106,7 @@ class Application extends BaseApplication
             // using it's second constructor argument:
             // `new RoutingMiddleware($this, '_cake_routes_')`
             ->add(new RoutingMiddleware($this))
+            //->add(new AuthenticationMiddleware($this))
 
             // Parse various types of encoded request bodies so that they are
             // available as array through $request->getData()
@@ -135,4 +149,32 @@ class Application extends BaseApplication
 
         // Load more plugins here
     }
+
+    //Redirigimos al usuario a la página de login cuando no tiene el loguin realizado
+    /*public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface
+    {
+      /*  $serviciosAutenticacion = new AuthenticationService([
+            'authenticatedRedirect' => Router::url('/admin/user/login'),
+            'queryParam' => 'redirect'
+        ]);
+        //Fields - permite parametrizar nuestro formulario de conexión
+        $serviciosAutenticacion->loadIdentifier('Authentication.Password', [
+            'fields' => [
+                'correo' => 'correo',
+                'password' => 'password'
+            ]
+        ]);
+        $serviciosAutenticacion->loadAuthenticator('Authentication.Session');
+
+        //los nombres que vamos a dar a nuestros campos
+        $serviciosAutenticacion->loadAuthenticator('Authentication.Form', [
+            'fields' => [
+                'correo' => 'correo',
+                'password' => 'password'
+            ],
+            'loginUrl' => Router::url('/admin/user/login')
+        ]);
+
+        return $serviciosAutenticacion;*/
+    //}*/
 }
