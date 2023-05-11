@@ -40,6 +40,8 @@
                 <?= $this->Element('BackTheme.layout/topbar'); ?>
                 <!-- Contenido de la página  -->
                 <div class="container-fluid">
+                    <!-- Mensajes Flash-->
+                    <?= $this->Flash->render(); ?>
                     <?= $this->fetch('content'); ?>
                 </div>
             </div>

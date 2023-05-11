@@ -18,6 +18,9 @@
                             <table class="months-table w-100">
                                 <tbody>
                                     <tr class="months-row">
+                                        <?php
+                                      //  print_r($this->obtener_meses());
+                                        ?>
                                         <td class="month">Ene</td>
                                         <td class="month">Feb</td>
                                         <td class="month">Mar</td>

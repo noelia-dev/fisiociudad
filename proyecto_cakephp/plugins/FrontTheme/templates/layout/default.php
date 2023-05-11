@@ -27,6 +27,7 @@
 
 <body>
     <?= $this->Element('FrontTheme.layout/topbar'); ?>
+    <?= $this->Flash->render(); ?>
     <!-- Content -->
     <?= $this->fetch('content'); ?>
 
