@@ -69,7 +69,11 @@ class UsersController extends AppController
      */
     public function index()
     {
-        //Condiciones AND sobre la condición where
+        $login_nombre = $this->Authentication->getResult()->getData()->nombre;
+        $login_nombre .= ' '. $this->Authentication->getResult()->getData()->apellidos;
+        //Nostramos el nombre del usuario que está logueado
+        $this->set('login_nombre',$login_nombre);
+        //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
         $users = $this->paginate($this->Users->find()->where(['eliminado is' => null, 'es_admin is not' => 'null', 'es_admin is not' => '1']));
         //crea una tabla con el contenido con todas las lineas resultantes
         $this->set(compact('users'));
@@ -98,15 +102,21 @@ class UsersController extends AppController
      */
     public function add()
     {
+        //Creamos uno vacio
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
+            //venimos de la validación del formulario
             $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+            if($this->request->getData('confirm_password') == $this->request->getData('password')){
+                if ($this->Users->save($user)) {
+                    $this->Flash->success(__('Usuario añadido correctamente.'));
+                    return $this->redirect(['action' => 'index']);
+                }    
+            }else{
+                $this->Flash->error(__('Las contraseñas no coinciden.'));
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            
+            $this->Flash->error(__('Usuario no guardado. Inténtelo de nuevo más tarde.'));
         }
         $this->set(compact('user'));
     }
@@ -126,11 +136,11 @@ class UsersController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
+                $this->Flash->success(__('Usuario añadido correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            $this->Flash->error(__('Usuario no guardado. Inténtelo de nuevo más tarde.'));
         }
         $this->set(compact('user'));
     }
