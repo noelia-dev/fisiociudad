@@ -2,25 +2,36 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <?= $this->Html->image('logo_fisio.png', ['alt' => 'CakePHP']) ?>
-        </div>
-        <div class="sidebar-brand-text mx-3">FisioCiudad<sup>&reg;</sup></div>
-    </a>
+    <div class="sidebar-brand-icon rotate-n-15">
+        <?= $this->Html->image('logo_fisio.png', [
+            'alt' => 'FisioCiudad',
+            'url' =>  [
+                'controller' => 'Users', 'action' => 'index',
+            ],
+            ['class' => 'sidebar-brand d-flex align-items-center justify-content-center']
+        ]) ?>
+    </div>    <!--a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
+        <div class="sidebar-brand-text mx-3">FisioCiudad</div>
+    </a-->
+
+    <?= $this->Html->link(
+        ' <div class="sidebar-brand-text mx-3">FisioCiudad<sup>&reg;</sup></div>',
+        ['controller' => 'Users', 'action' => 'index'],
+        ['class' => 'sidebar-brand d-flex align-items-center justify-content-center', 'escape' => false],
+    ); ?>
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
-   
+
     <li class="nav-item active">
-         <!-- Elemento - Usuarios -->
+        <!-- Elemento - Usuarios -->
         <?= $this->Html->link(
             '<i class="fas fa-user fa-tachometer-alt"></i>Usuarios',
             ['controller' => 'Users', 'action' => 'index'],
-            ['class'=>'nav-link','escape' => false]
+            ['class' => 'nav-link', 'escape' => false]
         ); ?>
-   </li>
+    </li>
 
 
     <!-- Divider 

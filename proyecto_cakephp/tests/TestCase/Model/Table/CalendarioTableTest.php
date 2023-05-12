@@ -3,20 +3,20 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\UsersTable;
+use App\Model\Table\CalendarioTable;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\UsersTable Test Case
+ * App\Model\Table\CalendarioTable Test Case
  */
-class UsersTableTest extends TestCase
+class CalendarioTableTest extends TestCase
 {
     /**
      * Test subject
      *
-     * @var \App\Model\Table\UsersTable
+     * @var \App\Model\Table\CalendarioTable
      */
-    protected $Users;
+    protected $Calendario;
 
     /**
      * Fixtures
@@ -24,7 +24,7 @@ class UsersTableTest extends TestCase
      * @var array<string>
      */
     protected $fixtures = [
-        'app.Users',
+        'app.Calendario',
     ];
 
     /**
@@ -35,8 +35,8 @@ class UsersTableTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $config = $this->getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
-        $this->Users = $this->getTableLocator()->get('Users', $config);
+        $config = $this->getTableLocator()->exists('Calendario') ? [] : ['className' => CalendarioTable::class];
+        $this->Calendario = $this->getTableLocator()->get('Calendario', $config);
     }
 
     /**
@@ -46,7 +46,7 @@ class UsersTableTest extends TestCase
      */
     protected function tearDown(): void
     {
-        unset($this->Users);
+        unset($this->Calendario);
 
         parent::tearDown();
     }
@@ -55,7 +55,7 @@ class UsersTableTest extends TestCase
      * Test validationDefault method
      *
      * @return void
-     * @uses \App\Model\Table\UsersTable::validationDefault()
+     * @uses \App\Model\Table\CalendarioTable::validationDefault()
      */
     public function testValidationDefault(): void
     {
@@ -66,7 +66,7 @@ class UsersTableTest extends TestCase
      * Test buildRules method
      *
      * @return void
-     * @uses \App\Model\Table\UsersTable::buildRules()
+     * @uses \App\Model\Table\CalendarioTable::buildRules()
      */
     public function testBuildRules(): void
     {

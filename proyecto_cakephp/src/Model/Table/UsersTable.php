@@ -91,7 +91,12 @@ class UsersTable extends Table
             ->allowEmptyDateTime('modificado');
 
         $validator
-            ->dateTime('eliminado');
+            ->dateTime('eliminado')
+            ->allowEmptyDateTime('eliminado');
+
+        $validator
+            ->integer('id_calendario')
+            ->allowEmptyString('id_calendario');
 
         return $validator;
     }

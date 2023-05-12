@@ -19,8 +19,8 @@ use Cake\ORM\Entity;
  * @property int|null $es_admin
  * @property \Cake\I18n\FrozenTime|null $alta
  * @property \Cake\I18n\FrozenTime|null $modificado
- * @property \Cake\I18n\FrozenTime $eliminado
- * @property string|null $usercol
+ * @property \Cake\I18n\FrozenTime|null $eliminado
+ * @property int|null $id_calendario
  */
 class User extends Entity
 {
@@ -43,7 +43,7 @@ class User extends Entity
         'alta' => true,
         'modificado' => true,
         'eliminado' => true,
-        'usercol' => true,
+        'id_calendario' => true,
     ];
 
     /**
