@@ -1,10 +1,35 @@
-CREATE TABLE `app_nco`.`user` (
-  `id_user` INT NOT NULL,
-  `password` VARCHAR(45) NULL,
-  `correo` VARCHAR(45) NULL,
-  `telefono` VARCHAR(45) NULL,
-  `nombre` VARCHAR(45) NULL,
-  `apellidos` VARCHAR(45) NULL,
-  `es_admin` BOOLEAN NULL,
-  PRIMARY KEY (`id_user`))
-ENGINE = InnoDB;
+CREATE TABLE `users` (
+  `id_user` int NOT NULL AUTO_INCREMENT,
+  `password` varchar(255) NOT NULL,
+  `correo` varchar(45) NOT NULL,
+  `telefono` varchar(45) DEFAULT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  `apellidos` varchar(45) DEFAULT NULL,
+  `es_admin` tinyint DEFAULT '0',
+  `alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `modificado` datetime DEFAULT NULL,
+  `eliminado` datetime DEFAULT NULL,
+  `id_calendario` int DEFAULT NULL,
+  PRIMARY KEY (`id_user`),
+  KEY `fk_id_calendario_idx` (`id_calendario`),
+  CONSTRAINT `fk_id_calendario` FOREIGN KEY (`id_calendario`) REFERENCES `calendario` (`id_calendario`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `calendario` (
+  `id_calendario` int NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(45) NOT NULL,
+  `fecha` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_calendario`),
+  UNIQUE KEY `fecha_UNIQUE` (`fecha`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+CREATE TABLE `citas` (
+  `id_cita` int NOT NULL,
+  `fecha` date NOT NULL,
+  `hora` time NOT NULL,
+  `nota_profesional` varchar(255) DEFAULT NULL,
+  `nota_paciente` varchar(255) DEFAULT NULL,
+  `id_usuario` int DEFAULT NULL,
+  KEY `fk_id_usuario_idx` (`id_usuario`),
+  CONSTRAINT `fk_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id_user`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
