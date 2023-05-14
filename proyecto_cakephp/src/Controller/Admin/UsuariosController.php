@@ -27,23 +27,13 @@ class UsuariosController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Paginator');
-    }
 
+    }
     //Sistema de permisos de acceso a acciones.
     public function beforeFilter(EventInterface $event)
     {
         parent::beforeFilter($event);
-        //Permite al usuario no autenticado acceder al apartado login
-        $this->Authentication->allowUnauthenticated(['login']);
-        $resultado = $this->Authentication->getResult();
-        if ($resultado->isValid()) {
-            $login_nombre = $resultado->getData()->nombre;
-            $login_nombre .= ' ' . $resultado->getData()->apellidos;
-            //Nostramos el nombre del usuario que está logueado
-            $this->set('login_nombre', $login_nombre);
-        }
     }
-
     /**
      * Establece la conexión del usuario
      */
@@ -88,7 +78,8 @@ class UsuariosController extends AppController
     public function index()
     {
         //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
-        $usuarios = $this->paginate($this->Usuarios->find()->where(['eliminado is' => null, 'es_admin is not' => 'null', 'es_admin is not' => '1']));
+        $usuarios = $this->paginate($this->Usuarios->find()->where([
+           'es_admin is not' => '1']));
         //crea una tabla con el contenido con todas las lineas resultantes
         $this->set(compact('usuarios'));
     }

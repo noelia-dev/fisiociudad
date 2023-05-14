@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -30,6 +31,8 @@ use Cake\Event\EventInterface;
  */
 class AppController extends ControllerPrincipal
 {
+    public $active_site;
+    public $login_nombre;
     /**
      * Initialization hook method.
      *
@@ -41,13 +44,27 @@ class AppController extends ControllerPrincipal
      */
     public function initialize(): void
     {
-        parent::initialize();    
-        
+        parent::initialize();
     }
 
     public function beforeRender(EventInterface $event)
     {
         //Establecemos el tema que utilizará el prefijo Admin
         $this->viewBuilder()->setTheme('BackTheme');
+    }
+
+    //Sistema de permisos de acceso a acciones.
+    public function beforeFilter(EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        //Permite al usuario no autenticado acceder al apartado login
+        $this->Authentication->allowUnauthenticated(['login']);
+        $resultado = $this->Authentication->getResult();
+        if ($resultado->isValid()) {
+            $login_nombre = $resultado->getData()->nombre;
+            $login_nombre .= ' ' . $resultado->getData()->apellidos;
+            //Nostramos el nombre del usuario que está logueado
+            $this->set('login_nombre', $login_nombre);
+        }
     }
 }

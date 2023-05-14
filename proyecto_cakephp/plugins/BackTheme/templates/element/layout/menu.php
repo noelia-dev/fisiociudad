@@ -6,7 +6,7 @@
         <?= $this->Html->image('logo_fisio.png', [
             'alt' => 'FisioCiudad',
             'url' =>  [
-                'controller' => 'Users', 'action' => 'index',
+                'controller' => 'Usuarios', 'action' => 'index',
             ],
             ['class' => 'sidebar-brand d-flex align-items-center justify-content-center']
         ]) ?>
@@ -16,7 +16,7 @@
 
     <?= $this->Html->link(
         ' <div class="sidebar-brand-text mx-3">FisioCiudad<sup>&reg;</sup></div>',
-        ['controller' => 'Users', 'action' => 'index'],
+        ['controller' => 'Usuarios', 'action' => 'index'],
         ['class' => 'sidebar-brand d-flex align-items-center justify-content-center', 'escape' => false],
     ); ?>
 
@@ -28,11 +28,19 @@
         <!-- Elemento - Usuarios -->
         <?= $this->Html->link(
             '<i class="fas fa-user fa-tachometer-alt"></i>Usuarios',
-            ['controller' => 'Users', 'action' => 'index'],
+            ['controller' => 'Usuarios', 'action' => 'index'],
             ['class' => 'nav-link', 'escape' => false]
         ); ?>
     </li>
 
+    <li class="nav-item">
+        <!-- Elemento - Usuarios -->
+        <?= $this->Html->link(
+            '<i class="fas fa-user fa-tachometer-alt"></i>Citas',
+            ['controller' => 'Citas', 'action' => 'index'],
+            ['class' => 'nav-link', 'escape' => false]
+        ); ?>
+    </li>
 
     <!-- Divider 
     <hr class="sidebar-divider">-->

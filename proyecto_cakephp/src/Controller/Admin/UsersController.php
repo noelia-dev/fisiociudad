@@ -88,7 +88,8 @@ class UsersController extends AppController
     public function index()
     {
         //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
-        $users = $this->paginate($this->Users->find()->where(['eliminado is' => null, 'es_admin is not' => 'null', 'es_admin is not' => '1']));
+        $users = $this->paginate($this->Users->find()->where(
+            ['eliminado is' => null, 'es_admin is not' => 'null', 'es_admin is not' => '1']));
         //crea una tabla con el contenido con todas las lineas resultantes
         $this->set(compact('users'));
     }

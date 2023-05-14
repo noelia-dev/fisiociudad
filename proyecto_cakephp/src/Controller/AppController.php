@@ -70,4 +70,13 @@ class AppController extends Controller
         }
         return $months;
     }
+
+    public function get_nombre_semana($nombre_semana){
+        $diassemanaES = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado","Domingo");
+        $diassemanaEN = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun");
+
+        $indice = array_search($nombre_semana,$diassemanaEN);
+        
+        return $diassemanaES[$indice];
+    }
 }

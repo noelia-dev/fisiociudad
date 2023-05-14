@@ -1,4 +1,3 @@
+.gitignore
 proyecto_cakephp/tmp/cache/*
 proyecto_cakephp/logs/*
-
-.gitignore
