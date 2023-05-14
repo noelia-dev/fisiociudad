@@ -117,12 +117,12 @@ class UsuariosController extends AppController
     public function add()
     {
         //Creamos uno vacio
-        $user = $this->Usuarios->newEmptyEntity();
+        $usuario = $this->Usuarios->newEmptyEntity();
         if ($this->request->is('post')) {
             //venimos de la validación del formulario
-            $user = $this->Usuarios->patchEntity($user, $this->request->getData());
+            $usuario = $this->Usuarios->patchEntity($usuario, $this->request->getData());
             if ($this->request->getData('confirm_password') == $this->request->getData('password')) {
-                if ($this->Usuarios->save($user)) {
+                if ($this->Usuarios->save($usuario)) {
                     $this->Flash->success(__('Usuario añadido correctamente.'));
                     return $this->redirect(['action' => 'index']);
                 }
@@ -144,11 +144,12 @@ class UsuariosController extends AppController
      */
     public function edit($id = null)
     {
-        $user = $this->Usuarios->get($id);
+
+        $usuario = $this->Usuarios->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-            $user = $this->Usuarios->patchEntity($user, $this->request->getData());
-            if ($this->Usuarios->save($user)) {
+            $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
+            if ($this->Usuarios->save($usuario)) {
                 $this->Flash->success(__('Usuario modificado correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -168,9 +169,9 @@ class UsuariosController extends AppController
     public function delete($id = null)
     {
         //$this->request->allowMethod(['post', 'delete']);
-        $user = $this->Usuarios->get($id);
-        $user = $this->Usuarios->patchEntity($user, ['eliminado' => date('Y-m-d H:i:s')]);
-        if ($this->Usuarios->save($user)) {
+        $usuario = $this->Usuarios->get($id);
+        $usuario = $this->Usuarios->patchEntity($usuario, ['eliminado' => date('Y-m-d H:i:s')]);
+        if ($this->Usuarios->save($usuario)) {
             $this->Flash->success(__('El usuario ha sido eliminado correctamente.'));
         } else {
             $this->Flash->error(__('El usuario NO ha podido ser eliminado. Por favor, intentelo de nuevo.'));

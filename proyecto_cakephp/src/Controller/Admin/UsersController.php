@@ -168,9 +168,9 @@ class UsersController extends AppController
     public function delete($id = null)
     {
         //$this->request->allowMethod(['post', 'delete']);
-        $user = $this->Users->get($id);
-        $user = $this->Users->patchEntity($user, ['eliminado' => date('Y-m-d H:i:s')]);
-        if ($this->Users->save($user)) {
+        $usuario = $this->Users->get($id);
+        $usuario = $this->Users->patchEntity($usuario, ['eliminado' => date('Y-m-d H:i:s')]);
+        if ($this->Usuario->save($usuario)) {
             $this->Flash->success(__('El usuario ha sido eliminado correctamente.'));
         } else {
             $this->Flash->error(__('El usuario NO ha podido ser eliminado. Por favor, intentelo de nuevo.'));
