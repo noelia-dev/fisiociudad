@@ -43,7 +43,7 @@ class PagesController extends AppController
         $this->fetchTable('Users'); //$this->loadModel('Users');
         $users = $this->getTableLocator()->get('Users');
         $result_datos = $users->find()->where(['es_admin =' => 1]);
-        if ($result_datos) {
+     //   if ($result_datos) {
             //No hay admin, creamos un usuario por defecto
             date_default_timezone_set("Europe/Madrid");
             $data = [
@@ -52,13 +52,16 @@ class PagesController extends AppController
                 'password'  => 'admin',
                 'nombre' => 'Noelia',
                 'apellidos' => 'Cortijo Durán',
-                'telefono' => '679663692'
+                'telefono' => '679663692',
+                'alta' => null,
+                'modificado' => null,
+                'eliminado' => null
             ];
             $users = $this->getTableLocator()->get('Users');
             $entity = $users->newEntity($data);
             $users->save($entity);
-        } else {
+      //  } else {
             // YA EXISTE EL ADMIN dd($result_datos);
-        }
+        //}
     }
 }

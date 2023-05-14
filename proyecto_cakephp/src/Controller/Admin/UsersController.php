@@ -6,6 +6,7 @@ namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
 use Cake\Event\EventInterface;
+use Cake\Datasource\Pagination\NumericPaginator;
 
 /**
  * Users Controller

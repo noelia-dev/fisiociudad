@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 namespace App\Model\Entity;
@@ -11,16 +10,12 @@ use Cake\ORM\Entity;
  * User Entity
  *
  * @property int $id_user
- * @property string $password
- * @property string $correo
+ * @property string|null $password
+ * @property string|null $correo
  * @property string|null $telefono
  * @property string|null $nombre
  * @property string|null $apellidos
- * @property int|null $es_admin
- * @property \Cake\I18n\FrozenTime|null $alta
- * @property \Cake\I18n\FrozenTime|null $modificado
- * @property \Cake\I18n\FrozenTime|null $eliminado
- * @property int|null $id_calendario
+ * @property bool|null $es_admin
  */
 class User extends Entity
 {
@@ -40,10 +35,6 @@ class User extends Entity
         'nombre' => true,
         'apellidos' => true,
         'es_admin' => true,
-        'alta' => true,
-        'modificado' => true,
-        'eliminado' => true,
-        'id_calendario' => true,
     ];
 
     /**
@@ -54,6 +45,7 @@ class User extends Entity
     protected $_hidden = [
         'password',
     ];
+    
     /**
      * Hashage de password.
      * Será llamado automáticamente para crea una password al crear un usuario

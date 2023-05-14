@@ -26,10 +26,6 @@ class UsersFixture extends TestFixture
                 'nombre' => 'Lorem ipsum dolor sit amet',
                 'apellidos' => 'Lorem ipsum dolor sit amet',
                 'es_admin' => 1,
-                'alta' => '2023-05-12 19:28:39',
-                'modificado' => '2023-05-12 19:28:39',
-                'eliminado' => '2023-05-12 19:28:39',
-                'id_calendario' => 1,
             ],
         ];
         parent::init();

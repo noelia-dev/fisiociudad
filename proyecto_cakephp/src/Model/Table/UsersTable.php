@@ -55,14 +55,12 @@ class UsersTable extends Table
         $validator
             ->scalar('password')
             ->maxLength('password', 255)
-            ->requirePresence('password', 'create')
-            ->notEmptyString('password');
+            ->allowEmptyString('password');
 
         $validator
             ->scalar('correo')
             ->maxLength('correo', 45)
-            ->requirePresence('correo', 'create')
-            ->notEmptyString('correo');
+            ->allowEmptyString('correo');
 
         $validator
             ->scalar('telefono')
@@ -80,25 +78,8 @@ class UsersTable extends Table
             ->allowEmptyString('apellidos');
 
         $validator
+            ->boolean('es_admin')
             ->allowEmptyString('es_admin');
-
-        $validator
-            ->dateTime('alta')
-            ->allowEmptyDateTime('alta');
-
-        $validator
-            ->dateTime('modificado')
-            ->allowEmptyDateTime('modificado');
-
-        $validator
-            ->dateTime('eliminado')
-            ->allowEmptyDateTime('eliminado');
-
-        $validator
-            ->integer('id_calendario')
-            ->allowEmptyString('id_calendario');
-            ->dateTime('eliminado')
-            ->allowEmptyDateTime('eliminado');
 
         return $validator;
     }

@@ -23422,3 +23422,560 @@ Stack Trace:
 Request URL: /admin/users
 Referer URL: http://localhost:8765/admin/users/login
 Client IP: 127.0.0.1
+2023-05-14 20:27:42 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:51 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:51 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:52 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:53 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:53 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:53 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:28:53 error: [Cake\Error\FatalErrorException] Fatal Error: method_exists() [<a href='https://secure.php.net/function.method-exists'>function.method-exists</a>]: The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;App\Model\Entity\Usuario&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php on line 783
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+2023-05-14 20:30:43 error: [TypeError] Argument 1 passed to Cake\Database\TypeFactory::build() must be of the type string, null given, called in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 2134 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2059
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:59
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:35:04 error: [TypeError] Argument 1 passed to Cake\Database\TypeFactory::build() must be of the type string, null given, called in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 2134 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2059
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:36:15 error: [TypeError] Argument 1 passed to Cake\Database\TypeFactory::build() must be of the type string, null given, called in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 2134 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2059
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:63
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:36:57 error: [TypeError] Argument 1 passed to Cake\Database\TypeFactory::build() must be of the type string, null given, called in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 2134 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2059
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:63
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:37:09 error: [TypeError] Argument 1 passed to Cake\Database\TypeFactory::build() must be of the type string, null given, called in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 2134 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2134
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2059
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:63
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:43:26 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_nco.users' doesn't exist in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 160
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:92
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1714
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1269
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:45
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_nco.users' doesn't exist in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:329
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:332
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:158
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:92
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1714
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1269
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:45
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:43:37 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_nco.users' doesn't exist in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 160
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:92
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1714
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1269
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:45
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_nco.users' doesn't exist in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:329
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:332
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:158
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:92
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1714
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1269
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:45
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:43:58 error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:360
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:62
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:44:18 error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:360
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:62
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:46:45 error: [Error] Class 'App\Model\Entity\DefaultPasswordHasher' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Model/Entity/User.php on line 56
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/EntityTrait.php:260
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Marshaller.php:222
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2787
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:61
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:46:57 error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1 in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:360
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:62
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 20:48:19 error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eliminado' in 'where clause' in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:180
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:75
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:360
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:1148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php:288
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php:1096
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/Paging/NumericPaginator.php:183
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:197
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:931
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsersController.php:91
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/users
+Referer URL: http://localhost:8765/admin/users/login
+Client IP: 127.0.0.1
