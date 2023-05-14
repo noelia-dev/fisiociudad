@@ -19,12 +19,13 @@ class CitasFixture extends TestFixture
     {
         $this->records = [
             [
-                'id_cita' => 1,
-                'fecha' => '2023-05-12',
-                'hora' => '19:26:13',
+                'id' => 1,
+                'fecha' => '2023-05-14',
+                'hora' => '20:57:43',
                 'nota_profesional' => 'Lorem ipsum dolor sit amet',
                 'nota_paciente' => 'Lorem ipsum dolor sit amet',
-                'id_usuario' => 1,
+                'usuario_id' => 1,
+                'calendario_id' => 1,
             ],
         ];
         parent::init();

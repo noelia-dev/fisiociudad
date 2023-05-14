@@ -38,6 +38,16 @@ class CitasTable extends Table
         parent::initialize($config);
 
         $this->setTable('citas');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
+
+        $this->belongsTo('Usuarios', [
+            'foreignKey' => 'usuario_id',
+        ]);
+        $this->belongsTo('Calendarios', [
+            'foreignKey' => 'calendario_id',
+            'joinType' => 'INNER',
+        ]);
     }
 
     /**
@@ -48,11 +58,6 @@ class CitasTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
-        $validator
-            ->integer('id_cita')
-            ->requirePresence('id_cita', 'create')
-            ->notEmptyString('id_cita');
-
         $validator
             ->date('fecha')
             ->requirePresence('fecha', 'create')
@@ -74,9 +79,28 @@ class CitasTable extends Table
             ->allowEmptyString('nota_paciente');
 
         $validator
-            ->integer('id_usuario')
-            ->allowEmptyString('id_usuario');
+            ->integer('usuario_id')
+            ->allowEmptyString('usuario_id');
+
+        $validator
+            ->integer('calendario_id')
+            ->notEmptyString('calendario_id');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules): RulesChecker
+    {
+        $rules->add($rules->existsIn('usuario_id', 'Usuarios'), ['errorField' => 'usuario_id']);
+        $rules->add($rules->existsIn('calendario_id', 'Calendarios'), ['errorField' => 'calendario_id']);
+
+        return $rules;
     }
 }

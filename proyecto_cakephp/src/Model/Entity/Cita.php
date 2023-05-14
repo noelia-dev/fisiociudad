@@ -8,12 +8,13 @@ use Cake\ORM\Entity;
 /**
  * Cita Entity
  *
- * @property int $id_cita
+ * @property int $id
  * @property \Cake\I18n\FrozenDate $fecha
  * @property \Cake\I18n\Time $hora
  * @property string|null $nota_profesional
  * @property string|null $nota_paciente
- * @property int|null $id_usuario
+ * @property int|null $usuario_id
+ * @property int $calendario_id
  */
 class Cita extends Entity
 {
@@ -27,11 +28,11 @@ class Cita extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'id_cita' => true,
         'fecha' => true,
         'hora' => true,
         'nota_profesional' => true,
         'nota_paciente' => true,
-        'id_usuario' => true,
+        'usuario_id' => true,
+        'calendario_id' => true,
     ];
 }

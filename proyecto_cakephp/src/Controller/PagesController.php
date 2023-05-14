@@ -40,10 +40,12 @@ class PagesController extends AppController
      */
     public function index()
     {
-        $this->fetchTable('Users'); //$this->loadModel('Users');
-        $users = $this->getTableLocator()->get('Users');
-        $result_datos = $users->find()->where(['es_admin =' => 1]);
-     //   if ($result_datos) {
+        $this->fetchTable('Usuarios'); //$this->loadModel('Users');
+        $usuarios = $this->getTableLocator()->get('Usuarios');
+        $result_datos = $usuarios->find()->where(['es_admin' => '1']);
+        //Detectamos si es la primera vez que se accede al apartado administrador
+
+        if ($result_datos->count() == 0) {
             //No hay admin, creamos un usuario por defecto
             date_default_timezone_set("Europe/Madrid");
             $data = [
@@ -59,9 +61,24 @@ class PagesController extends AppController
             ];
             $users = $this->getTableLocator()->get('Users');
             $entity = $users->newEntity($data);
-            $users->save($entity);
-      //  } else {
+           // $users->save($entity);
+
+
+            //No hay admin, creamos un usuario por defecto
+            date_default_timezone_set("Europe/Madrid");
+            $data = [
+                'es_admin' => '1',
+                'correo' => 'noeliacortijo@gmail.com',
+                'password'  => 'admin',
+                'nombre' => 'Noelia',
+                'apellidos' => 'Cortijo Durán',
+                'telefono' => '679663692'
+            ];
+            $usuarios = $this->getTableLocator()->get('Usuarios');
+            $entity = $usuarios->newEntity($data);
+            $usuarios->save($entity);
+        } else {
             // YA EXISTE EL ADMIN dd($result_datos);
-        //}
+        }
     }
 }

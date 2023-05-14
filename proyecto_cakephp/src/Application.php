@@ -160,9 +160,9 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
     {
         $service = new AuthenticationService();
         //Redirigimos al usuario a la página de login cuando no tiene el loguin realizado
-        // Define where users should be redirected to when they are not authenticated
+        // Define where usuarios should be redirected to when they are not authenticated
         $service->setConfig([
-            'unauthenticatedRedirect' => Router::url('/admin/users/login'),
+            'unauthenticatedRedirect' => Router::url('/admin/usuarios/login'),
             'queryParam' => 'redirect',
         ]);
 
@@ -174,7 +174,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         $service->loadAuthenticator('Authentication.Session');
         $service->loadAuthenticator('Authentication.Form', [
             'fields' => $fields,
-            'loginUrl' => Router::url('/admin/users/login'),
+            'loginUrl' => Router::url('/admin/usuarios/login'),
         ]);
 
         // Load identifiers

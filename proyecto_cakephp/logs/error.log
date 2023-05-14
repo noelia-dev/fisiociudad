@@ -23979,3 +23979,348 @@ Stack Trace:
 Request URL: /admin/users
 Referer URL: http://localhost:8765/admin/users/login
 Client IP: 127.0.0.1
+2023-05-14 21:08:48 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:80
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:09:08 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:80
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:09:36 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:11:03 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:11:11 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:11:22 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:11:42 error: [InvalidArgumentException] Cannot convert value of type `boolean` to integer in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php on line 40
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Type/IntegerType.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php:39
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php:96
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:113
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:170
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/ValueBinder.php:148
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:359
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:363
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php:254
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:2091
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1984
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1883
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1570
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php:709
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1571
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php:1884
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/PagesController.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /
+Client IP: 127.0.0.1
+2023-05-14 21:24:35 error: [Cake\View\Exception\MissingTemplateException] Template file `Admin/Usuarios/login.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/Admin/Usuarios/login.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/login.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/Admin/Usuarios/login.php`
+ in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'Admin/Usuarios/login.php',
+  'paths' => 
+  array (
+    0 => '/srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/',
+    1 => '/srv/project_nco/fisiociudad/proyecto_cakephp/templates/',
+    2 => '/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php:805
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:773
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:556
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1

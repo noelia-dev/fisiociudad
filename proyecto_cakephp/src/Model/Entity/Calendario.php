@@ -8,9 +8,11 @@ use Cake\ORM\Entity;
 /**
  * Calendario Entity
  *
- * @property int $id_calendario
+ * @property int $id
  * @property string $descripcion
  * @property string $fecha
+ *
+ * @property \App\Model\Entity\Cita[] $citas
  */
 class Calendario extends Entity
 {
@@ -26,5 +28,6 @@ class Calendario extends Entity
     protected $_accessible = [
         'descripcion' => true,
         'fecha' => true,
+        'citas' => true,
     ];
 }
