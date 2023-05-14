@@ -1,6 +1,4 @@
-proyecto_cakephp/logs/debug.log
-proyecto_cakephp/tmp/cache/models/myapp_cake_model_debug_kit_panels
-proyecto_cakephp/tmp/cache/models/myapp_cake_model_debug_kit_requests
-proyecto_cakephp/tmp/cache/models/myapp_cake_model_default_users
-proyecto_cakephp/tmp/cache/persistent/myapp_cake_core_translations.cake.es_ES
-proyecto_cakephp/tmp/cache/persistent/myapp_cake_core_translations.default.es_ES
+proyecto_cakephp/tmp/cache/*
+proyecto_cakephp/logs/*
+
+.gitignore
