@@ -97,6 +97,8 @@ class UsersTable extends Table
         $validator
             ->integer('id_calendario')
             ->allowEmptyString('id_calendario');
+            ->dateTime('eliminado')
+            ->allowEmptyDateTime('eliminado');
 
         return $validator;
     }
