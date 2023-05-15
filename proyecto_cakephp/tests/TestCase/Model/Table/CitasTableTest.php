@@ -25,6 +25,8 @@ class CitasTableTest extends TestCase
      */
     protected $fixtures = [
         'app.Citas',
+        'app.Usuarios',
+        'app.Calendarios',
     ];
 
     /**
@@ -58,6 +60,17 @@ class CitasTableTest extends TestCase
      * @uses \App\Model\Table\CitasTable::validationDefault()
      */
     public function testValidationDefault(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     * @uses \App\Model\Table\CitasTable::buildRules()
+     */
+    public function testBuildRules(): void
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

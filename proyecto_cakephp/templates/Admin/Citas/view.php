@@ -3,7 +3,7 @@
 
      <div class="row">
          <div class="col">
-             <h1 class="h3 mb-2 text-gray-800">Citas</h1>
+             <h1 class="h3 mb-2 text-gray-800">Citas del usuario <?= $nombre_usuario ?></h1>
              <?= $this->Flash->render() ?>
              <!--   <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
          -->
@@ -32,6 +32,7 @@
                                  <th>Hora</th>
                                  <th>Nota paciente</th>
                                  <th>Nota profesional</th>
+                                 <th>Fecha solicitud</th>
                                  <th></th>
                              </tr>
                          </thead>
@@ -39,11 +40,12 @@
                              <?php
                                 foreach ($citas as $cita) { ?>
                                  <tr>
-                                     <td class="aling-middle"><?= $cita->nombre ?></td>
-                                     <td class="aling-middle"><?= $cita->apellidos ?></td>
+                                     <td class="aling-middle"><?= $cita->fecha ?></td>
+                                     <td class="aling-middle"><?= $cita->hora ?></td>
+                                     <td class="aling-middle"><?= $cita->nota_paciente ?></td>
+                                     <td class="aling-middle"><?= $cita->nota_profesional ?></td>
                                      <td class="aling-middle"><?= $cita->alta ?></td>
                                      <td class="aling-right">
-                                         <?= $this->Html->link('<i class="fas fa-list"></i>', ['controller' => 'Citas', 'action' => 'view', $cita->id], ['class' => 'btn btn-primary', 'escape' => false]) ?>
                                          <?= $this->Html->link('<i class="fas fa-edit"></i>', ['action' => 'edit', $cita->id], ['class' => 'btn btn-warning', 'escape' => false]) ?>
                                          <?= $this->Html->link('<i class="fas fa-trash"></i>', ['action' => 'delete', $cita->id], [
                                                 'class' => 'btn btn-danger', 'escape' => false,

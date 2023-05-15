@@ -1,3 +1,3 @@
 $(document).ready(function() {
-   $('.select2').select2();
+   //@TODO $('.select2').select2();
 });

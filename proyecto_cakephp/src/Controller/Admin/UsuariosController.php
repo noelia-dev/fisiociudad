@@ -123,7 +123,7 @@ class UsuariosController extends AppController
 
             $this->Flash->error(__('Usuario no guardado. Inténtelo de nuevo más tarde.'));
         }
-        $this->set(compact('user'));
+        $this->set(compact('usuario'));
     }
 
     /**

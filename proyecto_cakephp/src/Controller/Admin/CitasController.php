@@ -4,6 +4,9 @@ declare(strict_types=1);
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
+use Cake\Event\EventInterface;
+use Cake\Datasource\Pagination\NumericPaginator;
+
 
 /**
  * Citas Controller
@@ -14,10 +17,10 @@ use App\Controller\Admin\AppController;
 class CitasController extends AppController
 {
     public $paginate = [
-        'limit' => 1,
-        'order' => [
-        //    'Citas.fecha' => 'asc'
-        ]
+        'limit' => '1',
+        /*'order' => [
+            'Citas.fecha' => 'desc',
+        ]*/
     ];
 
     public function initialize(): void
@@ -25,8 +28,13 @@ class CitasController extends AppController
         parent::initialize();
         $this->loadComponent('Paginator');
         
+        
     }
-
+    //Sistema de permisos de acceso a acciones.
+    public function beforeFilter(EventInterface $event)
+    {
+        parent::beforeFilter($event);
+    }
     /**
      * Index method
      *
@@ -63,11 +71,38 @@ class CitasController extends AppController
      */
     public function view($id = null)
     {
-        $cita = $this->Citas->get($id, [
-            'contain' => ['Usuarios', 'Calendarios'],
-        ]);
+        $nombre_usuario='';
+        $this->paginate = [
+                'contain' => ['Usuarios', 'Calendarios'],
+            ];
+      /*  $cita = $this->Citas->get($id, [
+            //'contain' => ['Usuarios', 'Calendarios'],
+        ]);*/
 
-        $this->set(compact('cita'));
+        if($id != null){
+            $resultado_citas = $this->Citas->find()->where([
+                'usuario_id' => $id
+            ]);
+            $citas = $this->paginate($resultado_citas, ['limit'=>'1']);
+            // Verificar si se encontraron registros
+            if (!empty($resultado_citas) && $resultado_citas->count()!=0) {
+                foreach ($resultado_citas as $result) {
+                    // Con el objeto de entidad creamos el nombre para mostrarlo en la vista
+                    $nombre_usuario = $result->usuario->nombre.' ' .$result->usuario->apellidos;
+                    break;
+                }
+            } else {
+             
+                // @TODO para mostrar ingualmente el usuario
+                //No se encontraron registros
+               /* $resultado_citas = $this->Usuarios->find()->where([
+                    'id' => $id
+                ]);
+                dd($resultado_citas);*/
+            }
+           
+        }
+        $this->set(compact('citas','nombre_usuario'));
     }
 
     /**

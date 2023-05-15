@@ -14,7 +14,11 @@ use Cake\ORM\Entity;
  * @property string|null $nota_profesional
  * @property string|null $nota_paciente
  * @property int|null $usuario_id
- * @property int $calendario_id
+ * @property int|null $calendario_id
+ * @property \Cake\I18n\FrozenTime|null $alta
+ *
+ * @property \App\Model\Entity\Usuario $usuario
+ * @property \App\Model\Entity\Calendario $calendario
  */
 class Cita extends Entity
 {
@@ -34,5 +38,8 @@ class Cita extends Entity
         'nota_paciente' => true,
         'usuario_id' => true,
         'calendario_id' => true,
+        'alta' => true,
+        'usuario' => true,
+        'calendario' => true,
     ];
 }

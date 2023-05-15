@@ -11,6 +11,9 @@ use Cake\Validation\Validator;
 /**
  * Citas Model
  *
+ * @property \App\Model\Table\UsuariosTable&\Cake\ORM\Association\BelongsTo $Usuarios
+ * @property \App\Model\Table\CalendariosTable&\Cake\ORM\Association\BelongsTo $Calendarios
+ *
  * @method \App\Model\Entity\Cita newEmptyEntity()
  * @method \App\Model\Entity\Cita newEntity(array $data, array $options = [])
  * @method \App\Model\Entity\Cita[] newEntities(array $data, array $options = [])
@@ -46,7 +49,6 @@ class CitasTable extends Table
         ]);
         $this->belongsTo('Calendarios', [
             'foreignKey' => 'calendario_id',
-            'joinType' => 'INNER',
         ]);
     }
 
@@ -84,7 +86,11 @@ class CitasTable extends Table
 
         $validator
             ->integer('calendario_id')
-            ->notEmptyString('calendario_id');
+            ->allowEmptyString('calendario_id');
+
+        $validator
+            ->dateTime('alta')
+            ->allowEmptyDateTime('alta');
 
         return $validator;
     }

@@ -10,7 +10,7 @@
      <!-- Page Heading -->
 
      <div class="card shadow my-5">
-         <?= $this->Form->create($user, ['class' => 'usuarios']); ?>
+         <?= $this->Form->create($usuario, ['class' => 'usuarios']); ?>
          <div class="card-header py-3">
              <h6 class="m-0 font-weight-bold text-primary">Añadir usuario</h6>
          </div>
