@@ -1,11 +1,9 @@
 <?php
-
 declare(strict_types=1);
 
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
-use Exception;
 
 /**
  * Citas Controller
@@ -15,11 +13,10 @@ use Exception;
  */
 class CitasController extends AppController
 {
-
     public $paginate = [
         'limit' => 1,
         'order' => [
-            'Usuarios.nombre' => 'asc'
+        //    'Citas.fecha' => 'asc'
         ]
     ];
 
@@ -37,11 +34,13 @@ class CitasController extends AppController
      */
     public function index($usuario_id = null)
     {
-      //  dd($usuario_id);
-     /*   $this->paginate = [
-            'contain' => ['Usuarios', 'Calendarios'],
-        ];*/
- 
+        //No quitar
+        $this->paginate = [
+        //    'contain' => ['Usuarios', 'Calendarios'],
+        ];
+        $citas = $this->paginate($this->Citas->find('all'));
+     //   dd($citas);
+
         if($usuario_id != null){
             $citas = $this->Citas->find()->where([
                 'usuario_id' => $usuario_id
@@ -49,10 +48,10 @@ class CitasController extends AppController
         }else{
             $citas = $this->paginate($this->Citas->find('all'));
         }
-        //dd( $citas );
         $anio_calendario = (int) date("Y");
         $this->get_calendario_completo((int) date("Y"));
-        $this->set(compact('usuario_id','citas','anio_calendario'));
+
+        $this->set(compact('citas','anio_calendario','usuario_id'));
     }
 
     /**
@@ -64,28 +63,11 @@ class CitasController extends AppController
      */
     public function view($id = null)
     {
-     //   dd($id);
-     $this->paginate = [
-        'contain' => ['Usuarios', 'Calendarios'],
-    ];
-        try{
-            $citas = $this->Citas->get($id, [
-                'contain' => ['Usuarios', 'Calendarios'],
-            ]);
-        }catch (Exception $e){
-            $citas= null;
-           /*@TODO Mostrar el nombre del usuario $usuario = $this->paginate($this->Citas->find()->where(['Usuarios.id'=>$id]));
-            $this->set(compact('citas','usuario'));*/
-            $this->set(compact('citas'));
-        }
-        
-        if($id != null){
-            $citas = $this->paginate($this->Citas->find()->where([
-                'usuario_id' => $id
-            ]));
-        }
+        $cita = $this->Citas->get($id, [
+            'contain' => ['Usuarios', 'Calendarios'],
+        ]);
 
-        $this->set(compact('citas'));
+        $this->set(compact('cita'));
     }
 
     /**

@@ -28,9 +28,10 @@
                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                          <thead>
                              <tr>
-                                 <th>Nombre</th>
-                                 <th>Apellidos</th>
-                                 <th>Fecha de alta</th>
+                                 <th>Fecha</th>
+                                 <th>Hora</th>
+                                 <th>Nota paciente</th>
+                                 <th>Nota profesional</th>
                                  <th></th>
                              </tr>
                          </thead>

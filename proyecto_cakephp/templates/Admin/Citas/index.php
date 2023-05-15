@@ -22,7 +22,6 @@
                      No existen citas para el cliente.
                  </div>
                  <?php } else {
-                    echo $citas->count();
                     if (!$citas->count()) { ?>
                      <div class="alert alert-info">
                          No existen citas.
@@ -39,10 +38,10 @@
                             $fechas_citas = array();
                             //Visualizar todo
                             foreach($citas as $cita){
-                                $fechas_citas[] = $cita->fecha->format('Y-m-d');
-                            //    echo $citas->count();
+                                $fechas_citas[] = $cita->fecha->format('Y-n-d');
                             }
-                          //  print_r($fechas_citas);
+                            $fechas_citas = array_unique($fechas_citas);
+                            //print_r($fechas_citas);
                         }
 
                     }?>
@@ -51,7 +50,9 @@
                         $weekdays = $this->diassemanaEN_sub;
                         foreach ($calendario_completo as $month => $weeks) {
                             $i = 0;
-                            echo $this->nombres_mesesES[$month - 1]; ?>
+                            ?>
+                            <p class="h4"><?= $this->nombres_mesesES[$month - 1]; ?></p>
+                            
                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                              <?php foreach ($weeks as $week => $days) {
                                     if ($i == 0) { ?>
@@ -61,11 +62,22 @@
                                  <?php $i++;
                                     } ?>
                                  <tr>
-                                     <?php foreach ($weekdays as $day) { ?>
-                                         <td>
+                                     <?php foreach ($weekdays as $day) {
+                                        $dia = isset($days[$day]) ? $days[$day] : '&nbsp';
+                                        $mes = $month;
+                                        $fecha_actual = $anio_calendario. '-'. $mes.'-'.$dia;
+                                        $existe_fecha = in_array($fecha_actual,$fechas_citas);
+                                        if(!$existe_fecha){ ?>
+                                            <td>
                                              <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
                                          </td>
-                                     <?php } ?>
+                                       <?php }else{?>
+                                            <td class="table-date active-date font-weight-bold">
+                                             <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
+                                         </td>
+                                        <?php }
+                                         
+                                      } ?>
                                  </tr>
                              <?php } ?>
                          </table>
