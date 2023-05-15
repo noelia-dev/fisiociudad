@@ -25,7 +25,8 @@
     ?>
     <?= $this->Html->css([
         'BackTheme./css/sb-admin-2.min',
-        'BackTheme./css/fontawesome.min'
+        'BackTheme./css/fontawesome.min',
+        'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min'
     ]); ?>
 </head>
 
@@ -57,9 +58,11 @@
         'BackTheme./js/jquery.easing.min',
         'BackTheme./js/sb-admin-2.min',
         'BackTheme./js/custom',
+        'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min',
+        'BackTheme./js/custom'
     ]); ?>
 
-    <!-- Bootstrap core JavaScript
+<!-- Bootstrap core JavaScript
      <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 -->

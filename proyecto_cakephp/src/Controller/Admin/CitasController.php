@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
+use Exception;
 
 /**
  * Citas Controller
@@ -15,7 +17,7 @@ class CitasController extends AppController
 {
 
     public $paginate = [
-        'limit'=> 1,
+        'limit' => 1,
         'order' => [
             'Usuarios.nombre' => 'asc'
         ]
@@ -25,7 +27,7 @@ class CitasController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Paginator');
-
+        
     }
 
     /**
@@ -33,14 +35,24 @@ class CitasController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function index()
+    public function index($usuario_id = null)
     {
-        $this->paginate = [
+      //  dd($usuario_id);
+     /*   $this->paginate = [
             'contain' => ['Usuarios', 'Calendarios'],
-        ];
-        $citas = $this->paginate($this->Citas);
+        ];*/
+ 
+        if($usuario_id != null){
+            $citas = $this->Citas->find()->where([
+                'usuario_id' => $usuario_id
+            ]);
+        }else{
+            $citas = $this->paginate($this->Citas->find('all'));
+        }
+        //dd( $citas );
+        $anio_calendario = (int) date("Y");
         $this->get_calendario_completo((int) date("Y"));
-        $this->set(compact('citas'));
+        $this->set(compact('usuario_id','citas','anio_calendario'));
     }
 
     /**
@@ -52,11 +64,28 @@ class CitasController extends AppController
      */
     public function view($id = null)
     {
-        $cita = $this->Citas->get($id, [
-            'contain' => ['Usuarios', 'Calendarios'],
-        ]);
+     //   dd($id);
+     $this->paginate = [
+        'contain' => ['Usuarios', 'Calendarios'],
+    ];
+        try{
+            $citas = $this->Citas->get($id, [
+                'contain' => ['Usuarios', 'Calendarios'],
+            ]);
+        }catch (Exception $e){
+            $citas= null;
+           /*@TODO Mostrar el nombre del usuario $usuario = $this->paginate($this->Citas->find()->where(['Usuarios.id'=>$id]));
+            $this->set(compact('citas','usuario'));*/
+            $this->set(compact('citas'));
+        }
+        
+        if($id != null){
+            $citas = $this->paginate($this->Citas->find()->where([
+                'usuario_id' => $id
+            ]));
+        }
 
-        $this->set(compact('cita'));
+        $this->set(compact('citas'));
     }
 
     /**
@@ -130,20 +159,20 @@ class CitasController extends AppController
     public function get_calendario_completo($year)
     {
         $calendario_completo = array();
-    
-        date("L", mktime(0,0,0, 7,7, $year)) ? $days = 366 : $days = 365;
-        for($i = 1; $i <= $days; $i++){
+
+        date("L", mktime(0, 0, 0, 7, 7, $year)) ? $days = 366 : $days = 365;
+        for ($i = 1; $i <= $days; $i++) {
             //echo $month;
-            $mes_letras = (int)date('m', mktime(0,0,0,1,$i,$year));
-            $month_num = (int)date('N', mktime(0,0,0,1,$i,$year));
-            $wk = (int)date('W', mktime(0,0,0,1,$i,$year));
-            $wkDay = date('D', mktime(0,0,0,1,$i,$year));
-           // $wkDay = substr($this->get_nombre_semana($wkDay),0,3);
-            $day = (int)date('d', mktime(0,0,0,1,$i,$year));
-           
+            $mes_letras = (int)date('m', mktime(0, 0, 0, 1, $i, $year));
+            $month_num = (int)date('N', mktime(0, 0, 0, 1, $i, $year));
+            $wk = (int)date('W', mktime(0, 0, 0, 1, $i, $year));
+            $wkDay = date('D', mktime(0, 0, 0, 1, $i, $year));
+            // $wkDay = substr($this->get_nombre_semana($wkDay),0,3);
+            $day = (int)date('d', mktime(0, 0, 0, 1, $i, $year));
+
             $calendario_completo[$mes_letras][$wk][$wkDay] = $day;
-        } 
-      //dd($calendario_completo);
-        $this->set(compact('calendario_completo'));   
+        }
+       // dd($calendario_completo);
+        $this->set(compact('calendario_completo'));
     }
 }

@@ -170,4 +170,26 @@ class UsuariosController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function get_calendario_completo($year)
+    {
+        $calendario_completo = array();
+
+        date("L", mktime(0, 0, 0, 7, 7, $year)) ? $days = 366 : $days = 365;
+        for ($i = 1; $i <= $days; $i++) {
+            //echo $month;
+            $mes_letras = (int)date('m', mktime(0, 0, 0, 1, $i, $year));
+            $month_num = (int)date('N', mktime(0, 0, 0, 1, $i, $year));
+            $wk = (int)date('W', mktime(0, 0, 0, 1, $i, $year));
+            $wkDay = date('D', mktime(0, 0, 0, 1, $i, $year));
+            // $wkDay = substr($this->get_nombre_semana($wkDay),0,3);
+            $day = (int)date('d', mktime(0, 0, 0, 1, $i, $year));
+
+            $calendario_completo[$mes_letras][$wk][$wkDay] = $day;
+        }
+        //dd($calendario_completo);
+        $this->set(compact('calendario_completo'));
+    }
+
+
 }

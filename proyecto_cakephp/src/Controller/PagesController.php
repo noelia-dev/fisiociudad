@@ -35,6 +35,7 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
+
     /**
      * Creación de usuario inicalmente si no está creado (PTE)
      */
@@ -61,7 +62,7 @@ class PagesController extends AppController
             ];
             $users = $this->getTableLocator()->get('Users');
             $entity = $users->newEntity($data);
-           // $users->save($entity);
+            // $users->save($entity);
 
 
             //No hay admin, creamos un usuario por defecto
@@ -77,8 +78,28 @@ class PagesController extends AppController
             $usuarios = $this->getTableLocator()->get('Usuarios');
             $entity = $usuarios->newEntity($data);
             $usuarios->save($entity);
+            
         } else {
             // YA EXISTE EL ADMIN dd($result_datos);
+
+            $this->fetchTable('Usuarios'); //$this->loadModel('Users');
+            $usuarios = $this->getTableLocator()->get('Usuarios');
+            $result_datos = $usuarios->find()->where(['es_admin' => '1']);
         }
+        foreach( $result_datos as $d){
+            $usuario = $d->id;
+            break;
+        }
+        
+       // $this->crear_calendario_completo($usuario);
+    }
+
+    public function crear_calendario_completo($usuario)
+    {
+        //dd ($usuario);
+        $citas = $this->Citas->find()->where([
+            'id' => $usuario]);
+            dd($citas);
+
     }
 }
