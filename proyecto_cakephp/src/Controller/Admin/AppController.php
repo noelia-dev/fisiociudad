@@ -20,6 +20,7 @@ namespace App\Controller\Admin;
 
 use App\Controller\AppController as ControllerPrincipal;
 use Cake\Event\EventInterface;
+use Cake\Http\ServerRequest;
 
 /**
  * Application Controller
@@ -31,7 +32,6 @@ use Cake\Event\EventInterface;
  */
 class AppController extends ControllerPrincipal
 {
-    public $active_site;
     public $login_nombre;
     /**
      * Initialization hook method.
@@ -51,6 +51,14 @@ class AppController extends ControllerPrincipal
     {
         //Establecemos el tema que utilizará el prefijo Admin
         $this->viewBuilder()->setTheme('BackTheme');
+
+        // URL actual desde la solicitud
+        $currentUrl = (new ServerRequest())->getUri()->getPath();
+        // Extraer los valores de controlador y acción de la URL
+        $urlSegments = explode('/', $currentUrl);
+        // El valor por defecto
+        $menu_activo = !empty($urlSegments[2]) ? $urlSegments[2] : 'index';
+        $this->set(compact('menu_activo'));
     }
 
     //Sistema de permisos de acceso a acciones.

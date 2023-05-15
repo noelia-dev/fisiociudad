@@ -24,7 +24,7 @@
     <hr class="sidebar-divider my-0">
 
 
-    <li class="nav-item active">
+    <li class="nav-item <?= str_contains($menu_activo,'usuarios') ? 'active' : ''; ?>">
         <!-- Elemento - Usuarios -->
         <?= $this->Html->link(
             '<i class="fas fa-user fa-tachometer-alt"></i>Usuarios',
@@ -33,7 +33,7 @@
         ); ?>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item <?= str_contains($menu_activo,'citas') ? 'active' : ''; ?>">
         <!-- Elemento - Usuarios -->
         <?= $this->Html->link(
             '<i class="fas fa-user fa-tachometer-alt"></i>Citas',
