@@ -27,80 +27,95 @@
                          No existen citas.
                      </div>
                  <?php
-                    } else{
-                        if(!empty($usuario_id)){
-                            foreach($citas as $cita){
+                    } else {
+                        if (!empty($usuario_id)) {
+                            foreach ($citas as $cita) {
                                 //print_r($cita);
                                 echo $cita->fecha;
                                 echo $cita->hora;
                             }
-                        }else{
+                        } else {
                             $fechas_citas = array();
                             //Visualizar todo
-                            foreach($citas as $cita){
+                            foreach ($citas as $cita) {
                                 $fechas_citas[] = $cita->fecha->format('Y-n-d');
                             }
                             $fechas_citas = array_unique($fechas_citas);
                             //print_r($fechas_citas);
                         }
-
-                    }?>
-                 <div class="table-responsive">
+                    } ?>
+                 <div class="container-fluid">
                      <?php
                         $weekdays = $this->diassemanaEN_sub;
                         foreach ($calendario_completo as $month => $weeks) {
                             $i = 0;
-                            ?>
-                            <p class="h4"><?= $this->nombres_mesesES[$month - 1]; ?></p>
-                            
-                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                             <?php foreach ($weeks as $week => $days) {
-                                    if ($i == 0) { ?>
-                                     <thead>
-                                         <th><?php echo implode('</th><th>', $this->diassemanaES_sub); ?></th>
-                                     </thead>
-                                 <?php $i++;
-                                    } ?>
-                                 <tr>
-                                     <?php foreach ($weekdays as $day) {
-                                        $dia = isset($days[$day]) ? $days[$day] : '&nbsp';
-                                        $mes = $month;
-                                        $fecha_actual = $anio_calendario. '-'. $mes.'-'.$dia;
-                                        $existe_fecha = in_array($fecha_actual,$fechas_citas);
-                                        if(!$existe_fecha){ ?>
-                                            <td>
-                                             <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
-                                         </td>
-                                       <?php }else{?>
-                                            <td class="table-date active-date font-weight-bold">
-                                             <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
-                                         </td>
-                                        <?php }
-                                         
-                                      } ?>
-                                 </tr>
+                            if ($month % 3 == 0) { //Meses divisibles por 3
+                        ?>
+                             <div class="col-sm-4">
+                             <?php } elseif (($month + 1) % 3 == 0) { //NO divisibles
+                                ?>
+                                 <div class="col-sm-4">
+                                 <?php } else { ?>
+                                     <div class="row">
+                                         <div class="col-sm-4">
+                                         <?php } ?>
+                                         <p class="h2"><?= $this->nombres_mesesES[$month - 1]; ?></p>
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                             <?php foreach ($weeks as $week => $days) {
+                                                    if ($i == 0) { ?>
+                                                     <thead>
+                                                         <th><?php echo implode('</th><th>', $this->diassemanaES_sub); ?></th>
+                                                     </thead>
+                                                 <?php
+                                                    }
+                                                    $i++; ?>
+                                                 <tr class="table-row">
+                                                     <?php foreach ($weekdays as $day) {
+                                                            $dia = isset($days[$day]) ? $days[$day] : '&nbsp';
+                                                            $mes = $month;
+                                                            $fecha_actual = $anio_calendario . '-' . $mes . '-' . $dia;
+                                                            $existe_fecha = in_array($fecha_actual, $fechas_citas);
+                                                            if (!$existe_fecha) { ?>
+                                                             <td class="table-date">
+                                                                 <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
+                                                             </td>
+                                                         <?php } else { ?>
+                                                             <td class="table-date active-date font-weight-bold">
+                                                                 <?php echo isset($days[$day]) ? $days[$day] : '&nbsp'; ?>
+                                                             </td>
+                                                     <?php }
+                                                        } ?>
+                                                 </tr>
+                                             <?php } ?>
+                                         </table>
+                                         <?php
+                                            if ($month % 3 == 0) { //Meses divisibles por 3
+                                            ?>
+                                         </div>
+                                     </div>
+                                 <?php } else { ?>
+                                 </div>
                              <?php } ?>
-                         </table>
-                     <?php } ?>
-                 </div>
-             <?php
-                }
-                ?>
+                         <?php } ?>
+                             </div>
+                         <?php
+                        }
+                            ?>
 
-             <nav class="d-inline-block">
-                 <ul class="pagination">
-                     <?= $this->Paginator->prev('<'); ?>
-                     <?= $this->Paginator->numbers() ?>
-                     <?= $this->Paginator->next('>'); ?>
-                 </ul>
-             </nav>
+                         <nav class="d-inline-block">
+                             <ul class="pagination">
+                                 <?= $this->Paginator->prev('<'); ?>
+                                 <?= $this->Paginator->numbers() ?>
+                                 <?= $this->Paginator->next('>'); ?>
+                             </ul>
+                         </nav>
+
+                 </div>
 
          </div>
 
      </div>
-
- </div>
- <!-- /.container-fluid -->
+     <!-- /.container-fluid -->
 
  </div>
  <!-- End of Main Content -->
