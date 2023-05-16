@@ -1,9 +1,10 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AppController;
 
 /**
  * Calendarios Controller
@@ -20,9 +21,26 @@ class CalendariosController extends AppController
      */
     public function index()
     {
-        $calendarios = $this->paginate($this->Calendarios);
+        $anio_calendario = date("Y");
+        //Muestra sólo datos del año 2023
+        $resultado_calendarios = $this->Calendarios->find()
+            ->where(function ($exp, $q) use ($anio_calendario) {
+                return $exp->equalFields('YEAR(fecha)', $anio_calendario);
+            });
 
-        $this->set(compact('calendarios'));
+        $calendarios_sinformato = $resultado_calendarios->all()->toArray();
+
+        $calendarios = [];
+        foreach ($calendarios_sinformato as $calendario) {
+            $calendarios[] = [
+                'id' => $calendario->id,
+                'fecha' => date('Y-n-d', strtotime($calendario->fecha)),
+                'descripcion' => $calendario->descripcion
+            ];
+        }
+        $this->get_calendario_completo((int) date("Y"));
+       // dd($calendarios);
+        $this->set(compact('calendarios', 'anio_calendario'));
     }
 
     /**
@@ -97,11 +115,31 @@ class CalendariosController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $calendario = $this->Calendarios->get($id);
         if ($this->Calendarios->delete($calendario)) {
-            $this->Flash->success(__('The calendario has been deleted.'));
+            $this->Flash->success(__('La fecha se ha eliminado correctamente del calendario.'));
         } else {
-            $this->Flash->error(__('The calendario could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La fecha no ha sido eliminada.'));
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function get_calendario_completo($year)
+    {
+        $calendario_completo = array();
+
+        date("L", mktime(0, 0, 0, 7, 7, $year)) ? $days = 366 : $days = 365;
+        for ($i = 1; $i <= $days; $i++) {
+            //echo $month;
+            $mes_letras = (int)date('m', mktime(0, 0, 0, 1, $i, $year));
+            $month_num = (int)date('N', mktime(0, 0, 0, 1, $i, $year));
+            $wk = (int)date('W', mktime(0, 0, 0, 1, $i, $year));
+            $wkDay = date('D', mktime(0, 0, 0, 1, $i, $year));
+            // $wkDay = substr($this->get_nombre_semana($wkDay),0,3);
+            $day = (int)date('d', mktime(0, 0, 0, 1, $i, $year));
+
+            $calendario_completo[$mes_letras][$wk][$wkDay] = $day;
+        }
+        // dd($calendario_completo);
+        $this->set(compact('calendario_completo'));
     }
 }

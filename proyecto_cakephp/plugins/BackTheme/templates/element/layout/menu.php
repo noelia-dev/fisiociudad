@@ -34,14 +34,22 @@
     </li>
 
     <li class="nav-item <?= str_contains($menu_activo,'citas') ? 'active' : ''; ?>">
-        <!-- Elemento - Usuarios -->
+        <!-- Elemento - Citas -->
         <?= $this->Html->link(
-            '<i class="fas fa-user fa-tachometer-alt"></i>Citas',
+            '<i class="fas fa-list-ol"></i>Citas',
             ['controller' => 'Citas', 'action' => 'index'],
             ['class' => 'nav-link', 'escape' => false]
         ); ?>
     </li>
 
+    <li class="nav-item <?= str_contains($menu_activo,'calendarios') ? 'active' : ''; ?>">
+        <!-- Elemento - Calendarios -->
+        <?= $this->Html->link(
+            '<i class="fas fa-calendar-alt"></i>Calendarios',
+            ['controller' => 'Calendarios', 'action' => 'index'],
+            ['class' => 'nav-link', 'escape' => false]
+        ); ?>
+    </li>
     <!-- Divider 
     <hr class="sidebar-divider">-->
 
