@@ -28,9 +28,18 @@
         var day_count = days_in_month(month, year);
         var row = $("<tr class='table-row'></tr>");
         var today = date.getDate();
+        console.log(date);
         // Set date to 1 to find the first day of the month
         date.setDate(1);
         var first_day = date.getDay() - 1;
+        //Creamos la fecha en un array para poder marcar el día actual
+        let fecha_hoy;
+        fecha_hoy = [         
+             new Date().getFullYear(),
+             new Date().getMonth() + 1,
+             new Date().getDate()
+        ];
+        fecha_hoy = fecha_hoy.join('-');
         // 35+firstDay is the number of date elements to be added to the dates table
         // 35 is from (7 days in a week) * (up to 5 rows of dates in a month)
         for (var i = 0; i < 35 + first_day; i++) {
@@ -48,23 +57,28 @@
                 row.append(curr_date);
             }
             else {
+
                 var curr_date = $("<td class='table-date'>" + day + "</td>");
                 var events = check_events(day, month + 1, year);
-                if (today + 1 === day && $(".active-date").length === 0) {
+                let dia_calendario = [year, month + 1, day].join('-');
+
+                //if (dia_calendario == fecha_hoy) {
+                if (today + 1 === day && $(".active-date").length === 0 || Date.parse(dia_calendario)+1 == Date.parse(fecha_hoy)) {
+                  //  console.log(today);
                     curr_date.addClass("active-date");
                     show_events(events, months[month], day);
                 }
-                if (today === day){
+                if (Date.parse(dia_calendario) == Date.parse(fecha_hoy)) {
+                    //                            console.log(day, month + 1, year);   
                     curr_date.addClass("dia_hoy");
                 }
-
                 // If this date has any events, style it with .event-date
                 if (events.length !== 0) {
                     curr_date.addClass("event-date");
                 }
                 //Establece el evento a aquellas fechas que son superiores a la actual.
                 //Evitamos con esto pedir cita con fecha anterior
-                if (today + 1 <= day) {
+                if (Date.parse(dia_calendario) > Date.parse(fecha_hoy)) {
                     curr_date.click({ events: events, month: months[month], day: day }, date_click);
                 }
                 row.append(curr_date);
@@ -184,7 +198,7 @@
         // Clear the dates container
         $(".events-container").empty();
         $(".events-container").show(250);
-        console.log(event_data["events"]);
+        //     console.log(event_data["events"]);
         // If there are no events for this date, notify the user
         if (events.length === 0) {
             var event_card = $("<div class='event-card'></div>");
