@@ -18,6 +18,9 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Model\Entity\Calendario;
+use Cake\Chronos\Chronos;
+
 use Cake\ORM\TableRegistry;
 
 use Cake\Core\Configure;
@@ -36,9 +39,17 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
     public $nombres_mesesES = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+    protected $Calendarios;
+
+
+    public function initialize(): void
+    {
+        parent::initialize();
+        $this->Calendarios = TableRegistry::getTableLocator()->get('Calendarios');        
+    }
 
     /**
-     * Creación de usuario inicalmente si no está creado (PTE)
+     * Creación de usuario inicalmente si no está creado
      */
     public function index()
     {
@@ -46,26 +57,7 @@ class PagesController extends AppController
         $usuarios = $this->getTableLocator()->get('Usuarios');
         $result_datos = $usuarios->find()->where(['es_admin' => '1']);
         //Detectamos si es la primera vez que se accede al apartado administrador
-
         if ($result_datos->count() == 0) {
-            //No hay admin, creamos un usuario por defecto
-            date_default_timezone_set("Europe/Madrid");
-            $data = [
-                'es_admin' => 1,
-                'correo' => 'noeliacortijo@gmail.com',
-                'password'  => 'admin',
-                'nombre' => 'Noelia',
-                'apellidos' => 'Cortijo Durán',
-                'telefono' => '679663692',
-                'alta' => null,
-                'modificado' => null,
-                'eliminado' => null
-            ];
-            $users = $this->getTableLocator()->get('Users');
-            $entity = $users->newEntity($data);
-            // $users->save($entity);
-
-
             //No hay admin, creamos un usuario por defecto
             date_default_timezone_set("Europe/Madrid");
             $data = [
@@ -79,28 +71,41 @@ class PagesController extends AppController
             $usuarios = $this->getTableLocator()->get('Usuarios');
             $entity = $usuarios->newEntity($data);
             $usuarios->save($entity);
-            
-        } else {
-            // YA EXISTE EL ADMIN dd($result_datos);
-
-            $this->fetchTable('Usuarios'); //$this->loadModel('Users');
+            $this->crear_calendario_completo();
+        } else {// Exite admin
+            $this->fetchTable('Usuarios');
             $usuarios = $this->getTableLocator()->get('Usuarios');
             $result_datos = $usuarios->find()->where(['es_admin' => '1']);
         }
-        foreach( $result_datos as $d){
-            $usuario = $d->id;
-            break;
-        }
-        
-       // $this->crear_calendario_completo($usuario);
     }
 
-    public function crear_calendario_completo($usuario)
+    /**
+     * Creación de todas fechas en las que se puede tomar cita.
+     */
+    public function crear_calendario_completo()
     {
-        //dd ($usuario);
-        $citas = $this->Citas->find()->where([
-            'id' => $usuario]);
-            dd($citas);
+        //Tomamos la fecha actual como punto de partida
+        $fechaActual = Chronos::now();
 
+        $dia = $fechaActual->day;
+        $mes = $fechaActual->month;
+        $anio = $fechaActual->year;
+        
+        $inicio = Chronos::createFromDate($anio, $mes, $dia);
+        $fin = Chronos::createFromDate($anio, 12, 31);
+
+        $dias_del_anio = [];
+        $datos_alta2 = [];
+        //Creación del calendario completo
+        for ($fecha = $inicio; $fecha->lte($fin); $fecha = $fecha->addDay()) {
+            if (!$fecha->isSaturday() && !$fecha->isSunday()) {
+                $dias_del_anio[] = $fecha->format('Y-m-d');
+                $datos_alta = new Calendario();
+                $datos_alta->descripcion = 'inicio';
+                $datos_alta->fecha = $fecha->format('Y-m-d');
+                $datos_alta2[]=$datos_alta;
+            }
+        }
+        $this->Calendarios->saveMany($datos_alta2);
     }
 }
