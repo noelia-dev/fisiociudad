@@ -115,6 +115,7 @@ class CitasController extends AppController
         $cita = $this->Citas->newEmptyEntity();
         if ($this->request->is('post')) {
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
+           // dd( $this->request->getData());
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita añadida correctamente.'));
 
@@ -122,9 +123,10 @@ class CitasController extends AppController
             }
             $this->Flash->error(__('The cita could not be saved. Please, try again.'));
         }
-        $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
+        //Establece una array con todos los pacientes, sin incluir al administrador
+        $this->get_usuario_usuarios();
         $calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'usuarios', 'calendarios'));
+        $this->set(compact('cita', 'calendarios'));
     }
 
     /**

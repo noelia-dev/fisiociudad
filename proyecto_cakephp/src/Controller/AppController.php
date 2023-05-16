@@ -54,8 +54,11 @@ class AppController extends Controller
          */
         //$this->loadComponent('FormProtection');
         $this->Authentication->allowUnauthenticated(['view', 'index']);
-        $meses = $this->obtener_meses();
-        $this->set(compact('meses'));
+        if(isset($this->nombres_mesesES)){
+            $meses = $this->obtener_meses();
+            $this->set(compact('meses'));
+        }
+        
     }
 
     public function beforeRender(EventInterface $event)

@@ -21,8 +21,10 @@ namespace App\Controller\Admin;
 use App\Controller\AppController as ControllerPrincipal;
 use Cake\Event\EventInterface;
 use Cake\Http\ServerRequest;
+use App\Model\Table\UsuariosTable;
+use Cake\ORM\TableRegistry;
 
-/**
+/*
  * Application Controller
  *
  * Add your application-wide methods in the class below, your controllers
@@ -33,6 +35,7 @@ use Cake\Http\ServerRequest;
 class AppController extends ControllerPrincipal
 {
     public $login_nombre;
+    protected $Usuarios;
     /**
      * Initialization hook method.
      *
@@ -45,7 +48,9 @@ class AppController extends ControllerPrincipal
     public function initialize(): void
     {
         parent::initialize();
+        $this->Usuarios = TableRegistry::getTableLocator()->get('Usuarios');        
     }
+  
 
     public function beforeRender(EventInterface $event)
     {
@@ -74,5 +79,18 @@ class AppController extends ControllerPrincipal
             //Nostramos el nombre del usuario que está logueado
             $this->set('login_nombre', $login_nombre);
         }
+    }
+
+    public function get_usuario_usuarios($id = null){
+        if($id==null){
+             $usuarios = $this->Usuarios->find()->where([
+                'es_admin is not' => '1']);
+        }
+        $lista_usuarios=array();
+        foreach($usuarios as $usuario){
+            $lista_usuarios += [$usuario->id => $usuario->nombre . ' ' .$usuario->apellidos];
+        }
+        //dd($lista_usuarios);
+        $this->set(compact('lista_usuarios'));
     }
 }
