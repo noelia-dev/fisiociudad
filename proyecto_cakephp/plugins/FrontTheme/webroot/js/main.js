@@ -15,7 +15,7 @@
         $(".months-row").children().eq(date.getMonth()).addClass("active-month");
         init_calendar(date);
         var events = check_events(today, date.getMonth() + 1, date.getFullYear());
-        show_events(events, months[date.getMonth()], today);
+        show_events(events, months[date.getMonth()], today + 1);
     });
 
     // Initialize the calendar by appending the HTML dates
@@ -30,7 +30,7 @@
         var today = date.getDate();
         // Set date to 1 to find the first day of the month
         date.setDate(1);
-        var first_day = date.getDay();
+        var first_day = date.getDay() - 1;
         // 35+firstDay is the number of date elements to be added to the dates table
         // 35 is from (7 days in a week) * (up to 5 rows of dates in a month)
         for (var i = 0; i < 35 + first_day; i++) {
@@ -50,16 +50,23 @@
             else {
                 var curr_date = $("<td class='table-date'>" + day + "</td>");
                 var events = check_events(day, month + 1, year);
-                if (today === day && $(".active-date").length === 0) {
+                if (today + 1 === day && $(".active-date").length === 0) {
                     curr_date.addClass("active-date");
                     show_events(events, months[month], day);
                 }
+                if (today === day){
+                    curr_date.addClass("dia_hoy");
+                }
+
                 // If this date has any events, style it with .event-date
                 if (events.length !== 0) {
                     curr_date.addClass("event-date");
                 }
-                // Set onClick handler for clicking a date
-                curr_date.click({ events: events, month: months[month], day: day }, date_click);
+                //Establece el evento a aquellas fechas que son superiores a la actual.
+                //Evitamos con esto pedir cita con fecha anterior
+                if (today + 1 <= day) {
+                    curr_date.click({ events: events, month: months[month], day: day }, date_click);
+                }
                 row.append(curr_date);
             }
         }
@@ -181,7 +188,7 @@
         // If there are no events for this date, notify the user
         if (events.length === 0) {
             var event_card = $("<div class='event-card'></div>");
-            var event_name = $("<div class='event-name'>No hay planes para el mes" + month + " " + day + ".</div>");
+            var event_name = $("<div class='event-name'>No hay planes para el mes " + month + " " + day + ".</div>");
             $(event_card).css({ "border-left": "10px solid #FF1744" });
             $(event_card).append(event_name);
             $(".events-container").append(event_card);

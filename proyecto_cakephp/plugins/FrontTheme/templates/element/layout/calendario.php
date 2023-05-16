@@ -19,32 +19,25 @@
                                 <tbody>
                                     <tr class="months-row">
                                         <?php
-                                      //  print_r($this->obtener_meses());
+                                        $i = 1;
+                                        foreach ($meses as $mes) {
+                                            if ((int)date('m') <= $i) { ?>
+                                                <td class="month" mes="<?= substr($this->get_nombre_mes($i), 0, 3); ?>"><?= $mes ?></td>
+                                            <?php } else { //ocultamos los meses anteriores ?>
+                                                <td class="month d-none"></td>
+                                            <?php } ?>
+                                        <?php
+                                            $i++;
+                                        }
                                         ?>
-                                        <td class="month">Ene</td>
-                                        <td class="month">Feb</td>
-                                        <td class="month">Mar</td>
-                                        <td class="month">Abr</td>
-                                        <td class="month">May</td>
-                                        <td class="month">Jun</td>
-                                        <td class="month">Jul</td>
-                                        <td class="month">Ago</td>
-                                        <td class="month">Sep</td>
-                                        <td class="month">Oct</td>
-                                        <td class="month">Nov</td>
-                                        <td class="month">Dec</td>
                                     </tr>
                                 </tbody>
                             </table>
 
                             <table class="days-table w-100">
-                                <td class="day">Dom</td>
-                                <td class="day">Lun</td>
-                                <td class="day">Mar</td>
-                                <td class="day">Mie</td>
-                                <td class="day">Jue</td>
-                                <td class="day">Vie</td>
-                                <td class="day">Sab</td>
+                                <?php foreach($this->diassemanaES_sub as $dia){?>
+                                    <td class="day"><?= $dia?></td>
+                              <?php  }?>
                             </table>
                             <div class="frame">
                                 <table class="dates-table w-100">
@@ -58,15 +51,15 @@
                     <div class="events-container">
                     </div>
                     <div class="dialog" id="dialog">
-                        <h2 class="dialog-header"> Add New Event </h2>
+                        <h2 class="dialog-header">Solicitar cita</h2>
                         <form class="form" id="form">
                             <div class="form-container" align="center">
-                                <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
+                                <label class="form-label" id="valueFromMyButton" for="name">correo electrónico</label>
                                 <input class="input" type="text" id="name" maxlength="36">
-                                <label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
+                                <label class="form-label" id="valueFromMyButton" for="count">Número de teléfono</label>
                                 <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                <input type="button" value="Cancel" class="button" id="cancel-button">
-                                <input type="button" value="OK" class="button button-white" id="ok-button">
+                                <input type="button" value="Cancelar" class="button" id="cancel-button">
+                                <input type="button" value="Solicitar" class="button button-white" id="ok-button">
                             </div>
                         </form>
                     </div>

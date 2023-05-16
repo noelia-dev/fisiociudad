@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -14,6 +15,7 @@ declare(strict_types=1);
  * @since     0.2.9
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\Controller;
 
 use Cake\Controller\Controller;
@@ -41,7 +43,7 @@ class AppController extends Controller
     public function initialize(): void
     {
         parent::initialize();
-       // $this->loadComponent('Authentication.Authentication');
+        // $this->loadComponent('Authentication.Authentication');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 
@@ -52,6 +54,8 @@ class AppController extends Controller
          */
         //$this->loadComponent('FormProtection');
         $this->Authentication->allowUnauthenticated(['view', 'index']);
+        $meses = $this->obtener_meses();
+        $this->set(compact('meses'));
     }
 
     public function beforeRender(EventInterface $event)
@@ -59,24 +63,26 @@ class AppController extends Controller
         //Establecemos el tema que utilizará el prefijo Admin
         $this->viewBuilder()->setTheme('FrontTheme');
     }
-
+    //Obtiene los meses siguiente, no se muestra pasado
     public function obtener_meses($month_format = "M")
     {
-        date_default_timezone_set ('Europe/Madrid');
-        setlocale(LC_ALL,'es_ES');
+        date_default_timezone_set('Europe/Madrid');
+        setlocale(LC_ALL, 'es_ES');
+        $mes_actual = (int)date('m');
         $months =  [];
         for ($i = 1; $i <= 12; $i++) {
-            $months[] = date($month_format, mktime(0, 0, 0, $i));
+            $months[] = strtoupper(substr($this->nombres_mesesES[$i - 1], 0, 3));
         }
         return $months;
     }
 
-    public function get_nombre_semana($nombre_semana){
-        $diassemanaES = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado","Domingo");
-        $diassemanaEN = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun");
+    public function get_nombre_semana($nombre_semana)
+    {
+        $diassemanaES = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+        $diassemanaEN = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
 
-        $indice = array_search($nombre_semana,$diassemanaEN);
-        
+        $indice = array_search($nombre_semana, $diassemanaEN);
+
         return $diassemanaES[$indice];
     }
 }
