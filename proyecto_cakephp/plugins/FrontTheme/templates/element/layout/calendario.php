@@ -54,6 +54,10 @@
                         <h2 class="dialog-header">Solicitar cita</h2>
                         <form class="form" id="form">
                             <div class="form-container" align="center">
+                                <label class="form-label" id="valueFromMyButton" for="nobre">Nombre</label>
+                                <input class="input" type="text" id="nobre" maxlength="36">
+                                <label class="form-label" id="valueFromMyButton" for="apellidos">Apellidos</label>
+                                <input class="input" type="text" id="apellidos" maxlength="36">
                                 <label class="form-label" id="valueFromMyButton" for="name">correo electrónico</label>
                                 <input class="input" type="text" id="name" maxlength="36">
                                 <label class="form-label" id="valueFromMyButton" for="count">Número de teléfono</label>
