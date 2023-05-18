@@ -46,6 +46,7 @@ class CitasTable extends Table
 
         $this->belongsTo('Usuarios', [
             'foreignKey' => 'usuario_id',
+            'joinType' => 'INNER',
         ]);
         $this->belongsTo('Calendarios', [
             'foreignKey' => 'calendario_id',
@@ -82,7 +83,7 @@ class CitasTable extends Table
 
         $validator
             ->integer('usuario_id')
-            ->allowEmptyString('usuario_id');
+            ->notEmptyString('usuario_id');
 
         $validator
             ->integer('calendario_id')

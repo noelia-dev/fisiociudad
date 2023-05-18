@@ -34,13 +34,12 @@ CREATE TABLE `citas` (
   `hora` time NOT NULL,
   `nota_profesional` varchar(255) DEFAULT NULL,
   `nota_paciente` varchar(255) DEFAULT NULL,
-  `usuario_id` int DEFAULT NULL,
+  `usuario_id` int NOT NULL,
   `calendario_id` int DEFAULT NULL,
   `alta` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `fk_id_calend_idx` (`calendario_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
-
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 
 CREATE TABLE `calendarios` (
   `id` int NOT NULL AUTO_INCREMENT,

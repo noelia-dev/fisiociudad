@@ -13,7 +13,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\Time $hora
  * @property string|null $nota_profesional
  * @property string|null $nota_paciente
- * @property int|null $usuario_id
+ * @property int $usuario_id
  * @property int|null $calendario_id
  * @property \Cake\I18n\FrozenTime|null $alta
  *
