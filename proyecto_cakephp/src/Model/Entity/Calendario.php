@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * Calendario Entity
  *
  * @property int $id
- * @property string $descripcion
+ * @property string|null $descripcion
  * @property string $fecha
  *
  * @property \App\Model\Entity\Cita[] $citas

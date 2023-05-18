@@ -23,7 +23,8 @@
                         'class' => 'form-control custom-select',
                         'required' => true,
                         'aria-controls' => 'dataTable',
-                        'empty' => false
+                        'empty' => false,
+                        'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                     ]);
                     ?>
              </div>
@@ -33,7 +34,8 @@
                             'type' => 'date',
                             'label' => 'Fecha:',
                             'required' => true,
-                            'class' => 'form-control'
+                            'class' => 'form-control',
+                            'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                         ]); ?>
                  </div>
                  <div class="col-sm-6">
@@ -42,7 +44,8 @@
                             'label' => 'Hora:',
                             'required' => true,
                             'class' => 'form-control',
-                            'value' => date('d/m/y H:i:s')
+                            'value' => date('d/m/y H:i:s'),
+                            'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                         ]);
                         ?>
                  </div>
@@ -55,7 +58,8 @@
                         'placeholder' => 'Nota paciente',
                         'required' => false,
                         'label' => 'Nota del paciente',
-                        'style' => 'resize: none'
+                        'style' => 'resize: none',
+                        'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                     ]); ?>
              </div>
              <div class="form-group">
@@ -66,7 +70,8 @@
                         'placeholder' => 'Nota profesional',
                         'required' => false,
                         'label' => 'Nota del profesional',
-                        'style' => 'resize: none'
+                        'style' => 'resize: none',
+                        'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                     ]); ?>
              </div>
          </div>

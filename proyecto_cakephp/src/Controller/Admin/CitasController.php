@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller\Admin;
@@ -6,6 +7,7 @@ namespace App\Controller\Admin;
 use App\Controller\Admin\AppController;
 use Cake\Event\EventInterface;
 use Cake\Datasource\Pagination\NumericPaginator;
+use Cake\Routing\Router;
 
 
 /**
@@ -16,6 +18,7 @@ use Cake\Datasource\Pagination\NumericPaginator;
  */
 class CitasController extends AppController
 {
+
     public $paginate = [
         'limit' => '1',
         /*'order' => [
@@ -27,8 +30,6 @@ class CitasController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Paginator');
-        
-        
     }
     //Sistema de permisos de acceso a acciones.
     public function beforeFilter(EventInterface $event)
@@ -40,28 +41,68 @@ class CitasController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function index($usuario_id = null)
+    public function index()
     {
         //No quitar
         $this->paginate = [
-        //    'contain' => ['Usuarios', 'Calendarios'],
+            //    'contain' => ['Usuarios', 'Calendarios'],
         ];
-        $citas = $this->paginate($this->Citas->find('all'));
-     //   dd($citas);
+        $citas = $this->Citas->find('all')->toArray();
 
-        if($usuario_id != null){
-            $citas = $this->Citas->find()->where([
-                'usuario_id' => $usuario_id
-            ]);
-        }else{
-            $citas = $this->paginate($this->Citas->find('all'));
+
+        $fechas_citas = array();
+        //Visualizar todo
+        foreach ($citas as $cita) {
+            $fechas_citas[] = $cita->fecha->format('Y-m-d');
         }
+
+        $fechas_citas = array_unique($fechas_citas);
+        // dd($fechas_citas);
         $anio_calendario = (int) date("Y");
         $this->get_calendario_completo((int) date("Y"));
 
-        $this->set(compact('citas','anio_calendario','usuario_id'));
+        $this->set(compact('citas', 'anio_calendario', 'fechas_citas'));
     }
 
+    public function viewDia($dia_mostrar = null, $mes = null, $anio_calendario = null)
+    {
+        $fecha_mostrar = date('Y-m-d', strtotime($anio_calendario . '-' . $mes . '-' . $dia_mostrar));
+
+        $nombre_usuario = '';
+        $this->paginate = [
+            'contain' => ['Usuarios', 'Calendarios'],
+        ];
+        /*  $cita = $this->Citas->get($id, [
+            //'contain' => ['Usuarios', 'Calendarios'],
+        ]);*/
+
+
+        $resultado_citas = $this->Citas->find()->where([
+            'fecha' => $fecha_mostrar
+        ]);
+
+
+        $citas = $this->paginate($resultado_citas, ['limit' => '1']);
+        dd($citas);
+        // Verificar si se encontraron registros
+        if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
+            foreach ($resultado_citas as $result) {
+                // Con el objeto de entidad creamos el nombre para mostrarlo en la vista
+                $nombre_usuario = $result->usuario->nombre . ' ' . $result->usuario->apellidos;
+                break;
+            }
+        } else {
+
+            // @TODO para mostrar ingualmente el usuario
+            //No se encontraron registros
+            /* $resultado_citas = $this->Usuarios->find()->where([
+                    'id' => $id
+                ]);
+                dd($resultado_citas);*/
+        }
+
+        //    $this->set(compact('citas', 'nombre_usuario'));
+    }
     /**
      * View method
      *
@@ -71,38 +112,37 @@ class CitasController extends AppController
      */
     public function view($id = null)
     {
-        $nombre_usuario='';
+        $nombre_usuario = '';
         $this->paginate = [
-                'contain' => ['Usuarios', 'Calendarios'],
-            ];
-      /*  $cita = $this->Citas->get($id, [
+            'contain' => ['Usuarios', 'Calendarios'],
+        ];
+        /*  $cita = $this->Citas->get($id, [
             //'contain' => ['Usuarios', 'Calendarios'],
         ]);*/
 
-        if($id != null){
+        if ($id != null) {
             $resultado_citas = $this->Citas->find()->where([
                 'usuario_id' => $id
             ]);
-            $citas = $this->paginate($resultado_citas, ['limit'=>'1']);
+            $citas = $this->paginate($resultado_citas, ['limit' => '1']);
             // Verificar si se encontraron registros
-            if (!empty($resultado_citas) && $resultado_citas->count()!=0) {
+            if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
                 foreach ($resultado_citas as $result) {
                     // Con el objeto de entidad creamos el nombre para mostrarlo en la vista
-                    $nombre_usuario = $result->usuario->nombre.' ' .$result->usuario->apellidos;
+                    $nombre_usuario = $result->usuario->nombre . ' ' . $result->usuario->apellidos;
                     break;
                 }
             } else {
-             
+
                 // @TODO para mostrar ingualmente el usuario
                 //No se encontraron registros
-               /* $resultado_citas = $this->Usuarios->find()->where([
+                /* $resultado_citas = $this->Usuarios->find()->where([
                     'id' => $id
                 ]);
                 dd($resultado_citas);*/
             }
-           
         }
-        $this->set(compact('citas','nombre_usuario'));
+        $this->set(compact('citas', 'nombre_usuario'));
     }
 
     /**
@@ -115,13 +155,29 @@ class CitasController extends AppController
         $cita = $this->Citas->newEmptyEntity();
         if ($this->request->is('post')) {
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
-           // dd( $this->request->getData());
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita añadida correctamente.'));
-
                 return $this->redirect(['action' => 'index']);
+            } else {
+                //Obtenemos los errores procedentes de la validación y los mostramos
+                $errores = $cita->getErrors();
+                // Recorre los errores y establece cada mensaje en la sesión
+                foreach ($errores as $field => $fieldErrors) {
+                    foreach ($fieldErrors as $error) {
+                        if ($field == 'fecha') {
+                            //dd($cita->getInvalid()[$field]);
+                            // Genera el enlace utilizando el Router y el control deseado
+                            $url = Router::url([
+                                'controller' => 'Calendarios',
+                                'action' => 'add/'. $cita->getInvalid()[$field] //parámetro que se carga al darle a añadir
+                            ], true);
+                            //Modificamos el mensaje de error
+                            $error = sprintf($error, '<a href="' . $url . '">Añadir</a>');
+                        }
+                        $this->Flash->error($error, ['escape' => false]);
+                    }
+                }
             }
-            $this->Flash->error(__('The cita could not be saved. Please, try again.'));
         }
         //Establece una array con todos los pacientes, sin incluir al administrador
         $this->get_usuario_usuarios();
@@ -191,7 +247,7 @@ class CitasController extends AppController
 
             $calendario_completo[$mes_letras][$wk][$wkDay] = $day;
         }
-       // dd($calendario_completo);
+        // dd($calendario_completo);
         $this->set(compact('calendario_completo'));
     }
 }

@@ -59,8 +59,7 @@ class CalendariosTable extends Table
         $validator
             ->scalar('descripcion')
             ->maxLength('descripcion', 45)
-            ->requirePresence('descripcion', 'create')
-            ->notEmptyString('descripcion');
+            ->allowEmptyString('descripcion');
 
         $validator
             ->scalar('fecha')

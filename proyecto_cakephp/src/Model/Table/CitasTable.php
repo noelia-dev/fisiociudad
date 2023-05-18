@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Table;
@@ -7,6 +8,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\ORM\TableRegistry;
 
 /**
  * Citas Model
@@ -61,6 +63,7 @@ class CitasTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
+        // dd($validator);
         $validator
             ->date('fecha')
             ->requirePresence('fecha', 'create')
@@ -93,6 +96,16 @@ class CitasTable extends Table
             ->dateTime('alta')
             ->allowEmptyDateTime('alta');
 
+        //Añadimos el valor de la fecha al id para buscarlo
+        $validator
+            ->add('fecha', 'notInCalendarios', [
+                'rule' => function ($value, $context) {
+                    $calendariosTable = TableRegistry::getTableLocator()->get('Calendarios');
+                    $calendario = $calendariosTable->find()->where(['fecha' => $value])->first();
+                    return empty($calendario);
+                },
+                'message' => 'La fecha seleccionada no está establecida como una fecha laboral, por favor, seleccione otra fecha o añadala. %s',
+            ]);
         return $validator;
     }
 

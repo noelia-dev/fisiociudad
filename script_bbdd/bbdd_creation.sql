@@ -43,9 +43,10 @@ CREATE TABLE `citas` (
 
 CREATE TABLE `calendarios` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `descripcion` varchar(45) NOT NULL,
+  `descripcion` varchar(45) DEFAULT NULL,
   `fecha` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `fecha_UNIQUE` (`fecha`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=169 DEFAULT CHARSET=utf8mb3;
+
 

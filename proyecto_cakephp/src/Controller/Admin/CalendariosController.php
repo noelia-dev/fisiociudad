@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
+use Cake\Chronos\Date;
 
 /**
  * Calendarios Controller
@@ -39,7 +40,6 @@ class CalendariosController extends AppController
             ];
         }
         $this->get_calendario_completo((int) date("Y"));
-       // dd($calendarios);
         $this->set(compact('calendarios', 'anio_calendario'));
     }
 
@@ -64,17 +64,20 @@ class CalendariosController extends AppController
      *
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($fecha_selecionada = null)
     {
         $calendario = $this->Calendarios->newEmptyEntity();
         if ($this->request->is('post')) {
             $calendario = $this->Calendarios->patchEntity($calendario, $this->request->getData());
             if ($this->Calendarios->save($calendario)) {
-                $this->Flash->success(__('The calendario has been saved.'));
+                $this->Flash->success(__('La fehca ha sido añadida.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The calendario could not be saved. Please, try again.'));
+        } elseif ($fecha_selecionada != null) {
+            $f = new Date($fecha_selecionada);
+            $fecha_selecionada = $f->format('Y-m-d');
+            $this->set(compact('fecha_selecionada'));
         }
         $this->set(compact('calendario'));
     }

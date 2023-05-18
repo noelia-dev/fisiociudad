@@ -20,7 +20,9 @@
                             'type' => 'date',
                             'label' => 'Fecha:',
                             'required' => true,
-                            'class' => 'form-control'
+                            'class' => 'form-control',
+                            'value' => isset($fecha_selecionada) ? $fecha_selecionada : date('Y-m-d'),//Cargamos la fecha actual
+                            'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                         ]); ?>
                  </div>
 
