@@ -35,7 +35,7 @@ class CalendariosController extends AppController
         foreach ($calendarios_sinformato as $calendario) {
             $calendarios[] = [
                 'id' => $calendario->id,
-                'fecha' => date('Y-n-d', strtotime($calendario->fecha)),
+                'fecha' => date('Y-m-d', strtotime($calendario->fecha)),
                 'descripcion' => $calendario->descripcion
             ];
         }
@@ -116,13 +116,21 @@ class CalendariosController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $calendario = $this->Calendarios->get($id);
-        if ($this->Calendarios->delete($calendario)) {
-            $this->Flash->success(__('La fecha se ha eliminado correctamente del calendario.'));
-        } else {
-            $this->Flash->error(__('La fecha no ha sido eliminada.'));
-        }
 
+        if ($this->request->is(['post', 'delete'])) {
+            if (empty($selectedDates)) {
+                $this->Flash->error(__('Debe seleccionar al menos una fecha para relizar la eliminación.'));
+            }else{
+                 //dd($this->request->getData('selected_ids'));
+            $ids_seleccionados = $this->request->getData('selected_ids');
+            if ($this->Calendarios->deleteAll(['fecha IN' => $ids_seleccionados])) {
+                $this->Flash->success(__('La/s fecha/s se ha/n eliminado correctamente del calendario.'));
+            } else {
+                $this->Flash->error(__('La fecha no ha sido eliminada, vuelva a intentarlo más tarde.'));
+            }
+            }
+           
+        }
         return $this->redirect(['action' => 'index']);
     }
 

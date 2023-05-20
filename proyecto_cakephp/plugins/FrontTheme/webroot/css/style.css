@@ -8428,8 +8428,9 @@ h1, h2, h3, h4, h5,
     content: '';
     background: #28a745; }
 
+    /* Color active de los días de no laborales */
 .active-date {
-  background: #29b3ad;
+  background: #df0d0d;
   color: #fff; }
 
 .event-date.active-date {

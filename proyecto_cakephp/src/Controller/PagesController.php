@@ -80,7 +80,7 @@ class PagesController extends AppController
     }
 
     /**
-     * Creación de todas fechas en las que se puede tomar cita.
+     * Creación de todas fechas en las que NO se puede tomar cita.
      */
     public function crear_calendario_completo()
     {
@@ -98,14 +98,17 @@ class PagesController extends AppController
         $datos_alta2 = [];
         //Creación del calendario completo
         for ($fecha = $inicio; $fecha->lte($fin); $fecha = $fecha->addDay()) {
-            if (!$fecha->isSaturday() && !$fecha->isSunday()) {
+            if ($fecha->isSaturday() || $fecha->isSunday()) {
                 $dias_del_anio[] = $fecha->format('Y-m-d');
                 $datos_alta = new Calendario();
                 $datos_alta->descripcion = 'inicio';
                 $datos_alta->fecha = $fecha->format('Y-m-d');
-                $datos_alta2[]=$datos_alta;
+                $datos_alta2[] = $datos_alta;
             }
         }
+
+       // dd($datos_alta2);
+
         $this->Calendarios->saveMany($datos_alta2);
     }
 }
