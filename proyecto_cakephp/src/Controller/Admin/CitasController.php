@@ -8,6 +8,8 @@ use App\Controller\Admin\AppController;
 use Cake\Event\EventInterface;
 use Cake\Datasource\Pagination\NumericPaginator;
 use Cake\Routing\Router;
+use Cake\Chronos\Date;
+
 
 
 /**
@@ -63,27 +65,31 @@ class CitasController extends AppController
 
         $this->set(compact('citas', 'anio_calendario', 'fechas_citas'));
     }
-
-    public function viewDia($dia_mostrar = null, $mes = null, $anio_calendario = null)
+    /**
+    * Muestra un listado de usuarios para la fecha seleccionada
+     * 
+     */
+    public function viewDia($dia_mostrar, $mes, $anio_calendario)
     {
-        $fecha_mostrar = date('Y-m-d', strtotime($anio_calendario . '-' . $mes . '-' . $dia_mostrar));
+        $fecha = new Date(($anio_calendario . '-' . $mes . '-' . $dia_mostrar));
+        $fecha_selecionada = $fecha->format('Y-m-d');
 
-        $nombre_usuario = '';
         $this->paginate = [
             'contain' => ['Usuarios', 'Calendarios'],
         ];
         /*  $cita = $this->Citas->get($id, [
             //'contain' => ['Usuarios', 'Calendarios'],
         ]);*/
-
+        //dd($fecha_selecionada);
 
         $resultado_citas = $this->Citas->find()->where([
-            'fecha' => $fecha_mostrar
+            'Citas.fecha' => $fecha_selecionada
         ]);
+        // dd($resultado_citas);
 
 
-        $citas = $this->paginate($resultado_citas, ['limit' => '1']);
-        dd($citas);
+        $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '1']);
+        //dd($citas_por_usuario);
         // Verificar si se encontraron registros
         if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
             foreach ($resultado_citas as $result) {
@@ -101,8 +107,11 @@ class CitasController extends AppController
                 dd($resultado_citas);*/
         }
 
-        //    $this->set(compact('citas', 'nombre_usuario'));
+        $fecha_mostrar = $fecha->format('d-m-Y');
+
+        $this->set(compact('citas_por_usuario', 'fecha_mostrar'));
     }
+
     /**
      * View method
      *
@@ -169,7 +178,7 @@ class CitasController extends AppController
                             // Genera el enlace utilizando el Router y el control deseado
                             $url = Router::url([
                                 'controller' => 'Calendarios',
-                                'action' => 'add/'. $cita->getInvalid()[$field] //parámetro que se carga al darle a añadir
+                                'action' => 'add/' . $cita->getInvalid()[$field] //parámetro que se carga al darle a añadir
                             ], true);
                             //Modificamos el mensaje de error
                             $error = sprintf($error, '<a href="' . $url . '">Añadir</a>');

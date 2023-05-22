@@ -68,7 +68,7 @@
                                                          <td class="table-date active-date font-weight-bold">
                                                              <?php $dia_mostrar = isset($days[$day]) ? $days[$day] : '&nbsp';
                                                                 echo $this->Html->link($dia_mostrar, [
-                                                                    'controller' => 'Citas', 'action' => 'view_dia', $dia_mostrar,$mes,$anio_calendario
+                                                                    'controller' => 'Citas', 'action' => 'viewDia', $dia_mostrar,$mes,$anio_calendario
                                                                 ]) ?>
 
                                                          </td>
