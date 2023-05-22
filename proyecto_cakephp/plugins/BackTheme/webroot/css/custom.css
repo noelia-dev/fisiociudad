@@ -4,5 +4,10 @@
 
 .table-date.active-date a {
     color: #fff;
+    width: 100%;/*hace que toda la celda sea link, no sólo el texto*/
+    display: block;
+}
 
+#dataTable .active-date{
+    background: #66dcd7;
 }

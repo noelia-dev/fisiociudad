@@ -21,13 +21,39 @@
                             'label' => 'Fecha:',
                             'required' => true,
                             'class' => 'form-control',
-                            'value' => isset($fecha_selecionada) ? $fecha_selecionada : date('Y-m-d'),//Cargamos la fecha actual
+                            'value' => $this->request->getData('fecha') ? $this->request->getData('fecha') : $fecha_selecionada, //Cargamos la fecha actual
                             'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                         ]); ?>
                  </div>
+             </div>
+             <div class="form-group">
+                 <div class="custom-control custom-checkbox small">
+                     <?= $this->Form->checkbox('periodo', ['id' => 'check_periodo','checked' => $this->request->getData('periodo')
+                            ? $this->request->getData('periodo') : false, 'class' => '']) ?>
+                     <?= $this->Form->label(
+                            'es_periodo',
+                            'Periodo',
+                            ['for' => 'periodo']
+                        ); ?>
+
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-sm-6 mb-3 mb-sm-0">
+                     <?= $this->Form->control('fecha_fin', [
+                            'type' => 'date',
+                            'id'=>'fecha_fin',
+                            'label' => 'Fecha fin perido:',
+                            'required' => true,
+                            'class' => 'form-control d-none',
+                            'value' => $this->request->getData('fecha_fin') ? $this->request->getData('fecha_fin') : $fecha_periodo, //Cargamos la fecha actual
+                            'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
+                        ]); ?>
+
+                 </div>
 
                  <div class="col-sm-6">
-                 <?= $this->Form->control('descripcion', ['class' => 'form-control form-control-user', 'placeholder' => 'Nota', 'label' => 'Nota descriptiva', 'type' => 'string']); ?>
+                     <?= $this->Form->control('descripcion', ['class' => 'form-control form-control-user', 'placeholder' => 'Nota', 'label' => 'Nota descriptiva', 'type' => 'string']); ?>
                  </div>
              </div>
          </div>

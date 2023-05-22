@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace App\Controller\Admin;
 
 use App\Controller\Admin\AppController;
+use Cake\Chronos\Chronos;
 use Cake\Chronos\Date;
+use App\Controller\Admin\DateTime;
 
 /**
  * Calendarios Controller
@@ -61,25 +63,80 @@ class CalendariosController extends AppController
 
     /**
      * Add method
-     *
+     * @param string|null $fecha_selecionada añadimos la fecha seleccionada desde la cita
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
     public function add($fecha_selecionada = null)
     {
+        //Limpiamos el flash antes de mostrar nada nuevo
+        $this->getRequest()->getSession()->delete('Flash');
         $calendario = $this->Calendarios->newEmptyEntity();
         if ($this->request->is('post')) {
-            $calendario = $this->Calendarios->patchEntity($calendario, $this->request->getData());
-            if ($this->Calendarios->save($calendario)) {
-                $this->Flash->success(__('La fehca ha sido añadida.'));
+            if ($this->request->getData('periodo')) {
+                $fecha = new Chronos($this->request->getData('fecha'));
+                $fecha_fin = new Chronos($this->request->getData('fecha_fin'));
+                // dd($fecha->diff($fecha_fin)->days);
+                //Validamos la fecha
+                if ($fecha->diff($fecha_fin)->days == 0) {
+                    $this->Flash->error(__('Las fechas del periodo no son correcta.'));
+                } else {
+                    $rango = $fecha->diff($fecha_fin)->days;
+                    $descripcion = $this->request->getData('descripcion');
+                    $fechas_creadas = array();
+                    for ($i = 0; $i <= $rango; $i++) {
+                        $fecha->addDays($i);
+                        $fechas_creadas[] = $this->Calendarios->newEntity(['fecha' => $fecha->addDays($i)->toDateString(), 'descripcion' => $descripcion]);
+                    }
+                    //dd($fechas_creadas);
+                    //Permite guardar todas las fechas, en caso de alguna duplicada se añadirán el resto
+                    $respuesta_gaurdado = $this->Calendarios->saveMany($fechas_creadas);
+                    if ($respuesta_gaurdado) {
+                        $this->Flash->success(__('El periodo de fechas ha sido añadida.'));
+                        return $this->redirect(['action' => 'index']);
+                    } else {
+                        $errors = [];
+                        foreach ($fechas_creadas as $entity) {
+                            if ($entity->hasErrors()) {
+                                foreach ($entity->getErrors() as $field => $error) {
+                                    // Crear un objeto Chronos con el valor, que puede ser fecha
+                                    $timestamp = strtotime($entity->getInvalidField($field));
+                                    if ($timestamp !== false) {
+                                        $date = new Chronos($entity->getInvalidField($field));
+                                        $formattedDate = $date->format("d-m-Y");
+                                        $fieldErrors[$field] = $error[key($error)] . '('
+                                            .   $formattedDate . ')';
+                                    } else {//En el caso de que el error no sea de tipo fecha
+                                        $fieldErrors[$field] = $error[key($error)];
+                                    }
+                                }
+                                $errors[] = $fieldErrors;
+                            }
+                            $this->Flash->error(implode($fieldErrors));
+                        }
+                        //dd($this->request->getData());
+                        $this->set('data', $this->request->getData());
+                        //$this->render('add');
+                    }
+                }
+            } else {
+                $calendario = $this->Calendarios->patchEntity($calendario, $this->request->getData());
+                if ($this->Calendarios->save($calendario)) {
+                    $this->Flash->success(__('La fecha ha sido añadida.'));
 
-                return $this->redirect(['action' => 'index']);
+                    return $this->redirect(['action' => 'index']);
+                }
             }
         } elseif ($fecha_selecionada != null) {
+            //En el caso de que no se haya dado el aviso de fecha no añadida establecida como un día laboral
             $f = new Date($fecha_selecionada);
             $fecha_selecionada = $f->format('Y-m-d');
-            $this->set(compact('fecha_selecionada'));
+        }else{
+            $fecha_selecionada= Chronos::now()->format("d-m-Y");
+           // dd($fecha_selecionada);
         }
-        $this->set(compact('calendario'));
+        $f = new Date($fecha_selecionada);
+        $fecha_periodo = $f->addDays(1)->format("d-m-Y");
+        $this->set(compact('calendario', 'fecha_selecionada', 'fecha_periodo'));
     }
 
     /**
@@ -118,18 +175,18 @@ class CalendariosController extends AppController
         $this->request->allowMethod(['post', 'delete']);
 
         if ($this->request->is(['post', 'delete'])) {
-            if (empty($selectedDates)) {
-                $this->Flash->error(__('Debe seleccionar al menos una fecha para relizar la eliminación.'));
-            }else{
-                 //dd($this->request->getData('selected_ids'));
             $ids_seleccionados = $this->request->getData('selected_ids');
-            if ($this->Calendarios->deleteAll(['fecha IN' => $ids_seleccionados])) {
-                $this->Flash->success(__('La/s fecha/s se ha/n eliminado correctamente del calendario.'));
+            if (empty($ids_seleccionados)) {
+                $this->Flash->error(__('Debe seleccionar al menos una fecha para relizar la eliminación.'));
             } else {
-                $this->Flash->error(__('La fecha no ha sido eliminada, vuelva a intentarlo más tarde.'));
+                //dd($this->request->getData('selected_ids'));
+                
+                if ($this->Calendarios->deleteAll(['fecha IN' => $ids_seleccionados])) {
+                    $this->Flash->success(__('La/s fecha/s se ha/n eliminado correctamente del calendario.'));
+                } else {
+                    $this->Flash->error(__('La fecha no ha sido eliminada, vuelva a intentarlo más tarde.'));
+                }
             }
-            }
-           
         }
         return $this->redirect(['action' => 'index']);
     }

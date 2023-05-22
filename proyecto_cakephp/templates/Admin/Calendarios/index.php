@@ -13,7 +13,7 @@
          <div class="col text-right">
              <?= $this->Html->link('<i class="fas fa-plus"></i>Añadir fecha', ['action' => 'add'], ['class' => 'btn btn-success', 'escape' => false]) ?>
              <?= $this->Form->button(
-                    '<i class="fas fa-trash"></i>Eliminar fecha',
+                    '<i class="fas fa-trash"></i>Eliminar fecha/s',
                     [
                         'type' => 'submit', 'escapeTitle' => false, 'class' => 'btn btn-danger', 
                        // 'onclick' => "return confirm('¿Está seguro que desea eliminar las siguientes fechas?');"

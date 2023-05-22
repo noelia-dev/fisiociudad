@@ -14,14 +14,24 @@ $(document).ready(function () {
       var formData = $(this).serializeArray();
       // Acceder a los valores enviados
       let mensaje_fechas = '';
+      let existe_elementos = false;
       formData.forEach(function (field) {
+         existe_elementos = true;
          mensaje_fechas += field.value + '\n';
          //console.log(field.name + ': ' + field.value);
       });
-      mensaje += mensaje_fechas;
-      //console.log(mensaje_fechas);
-      if (!confirm(mensaje)) {
-         e.preventDefault();
+      if (existe_elementos) {
+         mensaje += mensaje_fechas;
+         //console.log(mensaje_fechas);
+         if (!confirm(mensaje)) {
+            e.preventDefault();
+         }
       }
+   });
+
+   $("#check_periodo").click(function (e) {
+      //Ocultamos/mostramos la fecha final para el periodo.
+      $('#fecha_fin').toggleClass('d-none');
+
    });
 });

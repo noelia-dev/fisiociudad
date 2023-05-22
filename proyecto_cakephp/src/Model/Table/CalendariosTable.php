@@ -66,7 +66,9 @@ class CalendariosTable extends Table
             ->maxLength('fecha', 45)
             ->requirePresence('fecha', 'create')
             ->notEmptyString('fecha')
-            ->add('fecha', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->add('fecha', 'unique', ['rule' => 'validateUnique', 'provider' => 'table',
+                'message' => 'La fecha seleccionada ya se encuentra en el calendario.']
+        );
 
         return $validator;
     }
