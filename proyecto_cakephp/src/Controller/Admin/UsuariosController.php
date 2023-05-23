@@ -48,7 +48,7 @@ class UsuariosController extends AppController
         if ($this->getRequest()->is('post') && !$resultado->isValid()) {
             $this->Flash->error('Conexión no establecida');
         } else {
-            $this->Flash->error('Conexión establecida');
+            $this->Flash->success('Conexión establecida');
         }
         //Cambiamos el theme a utilizar
         $this->viewBuilder()->setLayout('BackTheme.login');

@@ -59,6 +59,9 @@ return static function (RouteBuilder $routes) {
          */
         $builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'param']);
 
+        $builder->connect('/citas/exportarPdf', ['controller' => 'Citas', 'action' => 'exportarPdf']);
+
+
         /*
          * Connect catchall routes for all controllers.
          *

@@ -40,7 +40,7 @@
                               <?php  }?>
                             </table>
                             <div class="frame">
-                                <table class="dates-table w-100">
+                                <table class="dates-table w-100" id="calendario_cliente">
                                     <tbody class="tbody">
                                     </tbody>
                                 </table>

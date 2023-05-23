@@ -9,7 +9,9 @@ use Cake\Event\EventInterface;
 use Cake\Datasource\Pagination\NumericPaginator;
 use Cake\Routing\Router;
 use Cake\Chronos\Date;
-
+use Dompdf\Dompdf;
+use Dompdf\Options;
+use Cake\Http\Response;
 
 
 /**
@@ -65,8 +67,46 @@ class CitasController extends AppController
 
         $this->set(compact('citas', 'anio_calendario', 'fechas_citas'));
     }
+
+    public function exportarPdf($fecha)
+    {
+        $fecha = new Date($fecha);
+        $fecha_formateada = $fecha->format('Y-m-d');
+      
+        $dompdf = new Dompdf();
+        $options = new Options();
+
+        $resultado_citas = $this->Citas->find()->where([
+            'fecha' => $fecha_formateada
+        ]);
+        ;
+        $options->set('isRemoteEnabled', true);
+        // Establecemos las opciones en Dompdf
+        $dompdf->setOptions($options);
+        // Generar el contenido HTML del PDF
+        $html = '<h1>Citas de la fecha ' . $fecha .'</h1>
+            <p>Nombre: AA </p>
+            <p>Email:dd </p>';
+        // Cargar el contenido HTML en Dompdf
+        $dompdf->loadHtml($html);
+
+        $dompdf->render();
+        // Obtener el contenido del PDF generado
+        $pdfContent = $dompdf->output();
+
+        // Descargar el PDF
+        $response = new Response();
+        $response = $response->withType('application/pdf')
+            ->withStringBody($pdfContent)
+            ->withDownload('citas_' . $fecha . '.pdf');
+        //Devolvemos al usuario a la página con el listado de citas de ese día
+        $this->redirect(['action' => 'viewDia', $fecha->format('d') . $fecha->format('m') . $fecha->format('Y')]);
+
+        return $response;
+    }
+
     /**
-    * Muestra un listado de usuarios para la fecha seleccionada
+     * Muestra un listado de usuarios para la fecha seleccionada
      * 
      */
     public function viewDia($dia_mostrar, $mes, $anio_calendario)

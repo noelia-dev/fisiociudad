@@ -42,7 +42,7 @@
                                      <td class="aling-middle"><?= $usuario->apellidos ?></td>
                                      <td class="aling-middle"><?= $usuario->alta ?></td>
                                      <td class="aling-right">
-                                         <?= $this->Html->link('<i class="fas fa-list"></i>', ['controller' => 'Citas', 'action' => 'view', $usuario->id], ['class' => 'btn btn-primary', 'escape' => false]) ?>
+                                         <?= $this->Html->link('<i class="fas fa-list"></i>', ['controller' => 'Citas', 'action' => 'view', $usuario->id], ['class' => 'btn btn-info', 'escape' => false]) ?>
                                          <?= $this->Html->link('<i class="fas fa-edit"></i>', ['action' => 'edit', $usuario->id], ['class' => 'btn btn-warning', 'escape' => false]) ?>
                                          <?= $this->Html->link('<i class="fas fa-trash"></i>', ['action' => 'delete', $usuario->id], [
                                                 'class' => 'btn btn-danger', 'escape' => false,
