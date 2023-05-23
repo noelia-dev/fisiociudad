@@ -65,10 +65,12 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
+            'Svg\\' => 4,
             'SlevomatCodingStandard\\' => 23,
             'Seld\\Signal\\' => 12,
             'Seld\\PharUtils\\' => 15,
             'Seld\\JsonLint\\' => 14,
+            'Sabberworm\\CSS\\' => 15,
         ),
         'R' => 
         array (
@@ -90,6 +92,7 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         'M' => 
         array (
             'Migrations\\' => 11,
+            'Masterminds\\' => 12,
             'M1\\Env\\' => 7,
         ),
         'L' => 
@@ -103,8 +106,13 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
             'JsonSchema\\' => 11,
             'Jasny\\Twig\\' => 11,
         ),
+        'F' => 
+        array (
+            'FontLib\\' => 8,
+        ),
         'D' => 
         array (
+            'Dompdf\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
             'DebugKit\\Test\\Fixture\\' => 22,
@@ -205,6 +213,10 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
+        'Svg\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
         'SlevomatCodingStandard\\' => 
         array (
             0 => __DIR__ . '/..' . '/slevomat/coding-standard/SlevomatCodingStandard',
@@ -220,6 +232,10 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         'Seld\\JsonLint\\' => 
         array (
             0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
+        ),
+        'Sabberworm\\CSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
         'React\\Promise\\' => 
         array (
@@ -240,8 +256,8 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -271,6 +287,10 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         array (
             0 => __DIR__ . '/..' . '/cakephp/migrations/src',
         ),
+        'Masterminds\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
         'M1\\Env\\' => 
         array (
             0 => __DIR__ . '/..' . '/m1/env/src',
@@ -294,6 +314,14 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
         'Jasny\\Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/jasny/twig-extensions/src',
+        ),
+        'FontLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
+        ),
+        'Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -410,6 +438,7 @@ class ComposerStaticInite8e30d928b356d46e2635d3facf94422
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
