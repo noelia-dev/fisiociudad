@@ -244,20 +244,29 @@ class CitasController extends AppController
     public function edit($id = null)
     {
         $cita = $this->Citas->get($id, [
-            'contain' => [],
+            'contain' => ['Usuarios'],
         ]);
+        //dd($id);
+        $usuario_nombre = $cita->usuario->nombre . ' ' . $cita->usuario->apellidos;
+        
         if ($this->request->is(['patch', 'post', 'put'])) {
+           // dd($this->request->getData());
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita guardado correctamente.'));
-
                 return $this->redirect(['action' => 'index']);
+            }else{
+                 $this->Flash->error(var_export($cita->getErrors(), true));
             }
-            $this->Flash->error(__('The cita could not be saved. Please, try again.'));
+            $this->Flash->error(__('La cita no ha podido ser guardada correctamente.'));
+        }else{
+            $this->getRequest()->getData()['nota_profesional'] = $cita->nota_profesional;
+            //$this->Form->setValue('nota_profesional',);
         }
-        $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
-        $calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'usuarios', 'calendarios'));
+
+      //  $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
+        //$calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
+        $this->set(compact('cita', 'usuario_nombre'));
     }
 
     /**
