@@ -12,6 +12,7 @@ use Cake\Chronos\Date;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use Cake\Http\Response;
+use Cake\Database\Expression\QueryExpression;
 use Cake\View\View;
 
 /**
@@ -97,7 +98,9 @@ class CitasController extends AppController
             $html .= '<p>Nota profesional:' . $cita->nota_profesional . '</p>';
             $html .= '<hr>';
         };
-        $html = $this->render('view_dia_export');
+        
+        $this->set('resultado_citas', $resultado_citas);
+        $html = $this->render('view_dia_export','export');
         // Cargar el contenido HTML en Dompdf
         $dompdf->loadHtml($html);
 
@@ -181,10 +184,17 @@ class CitasController extends AppController
         ]);*/
 
         if ($id != null) {
-            $resultado_citas = $this->Citas->find()->where([
-                'usuario_id' => $id
-            ]);
-            $citas = $this->paginate($resultado_citas, ['limit' => '1']);
+            $resultado_citas = $this->Citas->find()
+                ->where(['usuario_id' => $id])
+                ->order(['Citas.fecha' => 'asc'])
+                ->formatResults(function ($results) {
+                    return $results->map(function ($row) {
+                        $row['fecha'] = $row['fecha']->format('d-m-Y'); // Formateo de la fecha
+                        return $row;
+                    });
+                });
+
+            $citas = $this->paginate($resultado_citas, ['limit' => '10']);
             // Verificar si se encontraron registros
             if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
                 foreach ($resultado_citas as $result) {

@@ -14,7 +14,6 @@ use Cake\ORM\TableRegistry;
  * Citas Model
  *
  * @property \App\Model\Table\UsuariosTable&\Cake\ORM\Association\BelongsTo $Usuarios
- * @property \App\Model\Table\CalendariosTable&\Cake\ORM\Association\BelongsTo $Calendarios
  *
  * @method \App\Model\Entity\Cita newEmptyEntity()
  * @method \App\Model\Entity\Cita newEntity(array $data, array $options = [])
@@ -51,7 +50,7 @@ class CitasTable extends Table
             'joinType' => 'INNER',
         ]);
         $this->belongsTo('Calendarios', [
-            'foreignKey' => 'calendario_id',
+            'foreignKey' => 'fecha',
         ]);
     }
 
@@ -63,7 +62,6 @@ class CitasTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
-        // dd($validator);
         $validator
             ->date('fecha')
             ->requirePresence('fecha', 'create')
@@ -89,10 +87,6 @@ class CitasTable extends Table
             ->notEmptyString('usuario_id');
 
         $validator
-            ->integer('calendario_id')
-            ->allowEmptyString('calendario_id');
-
-        $validator
             ->dateTime('alta')
             ->allowEmptyDateTime('alta');
 
@@ -106,6 +100,7 @@ class CitasTable extends Table
                 },
                 'message' => 'La fecha seleccionada no está establecida como una fecha laboral, por favor, seleccione otra fecha o añadala. %s',
             ]);
+
         return $validator;
     }
 
@@ -118,8 +113,15 @@ class CitasTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->existsIn('usuario_id', 'Usuarios'), ['errorField' => 'usuario_id']);
-        $rules->add($rules->existsIn('calendario_id', 'Calendarios'), ['errorField' => 'calendario_id']);
+        $rules->add(
+            $rules->existsIn('usuario_id', 'Usuarios'),
+            ['errorField' => 'usuario_id']
+        );
+
+        $rules->add($rules->isUnique(
+            ['fecha', 'hora'],
+            'La cita para esa fecha y hora ya está definida.'
+        ));
 
         return $rules;
     }

@@ -11,8 +11,6 @@ use Cake\Validation\Validator;
 /**
  * Calendarios Model
  *
- * @property \App\Model\Table\CitasTable&\Cake\ORM\Association\HasMany $Citas
- *
  * @method \App\Model\Entity\Calendario newEmptyEntity()
  * @method \App\Model\Entity\Calendario newEntity(array $data, array $options = [])
  * @method \App\Model\Entity\Calendario[] newEntities(array $data, array $options = [])
@@ -42,10 +40,6 @@ class CalendariosTable extends Table
         $this->setTable('calendarios');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
-
-        $this->hasMany('Citas', [
-            'foreignKey' => 'calendario_id',
-        ]);
     }
 
     /**
