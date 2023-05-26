@@ -12,7 +12,7 @@ use Cake\Chronos\Date;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use Cake\Http\Response;
-
+use Cake\View\View;
 
 /**
  * Citas Controller
@@ -75,18 +75,29 @@ class CitasController extends AppController
       
         $dompdf = new Dompdf();
         $options = new Options();
+        $this->paginate = [];
 
-        $resultado_citas = $this->Citas->find()->where([
-            'fecha' => $fecha_formateada
-        ]);
-        ;
+        $resultado_citas = $this->Citas->find()
+            ->where([
+                'fecha' => $fecha_formateada
+            ])
+            ->order(['hora' => 'asc'])
+            ->contain('Usuarios');
+
         $options->set('isRemoteEnabled', true);
         // Establecemos las opciones en Dompdf
         $dompdf->setOptions($options);
         // Generar el contenido HTML del PDF
-        $html = '<h1>Citas de la fecha ' . $fecha .'</h1>
-            <p>Nombre: AA </p>
-            <p>Email:dd </p>';
+        $html = '<img src='. '<h1>Citas de la fecha ' . $fecha . '</h1><p></p>';
+
+        foreach ($resultado_citas as $cita) {
+            $html .= '<p>Hora:' . $cita->hora . '</p>';
+            $html .= '<p>Nombre paciente:' . $cita->usuario->nombre . ' ' . $cita->usuario->apellidos . '- Teléfono:' . $cita->usuario->telefono . '</p>';
+            $html .= '<p>Nota paciente:' . $cita->nota_paciente . '</p>';
+            $html .= '<p>Nota profesional:' . $cita->nota_profesional . '</p>';
+            $html .= '<hr>';
+        };
+        $html = $this->render('view_dia_export');
         // Cargar el contenido HTML en Dompdf
         $dompdf->loadHtml($html);
 
@@ -248,23 +259,23 @@ class CitasController extends AppController
         ]);
         //dd($id);
         $usuario_nombre = $cita->usuario->nombre . ' ' . $cita->usuario->apellidos;
-        
+
         if ($this->request->is(['patch', 'post', 'put'])) {
-           // dd($this->request->getData());
+            // dd($this->request->getData());
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita guardado correctamente.'));
                 return $this->redirect(['action' => 'index']);
-            }else{
-                 $this->Flash->error(var_export($cita->getErrors(), true));
+            } else {
+                $this->Flash->error(var_export($cita->getErrors(), true));
             }
             $this->Flash->error(__('La cita no ha podido ser guardada correctamente.'));
-        }else{
+        } else {
             $this->getRequest()->getData()['nota_profesional'] = $cita->nota_profesional;
             //$this->Form->setValue('nota_profesional',);
         }
 
-      //  $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
+        //  $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
         //$calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
         $this->set(compact('cita', 'usuario_nombre'));
     }
