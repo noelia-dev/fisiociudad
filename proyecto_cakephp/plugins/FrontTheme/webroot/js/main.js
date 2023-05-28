@@ -15,11 +15,11 @@
         $(".months-row").children().eq(date.getMonth()).addClass("active-month");
         init_calendar(date);
         var events = check_events(today, date.getMonth() + 1, date.getFullYear());
-        show_events(events, months[date.getMonth()], today + 1);
+        show_events(events, months[date.getMonth()], today + 1, date.getFullYear());
     });
 
     // Initialize the calendar by appending the HTML dates
-    function init_calendar(date) {
+    async function init_calendar(date) {
         $(".tbody").empty();
         $(".events-container").empty();
         var calendar_days = $(".tbody");
@@ -28,18 +28,23 @@
         var day_count = days_in_month(month, year);
         var row = $("<tr class='table-row'></tr>");
         var today = date.getDate();
-        console.log(date);
+        //console.log(date);
         // Set date to 1 to find the first day of the month
         date.setDate(1);
         var first_day = date.getDay() - 1;
         //Creamos la fecha en un array para poder marcar el día actual
         let fecha_hoy;
-        fecha_hoy = [         
-             new Date().getFullYear(),
-             new Date().getMonth() + 1,
-             new Date().getDate()
+        fecha_hoy = [
+            new Date().getFullYear(),
+            new Date().getMonth() + 1,
+            new Date().getDate()
         ];
         fecha_hoy = fecha_hoy.join('-');
+        var noLaboral = await miFuncionPrincipal(month + 1, year);
+
+
+
+        console.log(noLaboral);
         // 35+firstDay is the number of date elements to be added to the dates table
         // 35 is from (7 days in a week) * (up to 5 rows of dates in a month)
         for (var i = 0; i < 35 + first_day; i++) {
@@ -63,10 +68,11 @@
                 let dia_calendario = [year, month + 1, day].join('-');
 
                 //if (dia_calendario == fecha_hoy) {
-                if (today + 1 === day && $(".active-date").length === 0 || Date.parse(dia_calendario)+1 == Date.parse(fecha_hoy)) {
-                  //  console.log(today);
+                if (today + 1 === day && $(".active-date").length === 0
+                    || Date.parse(dia_calendario) + 1 == Date.parse(fecha_hoy)) {
+                    //  console.log(today);
                     curr_date.addClass("active-date");
-                    show_events(events, months[month], day);
+                    show_events(events, months[month], day, year);
                 }
                 if (Date.parse(dia_calendario) == Date.parse(fecha_hoy)) {
                     //                            console.log(day, month + 1, year);   
@@ -78,8 +84,13 @@
                 }
                 //Establece el evento a aquellas fechas que son superiores a la actual.
                 //Evitamos con esto pedir cita con fecha anterior
-                if (Date.parse(dia_calendario) > Date.parse(fecha_hoy)) {
-                    curr_date.click({ events: events, month: months[month], day: day }, date_click);
+                let fecha_calendario = [year, (month + 1).toString().padStart(2, "0"),
+                    (day).toString().padStart(2, "0")].join('-');
+                //Sólo tendrán eventos aquellos diás que no estén en la tabla calendarios
+                if (Date.parse(dia_calendario) > Date.parse(fecha_hoy) && noLaboral.indexOf(fecha_calendario) < 0) {
+                    curr_date.click({ events: events, month: months[month], day: day, year: year, mes: month + 1 }, date_click);
+                }else{
+                    curr_date.addClass("noactive-date");
                 }
                 row.append(curr_date);
             }
@@ -98,11 +109,13 @@
 
     // Event handler for when a date is clicked
     function date_click(event) {
+        //El tiempo en el que mostrará el contenedor
         $(".events-container").show(250);
         $("#dialog").hide(250);
         $(".active-date").removeClass("active-date");
         $(this).addClass("active-date");
-        show_events(event.data.events, event.data.month, event.data.day);
+        //  show_events(event.data.events, event.data.month, event.data.day, event.data.year);
+        listar_disponibilidad(event.data.mes, event.data.day, event.data.year);
     };
 
     // Event handler for when a month is clicked
@@ -173,7 +186,7 @@
             }
             else {
                 $("#dialog").hide(250);
-                console.log("new event");
+                //console.log("new event");
                 new_event_json(name, count, date, day);
                 date.setDate(day);
                 init_calendar(date);
@@ -194,7 +207,8 @@
     }
 
     // Display all events of the selected date in card views
-    function show_events(events, month, day) {
+    function show_events(events, month, day, anio) {
+
         // Clear the dates container
         $(".events-container").empty();
         $(".events-container").show(250);
@@ -245,17 +259,17 @@
             {
                 "occasion": " Repeated Test Event ",
                 "invited_count": 120,
-                "year": 2020,
-                "month": 5,
-                "day": 10,
+                "year": 2023,
+                "month": 6,
+                "day": 4,
                 "cancelled": true
             },
             {
                 "occasion": " Repeated Test Event ",
                 "invited_count": 120,
-                "year": 2020,
+                "year": 2023,
                 "month": 5,
-                "day": 10,
+                "day": 30,
                 "cancelled": true
             },
             {

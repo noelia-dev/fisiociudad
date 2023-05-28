@@ -25,7 +25,7 @@ class CalendariosController extends AppController
     public function index()
     {
         $anio_calendario = date("Y");
-        //Muestra sólo datos del año 2023
+        //Muestra sólo datos del año definido
         $resultado_calendarios = $this->Calendarios->find()
             ->where(function ($exp, $q) use ($anio_calendario) {
                 return $exp->equalFields('YEAR(fecha)', $anio_calendario);
@@ -111,7 +111,7 @@ class CalendariosController extends AppController
                                 }
                                 $errors[] = $fieldErrors;
                             }
-                            $this->Flash->error(implode($fieldErrors));
+                           // $this->Flash->error(implode($fieldErrors));
                         }
                         //dd($this->request->getData());
                         $this->set('data', $this->request->getData());

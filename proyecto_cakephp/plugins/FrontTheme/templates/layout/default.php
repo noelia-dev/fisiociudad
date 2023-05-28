@@ -20,6 +20,7 @@
     );?>
     <?= $this->Html->css([
         'FrontTheme./css/style',
+        'FrontTheme./css/custom',
         'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min',
         'https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap'
     ]); ?>
@@ -28,18 +29,21 @@
 <body>
     <?= $this->Element('FrontTheme.layout/topbar'); ?>
     <?= $this->Flash->render(); ?>
+     <!-- Script-->
+    <?= $this->Html->script([
+        'FrontTheme./js/jquery.min',
+        'FrontTheme./js/popper',
+        'FrontTheme./js/bootstrap.min',
+        'FrontTheme./js/main',
+        'FrontTheme./js/custom'
+    ]); ?>
+
     <!-- Content -->
     <?= $this->fetch('content'); ?>
 
     <?= $this->Element('BackTheme.layout/footer'); ?>
 
-    <!-- Script-->
-    <?= $this->Html->script([
-        'FrontTheme./js/jquery.min',
-        'FrontTheme./js/popper',
-        'FrontTheme./js/bootstrap.min',
-        'FrontTheme./js/main'
-    ]); ?>
+   
 </body>
 
 </html>

@@ -23,7 +23,8 @@
                                         foreach ($meses as $mes) {
                                             if ((int)date('m') <= $i) { ?>
                                                 <td class="month" mes="<?= substr($this->get_nombre_mes($i), 0, 3); ?>"><?= $mes ?></td>
-                                            <?php } else { //ocultamos los meses anteriores ?>
+                                            <?php } else { //ocultamos los meses anteriores 
+                                            ?>
                                                 <td class="month d-none"></td>
                                             <?php } ?>
                                         <?php
@@ -35,9 +36,9 @@
                             </table>
 
                             <table class="days-table w-100">
-                                <?php foreach($this->diassemanaES_sub as $dia){?>
-                                    <td class="day"><?= $dia?></td>
-                              <?php  }?>
+                                <?php foreach ($this->diassemanaES_sub as $dia) { ?>
+                                    <td class="day"><?= $dia ?></td>
+                                <?php  } ?>
                             </table>
                             <div class="frame">
                                 <table class="dates-table w-100" id="calendario_cliente">
@@ -48,7 +49,10 @@
                             <button class="button" id="add-button">Solicitar cita</button>
                         </div>
                     </div>
+                   
+
                     <div class="events-container">
+
                     </div>
                     <div class="dialog" id="dialog">
                         <h2 class="dialog-header">Solicitar cita</h2>

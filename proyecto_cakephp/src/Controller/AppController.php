@@ -53,7 +53,7 @@ class AppController extends Controller
          * see https://book.cakephp.org/4/en/controllers/components/form-protection.html
          */
         //$this->loadComponent('FormProtection');
-        $this->Authentication->allowUnauthenticated(['view', 'index']);
+        $this->Authentication->allowUnauthenticated(['view', 'index','pages','obtenerHorarios','diasSinCita']);
         if(isset($this->nombres_mesesES)){
             $meses = $this->obtener_meses();
             $this->set(compact('meses'));
@@ -87,5 +87,10 @@ class AppController extends Controller
         $indice = array_search($nombre_semana, $diassemanaEN);
 
         return $diassemanaES[$indice];
+    }
+    
+
+    public function obtenerHorarios(){
+        return true;
     }
 }

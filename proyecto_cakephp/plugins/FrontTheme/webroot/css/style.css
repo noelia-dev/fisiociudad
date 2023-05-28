@@ -12099,7 +12099,7 @@ h5,
 
 /* Color active de los días de no laborales */
 .active-date {
-  background: #df0d0d;
+  background: #e74a3b;
   color: #fff;
 }
 
@@ -12112,6 +12112,10 @@ h5,
 
 .event-date.active-date {
   background: #3273a2;
+}
+
+.noactive-date {
+  background: #e74a3b;
 }
 
 /* input dialog */
