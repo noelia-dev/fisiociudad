@@ -1,10 +1,11 @@
- <!-- Tabla de citas del día -->
+<!-- Tabla de citas del día -->
  <div style="text-align: center; position: fixed; top: 20px; width: 100%;">
-     <h3>
-         <?php setlocale(LC_TIME, 'es_ES.utf-8'); // Establecer la configuración regional en español
+     <h3>Citas de la fecha
+         <?php 
+         //setlocale(LC_TIME, 'es_ES.utf-8'); // Establecer la configuración regional en español
             $fecha = $resultado_citas->first()->fecha;
-            $fecha_completa = (new \IntlDateFormatter('es_ES', \IntlDateFormatter::FULL, \IntlDateFormatter::NONE))->format(strtotime($fecha));
-            echo ucfirst($fecha_completa);
+           // $fecha_completa = (new \IntlDateFormatter('es_ES', \IntlDateFormatter::FULL, \IntlDateFormatter::NONE))->format(strtotime($fecha));
+            echo DateTime::createFromFormat('d/n/y', $fecha)->format('d/m/Y');;
             ?>
      </h3>
  </div>
