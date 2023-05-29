@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Model\Table;
@@ -56,13 +57,17 @@ class CalendariosTable extends Table
             ->allowEmptyString('descripcion');
 
         $validator
-            ->scalar('fecha')
-            ->maxLength('fecha', 45)
+            ->date('fecha')
             ->requirePresence('fecha', 'create')
-            ->notEmptyString('fecha')
-            ->add('fecha', 'unique', ['rule' => 'validateUnique', 'provider' => 'table',
-                'message' => 'La fecha seleccionada ya se encuentra en el calendario.']
-        );
+            ->notEmptyDate('fecha')
+            ->add(
+                'fecha',
+                'unique',
+                [
+                    'rule' => 'validateUnique', 'provider' => 'table',
+                    'message' => 'La fecha seleccionada ya se encuentra en el calendario.'
+                ]
+            );
 
         return $validator;
     }

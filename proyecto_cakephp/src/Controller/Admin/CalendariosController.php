@@ -37,7 +37,7 @@ class CalendariosController extends AppController
         foreach ($calendarios_sinformato as $calendario) {
             $calendarios[] = [
                 'id' => $calendario->id,
-                'fecha' => date('Y-m-d', strtotime($calendario->fecha)),
+                'fecha' => $calendario->fecha->format('Y-m-d'),
                 'descripcion' => $calendario->descripcion
             ];
         }

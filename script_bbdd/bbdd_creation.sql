@@ -14,20 +14,6 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-CREATE TABLE `users` (
-  `id_user` int NOT NULL AUTO_INCREMENT,
-  `password` varchar(255) DEFAULT NULL,
-  `correo` varchar(45) DEFAULT NULL,
-  `telefono` varchar(45) DEFAULT NULL,
-  `nombre` varchar(45) DEFAULT NULL,
-  `apellidos` varchar(45) DEFAULT NULL,
-  `es_admin` tinyint(1) DEFAULT '0',
-  `eliminado` datetime DEFAULT NULL,
-  `alta` datetime DEFAULT NULL,
-  `modificado` datetime DEFAULT NULL,
-  PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
-
 CREATE TABLE `citas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `fecha` date NOT NULL,
@@ -44,9 +30,10 @@ CREATE TABLE `citas` (
 CREATE TABLE `calendarios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `descripcion` varchar(45) DEFAULT NULL,
-  `fecha` varchar(45) NOT NULL,
+  `fecha` date NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `fecha_UNIQUE` (`fecha`)
-) ENGINE=InnoDB AUTO_INCREMENT=169 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb3;
+
 
 
