@@ -989,7 +989,7 @@ class ModelCommand extends BakeCommand
         }
 
         $uniqueColumns = ['username', 'login'];
-        if (in_array($model->getAlias(), ['Users', 'Accounts'])) {
+        if (in_array($model->getAlias(), ['Usuarios', 'Accounts'])) {
             $uniqueColumns[] = 'email';
         }
 

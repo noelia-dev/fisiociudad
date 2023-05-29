@@ -51,7 +51,7 @@ abstract class BaseAuthenticate implements EventListenerInterface
             'username' => 'username',
             'password' => 'password',
         ],
-        'userModel' => 'Users',
+        'userModel' => 'Usuarios',
         'finder' => 'all',
         'passwordHasher' => 'Default',
     ];

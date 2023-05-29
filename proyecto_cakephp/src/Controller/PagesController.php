@@ -53,7 +53,7 @@ class PagesController extends AppController
      */
     public function index()
     {
-        $this->fetchTable('Usuarios'); //$this->loadModel('Users');
+        $this->fetchTable('Usuarios');
         $usuarios = $this->getTableLocator()->get('Usuarios');
         $result_datos = $usuarios->find()->where(['es_admin' => '1']);
         //Detectamos si es la primera vez que se accede al apartado administrador

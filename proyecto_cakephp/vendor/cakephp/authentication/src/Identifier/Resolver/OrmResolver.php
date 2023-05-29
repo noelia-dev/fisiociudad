@@ -35,7 +35,7 @@ class OrmResolver implements ResolverInterface
      * @var array
      */
     protected $_defaultConfig = [
-        'userModel' => 'Users',
+        'userModel' => 'Usuarios',
         'finder' => 'all',
     ];
 

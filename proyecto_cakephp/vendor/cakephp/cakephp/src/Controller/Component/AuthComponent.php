@@ -454,7 +454,7 @@ class AuthComponent extends Component implements EventDispatcherInterface
                 'params' => ['class' => 'error'],
             ],
             'loginAction' => [
-                'controller' => 'Users',
+                'controller' => 'Ususairos',
                 'action' => 'login',
                 'plugin' => null,
             ],
