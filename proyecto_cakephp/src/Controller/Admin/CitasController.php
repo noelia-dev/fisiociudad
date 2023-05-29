@@ -77,6 +77,7 @@ class CitasController extends AppController
         $dompdf = new Dompdf();
         $options = new Options();
         $this->paginate = [];
+        setlocale(LC_TIME, 'es_ES');
 
         $resultado_citas = $this->Citas->find()
             ->where([
@@ -89,14 +90,7 @@ class CitasController extends AppController
         // Establecemos las opciones en Dompdf
         $dompdf->setOptions($options);
         // Generar el contenido HTML del PDF
-        $html = '<img src='. '<h1>Citas de la fecha ' . $fecha . '</h1><p></p>';
-
-        foreach ($resultado_citas as $cita) {
-            $html .= '<p>Hora:' . $cita->hora . '</p>';
-            $html .= '<p>Nombre paciente:' . $cita->usuario->nombre . ' ' . $cita->usuario->apellidos . '- Teléfono:' . $cita->usuario->telefono . '</p>';
-            $html .= '<p>Nota paciente:' . $cita->nota_paciente . '</p>';
-            $html .= '<p>Nota profesional:' . $cita->nota_profesional . '</p>';
-            $html .= '<hr>';
+        foreach ($resultado_citas as $citas) {
         };
         
         $this->set('resultado_citas', $resultado_citas);
@@ -277,9 +271,14 @@ class CitasController extends AppController
                 $this->Flash->success(__('Cita guardado correctamente.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(var_export($cita->getErrors(), true));
+                $errores = $cita->getErrors();
+                // Recorre los errores y establece cada mensaje en la sesión
+                foreach ($errores as $field => $fieldErrors) {
+                    foreach ($fieldErrors as $error) {
+                        $this->Flash->error($error, ['escape' => false]);
+                    }
+                }
             }
-            $this->Flash->error(__('La cita no ha podido ser guardada correctamente.'));
         } else {
             $this->getRequest()->getData()['nota_profesional'] = $cita->nota_profesional;
             //$this->Form->setValue('nota_profesional',);

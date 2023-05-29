@@ -44,7 +44,7 @@
                             'label' => 'Hora:',
                             'required' => true,
                             'class' => 'form-control',
-                            'value' => date('d/m/y H:i:s'),
+                            'value' => date('d/m/y H:00:00'),
                             'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
                         ]);
                         ?>

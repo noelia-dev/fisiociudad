@@ -101,6 +101,15 @@ class CitasTable extends Table
                 'message' => 'La fecha seleccionada no está establecida como una fecha laboral, por favor, seleccione otra fecha o añadala. %s',
             ]);
 
+        $validator
+            ->add('hora', 'validTime', [
+                'rule' => function ($value, $context) {
+                    $validTime = '/^([01]\d|2[0-3]):00:00$/'; // Patron para que cumpla con el formato HH:00:00
+                    return preg_match($validTime, $value) === 1;
+                },
+                'message' => 'Lo hora indicada debe ser a las horas en punto, ej. 10:00:00.',
+            ]);
+
         return $validator;
     }
 
