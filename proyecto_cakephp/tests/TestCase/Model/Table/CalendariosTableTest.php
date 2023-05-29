@@ -25,7 +25,6 @@ class CalendariosTableTest extends TestCase
      */
     protected $fixtures = [
         'app.Calendarios',
-        'app.Citas',
     ];
 
     /**

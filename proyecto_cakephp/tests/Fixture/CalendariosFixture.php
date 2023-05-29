@@ -21,7 +21,7 @@ class CalendariosFixture extends TestFixture
             [
                 'id' => 1,
                 'descripcion' => 'Lorem ipsum dolor sit amet',
-                'fecha' => 'Lorem ipsum dolor sit amet',
+                'fecha' => '2023-05-29',
             ],
         ];
         parent::init();
