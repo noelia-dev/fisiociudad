@@ -12080,11 +12080,11 @@ h5,
 /*.table-date:not(.nil):hover {
   border-color: #29b3ad; }*/
 
-.event-date {
-  border-color: #3273a2;
+ /*.event-date {
+ border-color: #3273a2;
   background: #3273a2;
   color: #fff;
-}
+}*/
 
 .event-date:after {
   position: absolute;
@@ -12114,9 +12114,9 @@ h5,
   background: #3273a2;
 }
 
-.noactive-date {
+/*.noactive-date {
   background: #e74a3b;
-}
+}*/
 
 /* input dialog */
 .dialog {
@@ -12124,7 +12124,7 @@ h5,
   background: #000;
   position: absolute;
   width: 50%;
-  height: 500px;
+  height: 590px;
   top: 0;
   right: 0;
   display: none;
@@ -12143,10 +12143,6 @@ h5,
   font-size: 28px;
 }
 
-.form-container {
-  margin-top: 25%;
-}
-
 .form-label {
   text-transform: uppercase;
   font-size: 13px;
@@ -12154,7 +12150,7 @@ h5,
   color: rgba(255, 255, 255, 0.9);
 }
 
-.input {
+.input_solicitud {
   border: none;
   background: none;
   border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
@@ -12180,4 +12176,15 @@ h5,
 
 .table-date.dia_hoy {
   border-color: #29b3ad;
+}
+
+.table-date.noactive-date:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: '';
+  background: #e74a3b;
 }

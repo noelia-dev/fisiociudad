@@ -72,7 +72,15 @@ class AppController extends Controller
         date_default_timezone_set('Europe/Madrid');
         setlocale(LC_ALL, 'es_ES');
         $mes_actual = (int)date('m');
+        if(date('t')== date('d')){
+            $mes_mostrar = $mes_actual +1;
+            $this->set(compact('mes_mostrar'));
+        }else{
+            $mes_mostrar = $mes_actual;
+            $this->set(compact('mes_mostrar'));
+        }       
         $months =  [];
+        //Sólo devolvemos los meses siguiente al mes actual
         for ($i = 1; $i <= 12; $i++) {
             $months[] = strtoupper(substr($this->nombres_mesesES[$i - 1], 0, 3));
         }

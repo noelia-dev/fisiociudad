@@ -52,7 +52,10 @@ class AjaxRespuestasController extends AppController
 
         return $response;
     }
-
+    /**
+     * Obtiene el mes completo con los días que no disponibilidad. Para ello tomaremos también 
+     * el número de citas creados para añadirlo o no a la tabla devuelta.
+     */
     public function diasSinCita()
     {
         $mes = $this->getRequest()->getData('mes');
@@ -70,14 +73,124 @@ class AjaxRespuestasController extends AppController
 
         $calendarios = [];
         foreach ($calendarios_sinformato as $calendario) {
-            $calendarios[] = date('Y-m-d', strtotime($calendario->fecha));
+            $calendarios[] = $calendario->fecha;
         }
+        //Obtenemos los días donde no hay más disponibilidad para citas y lo añadimos al 
+        //array anterior
+        $this->Citas = TableRegistry::getTableLocator()->get('Citas');
+        $resultado_citas = $this->Citas->find();
+        $resultado_citas->select([
+            'count' => $resultado_citas->func()->count('*'),
+            'fecha'])
+            ->where([
+                'YEAR(fecha)' => $anio,
+                'MONTH(fecha)' => $mes
+            ])
+            ->group('fecha')
+            ->having(['count' => count($this->lista_horario)]);
 
+        foreach ($resultado_citas as $cita) {
+            $calendarios[] = $cita->fecha;
+        }
         // Devuelve una respuesta JSON
         $response = new Response();
         $response = $response->withType('application/json')
-            ->withStringBody(json_encode(['success' => $calendarios]));
+            ->withStringBody(json_encode(['success' => $calendarios,'otros'=> $resultado_citas]));
 
         return $response;
+    }
+
+    /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|null|void Renders view
+     */
+    public function index()
+    {
+        $this->citas = TableRegistry::getTableLocator()->get('Citas');
+
+        //$ajaxRespuestas = $this->paginate($this->AjaxRespuestas);
+
+        $this->set(compact('ajaxRespuestas'));
+    }
+
+    /**
+     * View method
+     *
+     * @param string|null $id Ajax Respuesta id.
+     * @return \Cake\Http\Response|null|void Renders view
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
+    {
+        $ajaxRespuesta = $this->AjaxRespuestas->get($id, [
+            'contain' => [],
+        ]);
+
+        $this->set(compact('ajaxRespuesta'));
+    }
+
+    /**
+     * Add method
+     *
+     * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+        $ajaxRespuesta = $this->AjaxRespuestas->newEmptyEntity();
+        if ($this->request->is('post')) {
+            $ajaxRespuesta = $this->AjaxRespuestas->patchEntity($ajaxRespuesta, $this->request->getData());
+            if ($this->AjaxRespuestas->save($ajaxRespuesta)) {
+                $this->Flash->success(__('The ajax respuesta has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The ajax respuesta could not be saved. Please, try again.'));
+        }
+        $this->set(compact('ajaxRespuesta'));
+    }
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id Ajax Respuesta id.
+     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        $ajaxRespuesta = $this->AjaxRespuestas->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $ajaxRespuesta = $this->AjaxRespuestas->patchEntity($ajaxRespuesta, $this->request->getData());
+            if ($this->AjaxRespuestas->save($ajaxRespuesta)) {
+                $this->Flash->success(__('The ajax respuesta has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The ajax respuesta could not be saved. Please, try again.'));
+        }
+        $this->set(compact('ajaxRespuesta'));
+    }
+
+    /**
+     * Delete method
+     *
+     * @param string|null $id Ajax Respuesta id.
+     * @return \Cake\Http\Response|null|void Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $ajaxRespuesta = $this->AjaxRespuestas->get($id);
+        if ($this->AjaxRespuestas->delete($ajaxRespuesta)) {
+            $this->Flash->success(__('The ajax respuesta has been deleted.'));
+        } else {
+            $this->Flash->error(__('The ajax respuesta could not be deleted. Please, try again.'));
+        }
+
+        return $this->redirect(['action' => 'index']);
     }
 }

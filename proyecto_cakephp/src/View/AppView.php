@@ -30,6 +30,7 @@ class AppView extends View
     public $diassemanaES_sub = array("Lun", "Mar", "Mié", "Jue", "Vie", "Sáb","Dom");
     public $diassemanaEN_sub = array('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun');
     public $nombres_mesesES = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+    public $cita;
     /**
      * Initialization hook method.
      *

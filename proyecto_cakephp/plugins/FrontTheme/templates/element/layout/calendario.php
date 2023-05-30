@@ -1,7 +1,7 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 text-center mb-5">
+            <div class="col-md-8 text-center mb-5">
                 <h2 class="heading-section">Calendario de disponibilidad</h2>
             </div>
         </div>
@@ -21,7 +21,7 @@
                                         <?php
                                         $i = 1;
                                         foreach ($meses as $mes) {
-                                            if ((int)date('m') <= $i) { ?>
+                                            if ($mes_mostrar <= $i) { ?>
                                                 <td class="month" mes="<?= substr($this->get_nombre_mes($i), 0, 3); ?>"><?= $mes ?></td>
                                             <?php } else { //ocultamos los meses anteriores 
                                             ?>
@@ -49,27 +49,54 @@
                             <button class="button" id="add-button">Solicitar cita</button>
                         </div>
                     </div>
-                   
+
 
                     <div class="events-container">
-
+                        
                     </div>
                     <div class="dialog" id="dialog">
                         <h2 class="dialog-header">Solicitar cita</h2>
                         <form class="form" id="form">
+                            <?= $this->Form->create($this->cita, ['class' => 'cita']); ?>
+
                             <div class="form-container" align="center">
-                                <label class="form-label" id="valueFromMyButton" for="nobre">Nombre</label>
-                                <input class="input" type="text" id="nobre" maxlength="36">
-                                <label class="form-label" id="valueFromMyButton" for="apellidos">Apellidos</label>
-                                <input class="input" type="text" id="apellidos" maxlength="36">
-                                <label class="form-label" id="valueFromMyButton" for="name">correo electrónico</label>
-                                <input class="input" type="text" id="name" maxlength="36">
-                                <label class="form-label" id="valueFromMyButton" for="count">Número de teléfono</label>
-                                <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                <input type="button" value="Cancelar" class="button" id="cancel-button">
-                                <input type="button" value="Solicitar" class="button button-white" id="ok-button">
+                                <?= $this->Form->control('Nombre', [
+                                    'class' => 'input_solicitud',
+                                    'placeholder' => '', 'label' => [
+                                        'id' => 'nombre',
+                                        'class' => 'form-label'
+                                    ],
+                                    'type' => 'text',
+                                    'maxlength' => '36'
+                                ]); ?>
+
+                                <?= $this->Form->control('Apellidos', [
+                                    'class' => 'input_solicitud', 'placeholder' => '', 'label' => [
+                                        'id' => 'apellidos',
+                                        'class' => 'form-label'
+                                    ],
+                                    'type' => 'text',
+                                    'maxlength' => '36'
+                                ]); ?>
+
+                                <?= $this->Form->control(
+                                    'correo electrónico',
+                                    [
+                                        'class' => 'input_solicitud', 'placeholder' => '', 'label' => [
+                                            'id' => 'correo',
+                                            'class' => 'form-label'
+                                        ], 'type' => 'email', 'maxlength' => '36'
+                                    ]
+                                ); ?>
+                                <?= $this->Form->control('Número de teléfono', ['class' => 'input_solicitud', 'placeholder' => '', 'label' => [
+                                    'id' => 'telefono',
+                                    'class' => 'form-label'
+                                ], 'type' => 'string']); ?>
+
+                                <?= $this->Form->button('Cancelar', ['class' => 'button','id'=>'cancel-button','type' => 'submit']); ?>
+                                <?= $this->Form->button('Solicitar', ['class' => 'button','id'=>'ok-button','type' => 'submit']); ?>
                             </div>
-                        </form>
+                            <?= $this->Form->end(); ?>
                     </div>
                 </div>
             </div>

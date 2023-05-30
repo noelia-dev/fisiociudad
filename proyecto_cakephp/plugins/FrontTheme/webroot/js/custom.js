@@ -31,15 +31,15 @@ function obtener_Nodisponibilidad(mes_seleccionado, anio) {
 
 async function miFuncionPrincipal(mes_seleccionado, anio) {
     try {
-      const resultado = await obtener_Nodisponibilidad(mes_seleccionado, anio);
-      //console.log('Resultado de la llamada AJAX:', resultado);
-      return resultado;
-      // Aquí puedes continuar con la ejecución del código después de obtener el resultado
+        const resultado = await obtener_Nodisponibilidad(mes_seleccionado, anio);
+        //console.log('Resultado de la llamada AJAX:', resultado);
+        return resultado;
+        // Aquí puedes continuar con la ejecución del código después de obtener el resultado
     } catch (error) {
-      console.log('Ocurrió un error:', error);
-      // Manejar el error en caso de que ocurra
+        console.log('Ocurrió un error:', error);
+        // Manejar el error en caso de que ocurra
     }
-  }
+}
 
 function listar_disponibilidad(month, day, year) {
 
@@ -56,7 +56,7 @@ function listar_disponibilidad(month, day, year) {
         dataType: 'json',
         success: function (respuesta_Datos) {
             //  event_data = respuesta_Datos;
-            mostrar_datos_evento(respuesta_Datos['success']);
+            mostrar_datos_evento(respuesta_Datos['success'], day, month, year);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             // Maneja los errores de la solicitud
@@ -68,7 +68,7 @@ function listar_disponibilidad(month, day, year) {
 
 
 // Display all events of the selected date in card views
-function mostrar_datos_evento(horas_disponibles) {
+function mostrar_datos_evento(horas_disponibles, day, month, year) {
     // console.log(horas_disponibles);
     // Clear the dates container
     $(".events-container").empty();
@@ -86,23 +86,69 @@ function mostrar_datos_evento(horas_disponibles) {
         $(".events-container").append(event_card);
     }
     else {
+        var lista_titulo = $("<div class='horario-titulo h4 text-center'>Horarios disponibles <p>" + day + "/" + month + "/" + year + "</p></div>");
+        //$(lista_titulo).css({ "border-left": "10px solid #FF1744" });
+        $(".events-container").append(lista_titulo);
         // Go through and add each event as a card to the events container
         for (var i = 0; i < horas_disponibles.length; i++) {
             var event_card = $("<div class='event-card'></div>");
             var event_name = $("<div class='event-name'>" + horas_disponibles[i] + ":</div>");
             var event_count = $("<div class='event-count'>Disponible</div>");
-            /* if (horas_disponibles[i]["cancelled"] === true) {
-                 $(event_card).css({
-                     "border-left": "10px solid #FF1744"
-                 });
-                 event_count = $("<div class='event-cancelled'>Cancelled</div>");
-             }*/
+            var evento_add = $("<a href='#' id='add-boton'></a>");//Añadir solicitud
+            //A cada horario disponible creamos su evento con la fecha y la hora disponible.
+            evento_add.click({ date: (year + '-' + month + '-' + day), hora: horas_disponibles[i] }, nuevo_evento);
             $(event_card).append(event_name).append(event_count);
-            $(".events-container").append(event_card);
+            $(evento_add).append(event_card);
+            $(".events-container").append(evento_add);
         }
     }
 
 }
+
+function nuevo_evento(event) {
+    // if a date isn't selected then do nothing
+    if ($(".active-date").length === 0)
+        return;
+    // remove red error input on click
+    $("input").click(function () {
+        $(this).removeClass("error-input");
+    })
+    // empty inputs and hide events
+    $("#dialog input[type=text]").val('');
+    $("#dialog input[type=number]").val('');
+    $(".events-container").hide(250);
+    $("#dialog").show(250);
+    // Event handler for cancel button
+    $("#cancel-button").click(function () {
+        $("#name").removeClass("error-input");
+        $("#count").removeClass("error-input");
+        $("#dialog").hide(250);
+        $(".events-container").show(250);
+    });
+    // Event handler for ok button
+    $("#ok-button").unbind().click({ date: event.data.date, hora: event.data.hora }, function () {
+        var date = event.data.date;
+        var hora = event.data.hora;
+        //var name = $("#name").val().trim();
+        //var count = parseInt($("#count").val().trim());
+        var day = parseInt($(".active-date").html());
+        // Basic form validation
+        if (name.length === 0) {
+            $("#name").addClass("error-input");
+        }
+        else if (isNaN(count)) {
+            $("#count").addClass("error-input");
+        }
+        else {
+            $("#dialog").hide(250);
+            //console.log("new event");
+            new_event_json(name, count, date, day);
+            date.setDate(day);
+            init_calendar(date);
+        }
+    });
+}
+
 
 /*$(document).ready(function() {
     //Función de carga del spinner
