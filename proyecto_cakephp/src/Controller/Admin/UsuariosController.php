@@ -62,7 +62,7 @@ class UsuariosController extends AppController
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
             $this->Authentication->logout();
-            return $this->redirect(['controller' => 'Usuarios', 'action' => 'login']);
+            return $this->redirect('/');
         }
         $this->Flash->error('Desconexión imposible.');
         //Enviamos al usuario a la página en la que se encontraba antes de desconectarse.
