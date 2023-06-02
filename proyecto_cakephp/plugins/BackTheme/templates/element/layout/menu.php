@@ -27,7 +27,7 @@
     <li class="nav-item <?= str_contains($menu_activo,'usuarios') ? 'active' : ''; ?>">
         <!-- Elemento - Usuarios -->
         <?= $this->Html->link(
-            '<i class="fas fa-user fa-tachometer-alt"></i>Usuarios',
+            '<i class="fas fa-user fa-tachometer-alt"></i>Pacientes',
             ['controller' => 'Usuarios', 'action' => 'index'],
             ['class' => 'nav-link', 'escape' => false]
         ); ?>

@@ -35,6 +35,7 @@ use Cake\ORM\TableRegistry;
 class AppController extends ControllerPrincipal
 {
     public $login_nombre;
+    public $id_login;
     protected $Usuarios;
     /**
      * Initialization hook method.
@@ -76,8 +77,10 @@ class AppController extends ControllerPrincipal
         if ($resultado->isValid()) {
             $login_nombre = $resultado->getData()->nombre;
             $login_nombre .= ' ' . $resultado->getData()->apellidos;
+            $id_login = $resultado->getData()->id;
+            //dd($id_login);
             //Nostramos el nombre del usuario que está logueado
-            $this->set('login_nombre', $login_nombre);
+            $this->set(compact('login_nombre', 'id_login'));
         }
     }
 

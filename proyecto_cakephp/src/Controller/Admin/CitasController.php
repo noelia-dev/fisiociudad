@@ -136,7 +136,7 @@ class CitasController extends AppController
         // dd($resultado_citas);
 
 
-        $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '1']);
+        $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '5']);
         //dd($citas_por_usuario);
         // Verificar si se encontraron registros
         if (!empty($resultado_citas) && $resultado_citas->count() != 0) {

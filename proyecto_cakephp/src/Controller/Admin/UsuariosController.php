@@ -17,7 +17,7 @@ use Cake\Datasource\Pagination\NumericPaginator;
 class UsuariosController extends AppController
 {
     public $paginate = [
-        'limit'=> 1,
+        'limit' => 5,
         'order' => [
             'Usuarios.nombre' => 'asc'
         ]
@@ -27,7 +27,6 @@ class UsuariosController extends AppController
     {
         parent::initialize();
         $this->loadComponent('Paginator');
-
     }
     //Sistema de permisos de acceso a acciones.
     public function beforeFilter(EventInterface $event)
@@ -79,7 +78,8 @@ class UsuariosController extends AppController
     {
         //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
         $usuarios = $this->paginate($this->Usuarios->find()->where([
-           'es_admin is not' => '1']));
+            'es_admin is not' => '1'
+        ]));
         //crea una tabla con el contenido con todas las lineas resultantes
         $this->set(compact('usuarios'));
     }
@@ -191,5 +191,48 @@ class UsuariosController extends AppController
         $this->set(compact('calendario_completo'));
     }
 
+    public function editadmin($id = null)
+    {
+        $usuario = $this->Usuarios->get($id);
+        if ($this->request->is(['patch', 'post', 'put'])) {
 
+            $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
+            if ($this->request->getData('confirm_password') == $this->request->getData('password')) {
+                if ($this->Usuarios->save($usuario)) {
+                    $this->Flash->success(__('Usuario modificado correctamente.'));
+                    $this->request->getSession()->renew();//por si ha cambiado el nombre del usuario
+
+
+                    $auth = $this->request->getAttribute('authentication')->getIdentity();
+
+                    // Verificar si el objeto Auth es válido
+                   /* if ($auth instanceof \App\Model\Entity\Usuario) {
+                        // Modificar las propiedades del objeto Auth
+                        $auth->nombre = 'Nuevo nombre';
+                        $auth->email = 'nuevo@email.com';
+
+                        // Guardar los cambios en la sesión
+                        $this->request->getSession()->write($this->Authentication->getConfig('sessionKey'), $auth);
+                    }*/
+
+
+                    $session = $this->request->getSession();
+                    if ($session->check('login_nombre')) {
+                        dd('dd');
+                        $usuario = $this->Usuarios->get($id);
+                        $login_nombre = $usuario->nombre;
+                        $login_nombre .= ' ' . $usuario->apellidos;
+                        // Obtener el valor actual de la variable de sesión
+                        $session->write('login_nombre', $login_nombre);
+                    }
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('Modificaciones no guardadas. Inténtelo de nuevo más tarde.'));
+            }else{
+                $this->Flash->error(__('Las contraseñas no coinciden.'));
+            }
+        }
+
+        $this->set(compact('usuario'));
+    }
 }
