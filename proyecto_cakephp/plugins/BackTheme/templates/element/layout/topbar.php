@@ -155,15 +155,17 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <?php $clases = str_contains($menu_activo,'editadmin') ? 'active' : '' ;?>
                 <?= $this->Html->link(
-                    '<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Perfil',
+                    "<i class='fas fa-user fa-sm fa-fw mr-2 text-gray-400'></i>Perfil",
                     ['controller' => 'Usuarios', 'action' => 'editadmin', $id_login],
-                    ['class' => 'dropdown-item', 'escape' => false]
+                    ['class' => 'dropdown-item '. $clases, 'escape' => false]
                 ); ?>
+                <?php $clases = str_contains($menu_activo,'adminpass') ? 'active' : '' ;?>
                 <?= $this->Html->link(
                     '<i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>Modificar contraseña',
                     ['controller' => 'Usuarios', 'action' => 'adminpass', $id_login],
-                    ['class' => 'dropdown-item', 'escape' => false]
+                    ['class' => 'dropdown-item '. $clases, 'escape' => false]
                 ); ?>
 
                 <!-- a class="dropdown-item" href="#">

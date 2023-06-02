@@ -62,8 +62,15 @@ class AppController extends ControllerPrincipal
         $currentUrl = (new ServerRequest())->getUri()->getPath();
         // Extraer los valores de controlador y acción de la URL
         $urlSegments = explode('/', $currentUrl);
+        $menus_externos = ['editadmin','adminpass'];
         // El valor por defecto
         $menu_activo = !empty($urlSegments[2]) ? $urlSegments[2] : 'index';
+        foreach ($menus_externos as $valor) {
+            if (in_array($valor, $urlSegments)) {
+                $menu_activo = $valor;
+                continue;
+            }
+        }
         $this->set(compact('menu_activo'));
     }
 
