@@ -45,7 +45,9 @@ class PagesController extends AppController
     public function initialize(): void
     {
         parent::initialize();
-        $this->Calendarios = TableRegistry::getTableLocator()->get('Calendarios');        
+        $this->Calendarios = TableRegistry::getTableLocator()->get('Calendarios');
+        $this->Citas = TableRegistry::getTableLocator()->get('Citas');
+        $this->Usuarios = TableRegistry::getTableLocator()->get('Usuarios');
     }
 
     /**
@@ -72,13 +74,60 @@ class PagesController extends AppController
             $entity = $usuarios->newEntity($data);
             $usuarios->save($entity);
             $this->crear_calendario_completo();
-        } else {// Exite admin
+        } else { // Exite admin
             $this->fetchTable('Usuarios');
             $usuarios = $this->getTableLocator()->get('Usuarios');
             $result_datos = $usuarios->find()->where(['es_admin' => '1']);
         }
+
+        if ($this->request->is('post')) {
+            $this->fetchTable('Citas');
+            $citasTable = TableRegistry::getTableLocator()->get('Citas');
+
+            //Comprobamos que exista el usuario
+            $datos_forumario = $this->request->getData();
+            //dd($datos_forumario);
+            $correo = $datos_forumario['correo'];
+            $telefono = $datos_forumario['telefono'];
+            $exite_usuario = $this->existeUsuario($correo, $telefono);
+            //dd($exite_usuario);
+            if (!$exite_usuario) {
+                $this->Flash->success(__('Ha habido un problema al crear la cita, por favor intentelo más tarde.'));
+            } else {
+                if ($exite_usuario->es_admin) {
+                    //El administrador no puede coger cita para sí mismo
+                    $this->Flash->success(__('Este usuario ya existe y no puedo crear una cita.'));
+                } else {
+                    //creamos la cita para el usario especificado
+                    $cita = $this->Citas->newEmptyEntity();
+                    //Añadimos el usuario que hemos encontrado su ID
+                    $datos = $this->request->withData('usuario_id', $exite_usuario->id);
+                    $cita = $this->Citas->patchEntity($cita, $datos->getData());
+                    if ($this->Citas->save($cita)) {
+                        $this->Flash->success(__('Cita se ha registrado correctamente.'));
+                    }
+                }
+            }
+        }
     }
 
+    public function existeUsuario($correo, $telefono)
+    {
+        $usuariosTabla = TableRegistry::getTableLocator()->get('Usuarios');
+        $query = $usuariosTabla->find()
+            ->andWhere(['correo' => $correo])
+            ->andWhere(['telefono' => $telefono]);
+        $usuario = $query->first();
+        if ($usuario) {
+            return $usuario;
+        } else {
+            //Creamos usuario
+            $usuario = $this->Usuarios->newEmptyEntity();
+            $usuario = $this->Usuarios->patchEntity($usuario, $this->request->getData());
+            $datos_usuario = $this->Usuarios->save($usuario);
+            return $datos_usuario;
+        }
+    }
     /**
      * Creación de todas fechas en las que NO se puede tomar cita.
      */
@@ -90,7 +139,7 @@ class PagesController extends AppController
         $dia = $fechaActual->day;
         $mes = $fechaActual->month;
         $anio = $fechaActual->year;
-        
+
         $inicio = Chronos::createFromDate($anio, $mes, $dia);
         $fin = Chronos::createFromDate($anio, 12, 31);
 
@@ -107,7 +156,7 @@ class PagesController extends AppController
             }
         }
 
-       // dd($datos_alta2);
+        // dd($datos_alta2);
 
         $this->Calendarios->saveMany($datos_alta2);
     }

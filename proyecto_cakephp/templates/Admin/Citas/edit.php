@@ -31,7 +31,8 @@
                             'label' => 'Hora:',
                             'required' => true,
                             'class' => 'form-control',
-                            'error' => false //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
+                            'error' => false, //evitamos que el error se establezca debajo del campo, se mostrará en el Flash
+                            'format' => 'H:00:00'
                         ]);
                         ?>
                  </div>

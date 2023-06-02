@@ -91,8 +91,9 @@ function mostrar_datos_evento(horas_disponibles, day, month, year) {
         $(".events-container").append(lista_titulo);
         // Go through and add each event as a card to the events container
         for (var i = 0; i < horas_disponibles.length; i++) {
+            let formatea_hora= horas_disponibles[i].split(":").slice(0, 2).join(":");
             var event_card = $("<div class='event-card'></div>");
-            var event_name = $("<div class='event-name'>" + horas_disponibles[i] + ":</div>");
+            var event_name = $("<div class='event-name'>" + formatea_hora + " - </div>");
             var event_count = $("<div class='event-count'>Disponible</div>");
             var evento_add = $("<a href='#' id='add-boton'></a>");//Añadir solicitud
             //A cada horario disponible creamos su evento con la fecha y la hora disponible.
@@ -117,6 +118,8 @@ function nuevo_evento(event) {
     $("#dialog input[type=text]").val('');
     $("#dialog input[type=number]").val('');
     $(".events-container").hide(250);
+    $("#dialog #hora").val(event.data.hora); 
+    $("#dialog #fecha").val(event.data.date); 
     $("#dialog").show(250);
     // Event handler for cancel button
     $("#cancel-button").click(function () {

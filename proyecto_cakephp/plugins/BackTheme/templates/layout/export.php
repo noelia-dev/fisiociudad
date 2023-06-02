@@ -25,7 +25,7 @@
     ?>
     <?= $this->Html->css([
         'BackTheme./css/sb-admin-2.min',
-        'BackTheme./css/fontawesome.min'
+        'BackTheme./css/fontawesome.min',
     ]); ?>
 </head>
 

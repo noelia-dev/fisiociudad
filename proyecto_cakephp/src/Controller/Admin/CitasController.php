@@ -73,7 +73,7 @@ class CitasController extends AppController
     {
         $fecha = new Date($fecha);
         $fecha_formateada = $fecha->format('Y-m-d');
-      
+
         $dompdf = new Dompdf();
         $options = new Options();
         $this->paginate = [];
@@ -84,7 +84,13 @@ class CitasController extends AppController
                 'fecha' => $fecha_formateada
             ])
             ->order(['hora' => 'asc'])
-            ->contain('Usuarios');
+            ->contain('Usuarios')
+            ->formatResults(function ($results) {
+                return $results->map(function ($row) {
+                    $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
+                    return $row;
+                });
+            });
 
         $options->set('isRemoteEnabled', true);
         // Establecemos las opciones en Dompdf
@@ -92,9 +98,9 @@ class CitasController extends AppController
         // Generar el contenido HTML del PDF
         foreach ($resultado_citas as $citas) {
         };
-        
+
         $this->set('resultado_citas', $resultado_citas);
-        $html = $this->render('view_dia_export','export');
+        $html = $this->render('view_dia_export', 'export');
         // Cargar el contenido HTML en Dompdf
         $dompdf->loadHtml($html);
 
@@ -130,14 +136,17 @@ class CitasController extends AppController
         ]);*/
         //dd($fecha_selecionada);
 
-        $resultado_citas = $this->Citas->find()->where([
-            'Citas.fecha' => $fecha_selecionada
-        ]);
-        // dd($resultado_citas);
-
-
+        $resultado_citas = $this->Citas->find()
+            ->where([
+                'Citas.fecha' => $fecha_selecionada
+            ])
+            ->formatResults(function ($results) {
+                return $results->map(function ($row) {
+                    $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
+                    return $row;
+                });
+            });
         $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '5']);
-        //dd($citas_por_usuario);
         // Verificar si se encontraron registros
         if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
             foreach ($resultado_citas as $result) {
@@ -184,6 +193,8 @@ class CitasController extends AppController
                 ->formatResults(function ($results) {
                     return $results->map(function ($row) {
                         $row['fecha'] = $row['fecha']->format('d-m-Y'); // Formateo de la fecha
+                        $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
+                        $row['alta'] =  $row['alta']->format('d-m-Y, h:i'); // Formateo de la hora
                         return $row;
                     });
                 });

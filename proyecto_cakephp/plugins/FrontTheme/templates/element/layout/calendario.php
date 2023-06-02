@@ -52,51 +52,80 @@
 
 
                     <div class="events-container">
-                        
+
                     </div>
                     <div class="dialog" id="dialog">
                         <h2 class="dialog-header">Solicitar cita</h2>
-                        <form class="form" id="form">
-                            <?= $this->Form->create($this->cita, ['class' => 'cita']); ?>
+                        <?= $this->Form->create($this->cita, ['class' => 'citas']); ?>
+                        <div class="form-container" align="center">
+                            <?= $this->Form->control('nombre', [
+                                'class' => 'input_solicitud',
+                                'placeholder' => '',
+                                'label' => [
+                                    'id' => 'nombre',
+                                    'class' => 'form-label',
+                                    'text' => 'Nombre'
+                                ],
+                                'type' => 'text',
+                                'maxlength' => '36',
+                                'required' => true
+                            ]); ?>
 
-                            <div class="form-container" align="center">
-                                <?= $this->Form->control('Nombre', [
-                                    'class' => 'input_solicitud',
-                                    'placeholder' => '', 'label' => [
-                                        'id' => 'nombre',
-                                        'class' => 'form-label'
-                                    ],
-                                    'type' => 'text',
-                                    'maxlength' => '36'
-                                ]); ?>
+                            <?= $this->Form->control('apellidos', [
+                                'class' => 'input_solicitud', 'placeholder' => '',
+                                'label' => [
+                                    'id' => 'apellidos',
+                                    'class' => 'form-label',
+                                    'text' => 'Apellidos'
+                                ],
+                                'type' => 'text',
+                                'maxlength' => '36',
+                                'required' => true
+                            ]); ?>
 
-                                <?= $this->Form->control('Apellidos', [
-                                    'class' => 'input_solicitud', 'placeholder' => '', 'label' => [
-                                        'id' => 'apellidos',
-                                        'class' => 'form-label'
-                                    ],
-                                    'type' => 'text',
-                                    'maxlength' => '36'
-                                ]); ?>
+                            <?= $this->Form->control(
+                                'correo',
+                                [
+                                    'class' => 'input_solicitud', 'placeholder' => '',
+                                    'label' => [
+                                        'id' => 'correo',
+                                        'class' => 'form-label',
+                                        'text' => 'correo electrónico'
+                                    ], 'type' => 'email', 'maxlength' => '36',
+                                ]
+                            ); ?>
+                            <?= $this->Form->control(
+                                'telefono',
+                                [
+                                    'class' => 'input_solicitud', 'placeholder' => '',
+                                    'label' => [
+                                        'id' => 'telefono',
+                                        'class' => 'form-label',
+                                        'text' => 'Número de teléfono'
+                                    ], 'type' => 'string',
+                                    'required' => true
+                                ]
+                            ); ?>
 
-                                <?= $this->Form->control(
-                                    'correo electrónico',
-                                    [
-                                        'class' => 'input_solicitud', 'placeholder' => '', 'label' => [
-                                            'id' => 'correo',
-                                            'class' => 'form-label'
-                                        ], 'type' => 'email', 'maxlength' => '36'
-                                    ]
-                                ); ?>
-                                <?= $this->Form->control('Número de teléfono', ['class' => 'input_solicitud', 'placeholder' => '', 'label' => [
-                                    'id' => 'telefono',
-                                    'class' => 'form-label'
-                                ], 'type' => 'string']); ?>
+                            <?= $this->Form->control('fecha', [
+                                'class' => '', 'label' => [
+                                    'id' => 'fecha'
+                                ],
+                                'type' => 'text'
+                            ]); ?>
 
-                                <?= $this->Form->button('Cancelar', ['class' => 'button','id'=>'cancel-button','type' => 'submit']); ?>
-                                <?= $this->Form->button('Solicitar', ['class' => 'button','id'=>'ok-button','type' => 'submit']); ?>
-                            </div>
-                            <?= $this->Form->end(); ?>
+                            <?= $this->Form->control('hora', [
+                                'class' => '', 'label' => [
+                                    'id' => 'hora'
+                                ],
+                                'type' => 'text'
+                            ]); ?>
+
+
+                            <?= $this->Form->button('Cancelar', ['class' => 'button', 'id' => 'cancel-button', 'type' => 'submit']); ?>
+                            <?= $this->Form->button('Solicitar', ['class' => 'button', 'id' => 'ok-button', 'type' => 'submit']); ?>
+                        </div>
+                        <?= $this->Form->end(); ?>
                     </div>
                 </div>
             </div>

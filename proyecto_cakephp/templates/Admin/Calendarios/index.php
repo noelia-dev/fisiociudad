@@ -5,8 +5,8 @@
          <div class="col">
              <h1 class="h3 mb-2 text-gray-800">Calendarios del año <?= $anio_calendario; ?></h1>
              <?= $this->Flash->render() ?>
-             <!--   <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-         -->
+             <p class="mb-4">Eliminación multiple disponible con multiple selección</a>.</p>
+
          </div>
          <!-- Creamos el formulario para poder hacer una multiselección y eliminar una o varías fechas a la vez-->
          <?= $this->Form->create(null, ['url' => ['action' => 'delete'], 'type' => 'post', 'id' => 'fechasSeleccion']); ?>
@@ -15,8 +15,8 @@
              <?= $this->Form->button(
                     '<i class="fas fa-trash"></i>Eliminar fecha/s',
                     [
-                        'type' => 'submit', 'escapeTitle' => false, 'class' => 'btn btn-danger', 
-                       // 'onclick' => "return confirm('¿Está seguro que desea eliminar las siguientes fechas?');"
+                        'type' => 'submit', 'escapeTitle' => false, 'class' => 'btn btn-danger',
+                        // 'onclick' => "return confirm('¿Está seguro que desea eliminar las siguientes fechas?');"
                     ]
 
                 ); ?>
