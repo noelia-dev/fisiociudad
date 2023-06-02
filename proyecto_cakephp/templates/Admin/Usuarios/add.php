@@ -29,23 +29,6 @@
              <div class="form-group">
                  <?= $this->Form->control('telefono', ['class' => 'form-control form-control-user', 'placeholder' => '677777777', 'label' => '', 'type' => 'string']); ?>
              </div>
-             <div class="form-group row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <?= $this->Form->password('password', ['class' => 'form-control form-control-user', 'placeholder' => 'password', 'label' => '', 'type' => 'string']); ?>
-                </div>
-                <div class="col-sm-6">
-                    <?= $this->Form->password('confirm_password', ['class' => 'form-control form-control-user', 'placeholder' => 'password', 'label' => '', 'type' => 'string']); ?>
-                </div>
-             </div>
-             <div class="form-group">
-                 <div class="custom-control custom-checkbox small">                 
-                     <?= $this->Form->checkbox('es_admin', [
-                            'class' => '', 'id'=>'es_admin'
-                        ]); ?> 
-                        <?= $this->Form->label('es_admin', '¿Es un usuario administrador?'
-                            ,['for'=>'es_admin']);?>                     
-                 </div>
-             </div>
          </div>
          <div class="card-footer">
              <?= $this->Form->submit('Crear usuario', ['class' => 'btn btn-primary btn-user btn-block']); ?>

@@ -114,14 +114,14 @@ class UsuariosController extends AppController
             $usuario = $this->Usuarios->patchEntity($usuario, $this->request->getData());
             if ($this->request->getData('confirm_password') == $this->request->getData('password')) {
                 if ($this->Usuarios->save($usuario)) {
-                    $this->Flash->success(__('Usuario añadido correctamente.'));
+                    $this->Flash->success(__('Pacinete añadido correctamente.'));
                     return $this->redirect(['action' => 'index']);
                 }
             } else {
                 $this->Flash->error(__('Las contraseñas no coinciden.'));
             }
 
-            $this->Flash->error(__('Usuario no guardado. Inténtelo de nuevo más tarde.'));
+            $this->Flash->error(__('Pacinete no guardado. Inténtelo de nuevo más tarde.'));
         }
         $this->set(compact('usuario'));
     }
@@ -141,7 +141,7 @@ class UsuariosController extends AppController
 
             $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
             if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success(__('Usuario modificado correctamente.'));
+                $this->Flash->success(__('Pacinete modificado correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
@@ -163,9 +163,9 @@ class UsuariosController extends AppController
         $usuario = $this->Usuarios->get($id);
         $usuario = $this->Usuarios->patchEntity($usuario, ['eliminado' => date('Y-m-d H:i:s')]);
         if ($this->Usuarios->save($usuario)) {
-            $this->Flash->success(__('El usuario ha sido eliminado correctamente.'));
+            $this->Flash->success(__('El pacinete ha sido eliminado correctamente.'));
         } else {
-            $this->Flash->error(__('El usuario NO ha podido ser eliminado. Por favor, intentelo de nuevo.'));
+            $this->Flash->error(__('El pacinete NO ha podido ser eliminado. Por favor, intentelo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);
@@ -199,22 +199,8 @@ class UsuariosController extends AppController
             $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
 
             if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success(__('Usuario modificado correctamente.'));
+                $this->Flash->success(__('Pacinete modificado correctamente.'));
                 $this->request->getSession()->renew(); //por si ha cambiado el nombre del usuario
-
-
-                $auth = $this->request->getAttribute('authentication')->getIdentity();
-
-                // Verificar si el objeto Auth es válido
-                /* if ($auth instanceof \App\Model\Entity\Usuario) {
-                        // Modificar las propiedades del objeto Auth
-                        $auth->nombre = 'Nuevo nombre';
-                        $auth->email = 'nuevo@email.com';
-
-                        // Guardar los cambios en la sesión
-                        $this->request->getSession()->write($this->Authentication->getConfig('sessionKey'), $auth);
-                    }*/
-
 
                 $session = $this->request->getSession();
                 if ($session->check('login_nombre')) {
