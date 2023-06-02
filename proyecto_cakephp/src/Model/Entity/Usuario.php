@@ -55,9 +55,9 @@ class Usuario extends Entity
         'password',
     ];
 
-        /**
+     /**
      * Hashage de password.
-     * Será llamado automáticamente para crea una password al crear un usuario
+     * Será llamado automáticamente al modificar el password
      */
 
      protected function _setPassword($value)

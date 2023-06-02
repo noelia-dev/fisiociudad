@@ -44,10 +44,10 @@
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>-->
-                <!-- Counter - Alerts 
+        <!-- Counter - Alerts 
                 <span class="badge badge-danger badge-counter">3+</span>
             </a>-->
-            <!-- Dropdown - Alerts 
+        <!-- Dropdown - Alerts 
             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
                     Alerts Center
@@ -93,10 +93,10 @@
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>-->
-                <!-- Counter - Messages 
+        <!-- Counter - Messages 
                 <span class="badge badge-danger badge-counter">7</span>
             </a>-->
-            <!-- Dropdown - Messages 
+        <!-- Dropdown - Messages 
             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
                     Message Center
@@ -150,17 +150,23 @@
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?=  $login_nombre ?></span>
-                <?= $this->Html->image('perfil.jpg', ['alt' => 'miperfil', 'class'=>'img-profile rounded-circle'])?>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $login_nombre ?></span>
+                <?= $this->Html->image('perfil.jpg', ['alt' => 'miperfil', 'class' => 'img-profile rounded-circle']) ?>
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-            <?= $this->Html->link(
-                        '<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Perfil',
-                        ['controller' => 'Usuarios', 'action' => 'editadmin', $id_login],['class'=>'dropdown-item','escape'=> false]
-                    ); ?>
+                <?= $this->Html->link(
+                    '<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Perfil',
+                    ['controller' => 'Usuarios', 'action' => 'editadmin', $id_login],
+                    ['class' => 'dropdown-item', 'escape' => false]
+                ); ?>
+                <?= $this->Html->link(
+                    '<i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>Modificar contraseña',
+                    ['controller' => 'Usuarios', 'action' => 'adminpass', $id_login],
+                    ['class' => 'dropdown-item', 'escape' => false]
+                ); ?>
 
-            <!-- a class="dropdown-item" href="#">
+                <!-- a class="dropdown-item" href="#">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Perfil
                 </a-->
@@ -168,17 +174,19 @@
                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                     Configuración
                 </a-->
-                                <!--<a class="dropdown-item" href="#">
+                <!--<a class="dropdown-item" href="#">
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     Activity Log
                 </a>-->
-                <div class="dropdown-divider"></div>                  
-                    <?= $this->Html->link(
-                        '<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar sesión',
-                        ['controller' => 'Usuarios', 'action' => 'logout'
-                        ],['class'=>'dropdown-item','escape'=> false]
-                    ); ?>
-                
+                <div class="dropdown-divider"></div>
+                <?= $this->Html->link(
+                    '<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar sesión',
+                    [
+                        'controller' => 'Usuarios', 'action' => 'logout'
+                    ],
+                    ['class' => 'dropdown-item', 'escape' => false]
+                ); ?>
+
             </div>
         </li>
     </ul>

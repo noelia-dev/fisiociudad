@@ -197,16 +197,16 @@ class UsuariosController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
 
             $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
-            if ($this->request->getData('confirm_password') == $this->request->getData('password')) {
-                if ($this->Usuarios->save($usuario)) {
-                    $this->Flash->success(__('Usuario modificado correctamente.'));
-                    $this->request->getSession()->renew();//por si ha cambiado el nombre del usuario
+
+            if ($this->Usuarios->save($usuario)) {
+                $this->Flash->success(__('Usuario modificado correctamente.'));
+                $this->request->getSession()->renew(); //por si ha cambiado el nombre del usuario
 
 
-                    $auth = $this->request->getAttribute('authentication')->getIdentity();
+                $auth = $this->request->getAttribute('authentication')->getIdentity();
 
-                    // Verificar si el objeto Auth es válido
-                   /* if ($auth instanceof \App\Model\Entity\Usuario) {
+                // Verificar si el objeto Auth es válido
+                /* if ($auth instanceof \App\Model\Entity\Usuario) {
                         // Modificar las propiedades del objeto Auth
                         $auth->nombre = 'Nuevo nombre';
                         $auth->email = 'nuevo@email.com';
@@ -216,23 +216,38 @@ class UsuariosController extends AppController
                     }*/
 
 
-                    $session = $this->request->getSession();
-                    if ($session->check('login_nombre')) {
-                        dd('dd');
-                        $usuario = $this->Usuarios->get($id);
-                        $login_nombre = $usuario->nombre;
-                        $login_nombre .= ' ' . $usuario->apellidos;
-                        // Obtener el valor actual de la variable de sesión
-                        $session->write('login_nombre', $login_nombre);
-                    }
-                    return $this->redirect(['action' => 'index']);
+                $session = $this->request->getSession();
+                if ($session->check('login_nombre')) {
+                    dd('dd');
+                    $usuario = $this->Usuarios->get($id);
+                    $login_nombre = $usuario->nombre;
+                    $login_nombre .= ' ' . $usuario->apellidos;
+                    // Obtener el valor actual de la variable de sesión
+                    $session->write('login_nombre', $login_nombre);
                 }
-                $this->Flash->error(__('Modificaciones no guardadas. Inténtelo de nuevo más tarde.'));
-            }else{
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Modificaciones no guardadas. Inténtelo de nuevo más tarde.'));
+        }
+        $this->set(compact('usuario'));
+    }
+    /**
+     * Permite el cambio de contraseña del usuario administrador
+     */
+    public function adminpass($id = null)
+    {
+        $usuario = $this->Usuarios->get($id);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
+            if ($this->request->getData('confirm_password') == $this->request->getData('password')) {
+                if ($this->Usuarios->save($usuario)) {
+                    $this->Flash->success(__('Constraseña modificado correctamente.'));
+                    return $this->redirect(['controller' => 'Usuarios', 'action' => 'logout']);
+                }
+            } else {
                 $this->Flash->error(__('Las contraseñas no coinciden.'));
             }
         }
-
         $this->set(compact('usuario'));
     }
 }
