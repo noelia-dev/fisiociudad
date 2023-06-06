@@ -32,6 +32,7 @@
                              <tr>
                                  <th>Paciente</th>
                                  <th>Hora</th>
+                                 <th>Nota paciente</th>
                                  <th>Nota profesional</th>
                                  <th>Fecha solicitud</th>
                                  <th></th>
@@ -45,6 +46,7 @@
                                      <td class="aling-middle"><?= $cita->hora ?></td>
                                      <td class="aling-middle"><?= $cita->nota_paciente ?></td>
                                      <td class="aling-middle"><?= $cita->nota_profesional ?></td>
+                                     <td class="aling-middle"><?= $cita->alta ?></td>
                                      <td class="aling-right">
                                          <?= $this->Html->link('<i class="fas fa-edit"></i>', ['action' => 'edit', $cita->id], ['class' => 'btn btn-warning', 'escape' => false]) ?>
                                          <?= $this->Html->link('<i class="fas fa-trash"></i>', ['action' => 'delete', $cita->id], [

@@ -155,9 +155,6 @@ class PagesController extends AppController
                 $datos_alta2[] = $datos_alta;
             }
         }
-
-        // dd($datos_alta2);
-
         $this->Calendarios->saveMany($datos_alta2);
     }
 }

@@ -87,7 +87,7 @@ class CitasController extends AppController
             ->contain('Usuarios')
             ->formatResults(function ($results) {
                 return $results->map(function ($row) {
-                    $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
+                    $row['hora'] =  date('H:i', strtotime($row['hora'])); // Formateo de la hora
                     return $row;
                 });
             });
@@ -142,7 +142,8 @@ class CitasController extends AppController
             ])
             ->formatResults(function ($results) {
                 return $results->map(function ($row) {
-                    $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
+                    $row['hora'] =  date('H:i', strtotime($row['hora'])); // Formateo de la hora
+                    $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora
                     return $row;
                 });
             });
@@ -193,8 +194,8 @@ class CitasController extends AppController
                 ->formatResults(function ($results) {
                     return $results->map(function ($row) {
                         $row['fecha'] = $row['fecha']->format('d-m-Y'); // Formateo de la fecha
-                        $row['hora'] =  date('h:i', strtotime($row['hora'])); // Formateo de la hora
-                        $row['alta'] =  $row['alta']->format('d-m-Y, h:i'); // Formateo de la hora
+                        $row['hora'] =  date('H:i', strtotime($row['hora'])); // Formateo de la hora
+                        $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora
                         return $row;
                     });
                 });

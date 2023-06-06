@@ -30,13 +30,14 @@
 </head>
 
 <body id="bg-gradient-primary">
-    <!-- Contenido página -->
-    <div class="container"> 
 
-            <?= $this->fetch('content'); ?>
-           
+    <!-- Contenido página -->
+    <div class="container">
+        <?= $this->Flash->render(); ?>
+        <?= $this->fetch('content'); ?>
+
     </div>
-     <!-- Pie de página -->
+    <!-- Pie de página -->
     <?= $this->Element('BackTheme.layout/footer'); ?>
 
     <!-- Carga de scripts -->

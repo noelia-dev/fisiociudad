@@ -85,7 +85,7 @@ class UsuariosController extends AppController
                 ->where(['es_admin is not' => '1'])
                 ->formatResults(function ($results) {
                     return $results->map(function ($row) {
-                        $row['alta'] =  $row['alta']->format('d-m-Y, h:i'); // Formateo de la hora
+                        $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora
                         return $row;
                     });
                 })
