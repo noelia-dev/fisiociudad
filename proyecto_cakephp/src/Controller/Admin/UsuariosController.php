@@ -7,6 +7,7 @@ namespace App\Controller\Admin;
 use App\Controller\Admin\AppController;
 use Cake\Event\EventInterface;
 use Cake\Datasource\Pagination\NumericPaginator;
+use Cake\Mailer\Mailer;
 
 /**
  * Usuarios Controller
@@ -44,11 +45,13 @@ class UsuariosController extends AppController
         if ($resultado->isValid()) {
             return $this->redirect(['controller' => 'Usuarios', 'action' => 'index']);
         }
-        if ($this->getRequest()->is('post') && !$resultado->isValid()) {
-            $this->Flash->error('Conexión no establecida');
-        } else {
-            $this->Flash->success('Conexión establecida');
-        }
+        if ($this->getRequest()->is('post')){
+            if( !$resultado->isValid()) {
+                $this->Flash->error('Conexión no establecida');
+            } else {
+                $this->Flash->success('Conexión establecida, datos incorrectos. Vuelva a intentarlo.');
+            }
+        } 
         //Cambiamos el theme a utilizar
         $this->viewBuilder()->setLayout('BackTheme.login');
     }
@@ -148,7 +151,7 @@ class UsuariosController extends AppController
 
             $user = $this->Usuarios->patchEntity($usuario, $this->request->getData());
             if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success(__('Pacinete modificado correctamente.'));
+                $this->Flash->success(__('Paciente modificado correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
@@ -242,5 +245,20 @@ class UsuariosController extends AppController
             }
         }
         $this->set(compact('usuario'));
+    }
+
+    public function passwordRecup()
+    {
+        $this->viewBuilder()->setLayout('BackTheme.login');
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $email = new Mailer('default');
+         //   dd($this->request->getData('correo'));
+            $email->setFrom(['me@example.com' => 'My Site'])
+                ->setTo($this->request->getData('correo'))
+                ->setSubject('Prueba de correo electrónico')
+                ->deliver('Contenido del correo electrónico');
+            $this->Flash->success(__('Correo enviado correctamente.'));
+        }
+        //$this->viewBuilder()->setLayout('BackTheme.password_recup');
     }
 }
