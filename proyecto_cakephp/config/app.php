@@ -188,7 +188,7 @@ return [
         'skipLog' => [],
         'log' => true,
         'trace' => true,
-        'ignoredDeprecationPaths' => [],
+        'ignoredDeprecationPaths' => ['vendor/cakephp/cakephp/src/Controller/ComponentRegistry.php'],
     ],
 
     /*
