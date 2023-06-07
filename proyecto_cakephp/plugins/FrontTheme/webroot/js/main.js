@@ -7,8 +7,8 @@
         var date = new Date();
         var today = date.getDate();
         //evitamos que al final de mes se muestre el mes en el que no se podrá coger cita.
-        if( days_in_month(date.getMonth(), date.getFullYear()) == today){
-            date.setMonth(date.getMonth()+1);
+        if (days_in_month(date.getMonth(), date.getFullYear()) == today) {
+            date.setMonth(date.getMonth() + 1);
             date.setDate(1);
             today = date.getDate();
         }
@@ -19,10 +19,10 @@
         $("#add-button").click({ date: date }, new_event);//Añadir solicitud
         
         // Set current month as active
-        $(".months-row").children().eq(date.getMonth()-1).addClass("active-month");
+        $(".months-row").children().eq(date.getMonth() - 1).addClass("active-month");
         init_calendar(date);
         var events = check_events(today, date.getMonth() + 1, date.getFullYear());
-       // show_events(events, months[date.getMonth()], today + 1, date.getFullYear());
+        // show_events(events, months[date.getMonth()], today + 1, date.getFullYear());
     });
 
     // Initialize the calendar by appending the HTML dates
@@ -36,15 +36,15 @@
         var year = date.getFullYear();
         var calend_day = date.getDate();
         var day_count = days_in_month(month, year);
-        
+
         var row = $("<tr class='table-row'></tr>");
-        
-        
+
+
         console.log(month);
         // Set date to 1 to find the first day of the month
         date.setDate(1);
         //Día de comienzo de la semana
-        var first_day = date.getDay()-1;
+        var first_day = date.getDay() - 1;
         console.log(first_day);
         //Creamos la fecha en un array para poder marcar el día actual
         let fecha_hoy;
@@ -78,7 +78,7 @@
                 var curr_date = $("<td class='table-date event-date'>" + day + "</td>");
                 var events = check_events(day, month + 1, year);
                 let dia_calendario = [year, month + 1, day].join('-');
-                
+
                 //Si es hoy, lo marcamos.
                 if (Date.parse(dia_calendario) == Date.parse(fecha_hoy)) {
                     //console.log(day, month + 1, year);   
@@ -90,55 +90,55 @@
                 var fecha_calend = new Date(dia_calendario);
                 let fecha_calendario = [year, (month + 1).toString().padStart(2, "0"),
                     (day).toString().padStart(2, "0")].join('-');
-                
+
                 // Añade 1 día a la fecha
-                fecha.setDate(fecha.getDate() + 1); 
+                fecha.setDate(fecha.getDate() + 1);
                 //console.log(fecha_manana);
-                if(fecha.getMonth() == fecha_calend.getMonth() && 
-                    fecha.getFullYear() == fecha_calend.getFullYear()){
-                    if(fecha.getTime() == Date.parse(dia_calendario)){
+                if (fecha.getMonth() == fecha_calend.getMonth() &&
+                    fecha.getFullYear() == fecha_calend.getFullYear()) {
+                    if (fecha.getTime() == Date.parse(dia_calendario)) {
                         curr_date.addClass("active-date");
-                        listar_disponibilidad( month + 1, day, year);
+                        listar_disponibilidad(month + 1, day, year);
                     }
-                }else if(fecha_calend.getDate() == dia_semana_ppl
-                        && noLaboral.indexOf(fecha_calendario) < 0 ){
+                } else if (fecha_calend.getDate() == dia_semana_ppl
+                    && noLaboral.indexOf(fecha_calendario) < 0) {
                     //El primer día del mes será el que esta marcado, pero si no hay disponibilidad
                     //se debe marcar el siguiente día
                     curr_date.addClass("active-date");
-                    listar_disponibilidad( month , day, year);
-                }else if(fecha_calend.getDate() == dia_semana_ppl){
+                    listar_disponibilidad(month, day, year);
+                } else if (fecha_calend.getDate() == dia_semana_ppl) {
                     //intentamos asignar el día marcado al día siguiente, hasta encontrar disponbilidad
                     //en el mes.
                     dia_semana_ppl++;
                 }
-                
 
-                
-               /* if (today + 1 === day && $(".active-date").length === 0
-                    || Date.parse(dia_calendario) + 1 == Date.parse(fecha_hoy)) {
-                      console.log(today);
-                    curr_date.addClass("active-date");
-                    //show_events(events, months[month], day, year);
-                    listar_disponibilidad( month + 1, day, year);
-                }
-                if (Date.parse(dia_calendario) == Date.parse(fecha_hoy)) {
-                    //console.log(day, month + 1, year);   
-                    curr_date.addClass("dia_hoy");
-                }
-                // If this date has any events, style it with .event-date
-                if (events.length !== 0) {
-                    console.log(today);
 
-                    curr_date.addClass("event-date");
-                }*/
+
+                /* if (today + 1 === day && $(".active-date").length === 0
+                     || Date.parse(dia_calendario) + 1 == Date.parse(fecha_hoy)) {
+                       console.log(today);
+                     curr_date.addClass("active-date");
+                     //show_events(events, months[month], day, year);
+                     listar_disponibilidad( month + 1, day, year);
+                 }
+                 if (Date.parse(dia_calendario) == Date.parse(fecha_hoy)) {
+                     //console.log(day, month + 1, year);   
+                     curr_date.addClass("dia_hoy");
+                 }
+                 // If this date has any events, style it with .event-date
+                 if (events.length !== 0) {
+                     console.log(today);
+ 
+                     curr_date.addClass("event-date");
+                 }*/
                 //Establece el evento a aquellas fechas que son superiores a la actual.
                 //Evitamos con esto pedir cita con fecha anterior
-                
+
                 //Sólo tendrán eventos aquellos diás que no estén en la tabla calendarios
-                if (Date.parse(dia_calendario) > Date.parse(fecha_hoy) 
-                        && noLaboral.indexOf(fecha_calendario) < 0) {
+                if (Date.parse(dia_calendario) > Date.parse(fecha_hoy)
+                    && noLaboral.indexOf(fecha_calendario) < 0) {
                     curr_date.click({ events: events, month: months[month], day: day, year: year, mes: month + 1 }, date_click);
-                }else{
+                } else {
                     curr_date.addClass("noactive-date");
                 }
                 row.append(curr_date);
@@ -194,9 +194,13 @@
         $("#dialog").hide(250);
         var date = event.data.date;
         var new_year = date.getFullYear() - 1;
-        $("year").html(new_year);
-        date.setFullYear(new_year);
-        init_calendar(date);
+        var date_actual = new Date();
+        if (new_year >= date_actual.getFullYear()) {
+            $("year").html(new_year);
+            date.setFullYear(new_year);
+            init_calendar(date);
+        }
+
     }
 
     // Event handler for clicking the new event button

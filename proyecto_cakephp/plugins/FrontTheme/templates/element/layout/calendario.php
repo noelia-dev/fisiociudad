@@ -1,4 +1,4 @@
-<section class="ftco-section">
+<section>
     <div class="row"> 
         <div class="col-md-12">
             <div class="content w-100">
