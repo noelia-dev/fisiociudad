@@ -83,6 +83,7 @@ class UsuariosController extends AppController
         $usuarios = $this->paginate(
             $this->Usuarios->find()
                 ->where(['es_admin is not' => '1'])
+                ->order(['alta' => 'desc'])
                 ->formatResults(function ($results) {
                     return $results->map(function ($row) {
                         $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora

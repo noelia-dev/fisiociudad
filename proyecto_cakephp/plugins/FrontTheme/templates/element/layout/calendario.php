@@ -40,7 +40,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <button class="button" id="add-button">Solicitar cita</button>
+                        <!--button class="button" id="add-button">Solicitar cita</button-->
                     </div>
                 </div>
 
@@ -105,14 +105,14 @@
                             'class' => '', 'label' => [
                                 'id' => 'fecha'
                             ],
-                            'type' => 'text'
+                            'type' => 'hidden'
                         ]); ?>
 
                         <?= $this->Form->control('hora', [
                             'class' => '', 'label' => [
                                 'id' => 'hora'
                             ],
-                            'type' => 'text'
+                            'type' => 'hidden'
                         ]); ?>
 
 
