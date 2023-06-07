@@ -253,11 +253,15 @@ class UsuariosController extends AppController
         $this->viewBuilder()->setLayout('BackTheme.login');
         if ($this->request->is(['patch', 'post', 'put'])) {
             $email = new Mailer('default');
-         //   dd($this->request->getData('correo'));
-            $email->setFrom(['me@example.com' => 'My Site'])
+          //  dd($this->request->getData('correo'));
+            $email->setFrom('ncortijod01@iesalbarregas.es')
                 ->setTo($this->request->getData('correo'))
+                ->setEmailFormat('html')
                 ->setSubject('Prueba de correo electrónico')
-                ->deliver('Contenido del correo electrónico');
+                ->viewBuilder()
+                    ->setTemplate('prueba');
+
+            $email->deliver('Contenido del correo electrónico');
             $this->Flash->success(__('Correo enviado correctamente.'));
         }
         //$this->viewBuilder()->setLayout('BackTheme.password_recup');
