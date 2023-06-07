@@ -64,11 +64,11 @@ class PagesController extends AppController
             date_default_timezone_set("Europe/Madrid");
             $data = [
                 'es_admin' => '1',
-                'correo' => 'noeliacortijo@gmail.com',
+                'correo' => 'admin@admin.com',
                 'password'  => 'admin',
-                'nombre' => 'Noelia',
-                'apellidos' => 'Cortijo Durán',
-                'telefono' => '679663692'
+                'nombre' => 'Usuario',
+                'apellidos' => 'Apellido Prueba',
+                'telefono' => '666777888'
             ];
             $usuarios = $this->getTableLocator()->get('Usuarios');
             $entity = $usuarios->newEntity($data);
