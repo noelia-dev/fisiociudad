@@ -11,7 +11,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Bienvenido</h1>
                             </div>
-                            <?= $this->Form->create(null,['class'=>'usuario']) ?>
+                            <?= $this->Form->create(null, ['class' => 'usuario']) ?>
                             <div class="form-group">
                                 <?= $this->Form->control('correo', [
                                     'type' => 'email', 'label' => '', 'class' => 'form-control form-control-user'
@@ -19,12 +19,28 @@
                                 <!--input name="correo" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..."-->
                             </div>
                             <div class="form-group">
-                                <?= $this->Form->control('password',[
+                                <?= $this->Form->control('password', [
                                     'type' => 'password', 'label' => '', 'class' => 'form-control form-control-user'
                                 ]) ?>
                                 <!--input name="password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password"-->
                             </div>
-                            <?= $this->Form->submit('Acceder', ['class' => 'btn btn-primary btn-user btn-block']); ?>
+                            <div class="form-group">
+                                <div style="display: flex;" class="justify-content-center">
+                                    <?= $this->Form->submit('Acceder', ['class' => 'btn btn-primary btn-user btn-block']); ?>
+                                    <div class="submit">
+                                        <?= $this->Form->reset('Cancelar', ['class' => 'btn btn-secondary btn-user btn-block ml-2']); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <!--a class="small" href="forgot-password.html">He olvidado la contraseña</a-->
+                                <?= $this->Html->link(
+                                    ' <div class="sidebar-brand-text mx-3">He olvidado la contraseña</div>',
+                                    [ 'action' => 'passwordRecup'],
+                                    ['class' => 'small', 'escape' => false],
+                                ); ?>
+                            </div>
                             <?= $this->Form->end(); ?>
                         </div>
                     </div>

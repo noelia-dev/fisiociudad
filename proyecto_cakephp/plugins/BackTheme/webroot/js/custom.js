@@ -34,4 +34,25 @@ $(document).ready(function () {
       $('#fecha_fin').toggleClass('d-none');
 
    });
+
+   document.addEventListener('DOMContentLoaded', function() {
+      var deleteLinks = document.getElementsByClassName('delete-link');
+      var deleteConfirmButton = document.getElementsByClassName('delete-confirm')[0];
+      Array.from(deleteLinks).forEach(function(link) {
+          link.addEventListener('click', function(event) {
+              event.preventDefault();
+              var postId = this.getAttribute('data-id');
+              deleteConfirmButton.setAttribute('data-id', postId);
+          });
+      });
+      deleteConfirmButton.addEventListener('click', function() {
+          var postId = this.getAttribute('data-id');
+          // Aquí puedes hacer una petición AJAX para eliminar el post utilizando el ID
+          // o redireccionar al controlador para eliminar el post
+          console.log('Eliminar post con ID: ' + postId);
+          // Cierra el modal de confirmación
+          var deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+          deleteModal.hide();
+      });
+  });
 });

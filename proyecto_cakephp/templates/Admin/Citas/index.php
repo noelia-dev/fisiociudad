@@ -2,13 +2,11 @@
  <div class="container-fluid mt-5">
 
      <div class="row">
-         <div class="col">
-             <h1 class="h3 mb-2 text-gray-800">Citas del año <?= $anio_calendario; ?></h1>
+         <div class="col menu_titulo">
+             <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-list-ol"></i> Citas del año <?= $anio_calendario; ?></h1>
              <?= $this->Flash->render() ?>
-             <!--   <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-         -->
          </div>
-         <div class="col text-right">
+         <div class="col text-right d-flex justify-content-center">
              <?= $this->Html->link('<i class="fas fa-plus"></i>Añadir cita', ['action' => 'add'], ['class' => 'btn btn-success', 'escape' => false]) ?>
          </div>
      </div>
@@ -30,14 +28,15 @@
                         $i = 0;
                         if ($month % 3 == 0) { //Meses divisibles por 3
                     ?>
-                         <div class="col-sm-4">
+                         <div class="col">
                          <?php } elseif (($month + 1) % 3 == 0) { //NO divisibles
                             ?>
-                             <div class="col-sm-4">
+                             <div class="col">
                              <?php } else { ?>
                                  <div class="row">
-                                     <div class="col-sm-4">
+                                     <div class="col">
                                      <?php } ?>
+                                     <div class="table-responsive">
                                      <p class="h2"><?= $this->nombres_mesesES[$month - 1]; ?></p>
                                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                          <?php foreach ($weeks as $week => $days) {
@@ -77,6 +76,7 @@
                                              </tr>
                                          <?php } ?>
                                      </table>
+                                     </div>
                                      <?php
                                         if ($month % 3 == 0) { //Meses divisibles por 3
                                         ?>

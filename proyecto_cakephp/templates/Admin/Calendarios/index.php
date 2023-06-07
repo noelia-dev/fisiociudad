@@ -2,15 +2,15 @@
  <div class="container-fluid mt-5">
 
      <div class="row">
-         <div class="col">
-             <h1 class="h3 mb-2 text-gray-800">Calendarios del año <?= $anio_calendario; ?></h1>
+         <div class="col menu_titulo">
+             <h1 class="h3 mb-2 text-gray-800"><i class="fas fa-calendar-alt"></i> Calendario del año <?= $anio_calendario; ?></h1>
              <?= $this->Flash->render() ?>
              <p class="mb-4">Eliminación multiple disponible con multiple selección</a>.</p>
 
          </div>
          <!-- Creamos el formulario para poder hacer una multiselección y eliminar una o varías fechas a la vez-->
          <?= $this->Form->create(null, ['url' => ['action' => 'delete'], 'type' => 'post', 'id' => 'fechasSeleccion']); ?>
-         <div class="col text-right">
+         <div class="col text-right  d-flex justify-content-center">
              <?= $this->Html->link('<i class="fas fa-plus"></i>Añadir fecha', ['action' => 'add'], ['class' => 'btn btn-success', 'escape' => false]) ?>
              <?= $this->Form->button(
                     '<i class="fas fa-trash"></i>Eliminar fecha/s',
@@ -38,14 +38,15 @@
                         $i = 0;
                         if ($month % 3 == 0) { //Meses divisibles por 3
                     ?>
-                         <div class="col-sm-4">
+                         <div class="col-4 col-sm-12">
                          <?php } elseif (($month + 1) % 3 == 0) { //NO divisibles
                             ?>
-                             <div class="col-sm-4">
+                             <div class="col-4 col-sm-12">
                              <?php } else { ?>
                                  <div class="row">
-                                     <div class="col-sm-4">
+                                     <div class="col-4 col-sm-12">
                                      <?php } ?>
+                                     <div class="table-responsive">
                                      <p class="h2"><?= $this->nombres_mesesES[$month - 1]; ?></p>
                                      <table class="table table-bordered" id="CalendarioCompleto" width="100%" cellspacing="0">
                                          <?php foreach ($weeks as $week => $days) {
@@ -77,6 +78,7 @@
                                          <?php } ?>
                                      </table>
 
+                                     </div>
                                      <?php
                                         if ($month % 3 == 0) { //Meses divisibles por 3
                                         ?>
