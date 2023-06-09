@@ -24449,3 +24449,2194 @@ Stack Trace:
 Request URL: /admin/usuarios/delete
 Referer URL: http://localhost:8765/admin/usuarios
 Client IP: 127.0.0.1
+2023-06-07 23:17:44 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/bootstrap.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:17:45 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/popper.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:22:37 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/popper.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:22:38 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/bootstrap.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:22:56 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/popper.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:22:57 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/bootstrap.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:24:30 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/popper.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:24:31 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/bootstrap.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:26:03 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:26:04 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/popper.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:26:05 error: [Cake\Http\Exception\MissingControllerException] Controller class Front_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Front_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Front_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /front_theme/js/bootstrap.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:33:11 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:33:14 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:33:28 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:33:30 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:33:58 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:52:12 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:260
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-07 23:57:42 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-07 23:57:43 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:261
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-07 23:59:25 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:261
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:06:09 error: [Cake\View\Exception\MissingTemplateException] Template file `email/html/prueba.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/templates/email/html/prueba.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/email/html/prueba.php`
+ in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'email/html/prueba.php',
+  'paths' => 
+  array (
+    0 => '/srv/project_nco/fisiociudad/proyecto_cakephp/templates/',
+    1 => '/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php:805
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:387
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:404
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:07:06 error: [Cake\View\Exception\MissingTemplateException] Template file `email/html/prueba.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/templates/email/html/prueba.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/email/html/prueba.php`
+ in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'email/html/prueba.php',
+  'paths' => 
+  array (
+    0 => '/srv/project_nco/fisiociudad/proyecto_cakephp/templates/',
+    1 => '/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php:805
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:387
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:404
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:07:35 error: [Cake\Http\Exception\MissingControllerException] Controller class Back_theme could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Back_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Back_theme',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /back_theme/js/bootstrap.bundle.min.js.map
+Client IP: 127.0.0.1
+2023-06-08 00:08:05 error: [Cake\View\Exception\MissingTemplateException] Template file `email/html/prueba.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/templates/email/html/prueba.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/email/html/prueba.php`
+ in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'email/html/prueba.php',
+  'paths' => 
+  array (
+    0 => '/srv/project_nco/fisiociudad/proyecto_cakephp/templates/',
+    1 => '/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php:805
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:387
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:404
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:10:25 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:263
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:14:29 error: [Cake\View\Exception\MissingTemplateException] Template file `email/html/confirmacion.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/templates/email/html/confirmacion.php`
+- `/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/email/html/confirmacion.php`
+ in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'email/html/confirmacion.php',
+  'paths' => 
+  array (
+    0 => '/srv/project_nco/fisiociudad/proyecto_cakephp/templates/',
+    1 => '/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php:805
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:387
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:404
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:14:57 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:16:54 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:22:27 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:27:18 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:27:22 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:28:32 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:28:38 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:30:14 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:34:27 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:34:56 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:35:53 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:35:54 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:36:39 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:36:42 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:36:43 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:37:01 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:38:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Sss could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Sss',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Sss',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /sss
+Client IP: 127.0.0.1
+2023-06-08 00:39:53 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:264
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+2023-06-08 00:40:06 error: [Cake\Http\Exception\MissingControllerException] Controller class Usud could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Usud',
+  'plugin' => NULL,
+  'prefix' => 'Admin',
+  '_ext' => NULL,
+  'class' => 'Usud',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:42:16 error: [Error] Class 'Cake\Routing\Route' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php on line 29
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:198
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:135
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:95
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:155
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:42:17 error: [Error] Class 'Cake\Routing\Route' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php on line 29
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:198
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:135
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:95
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:155
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /debug-kit/toolbar/c964bd4a-2e15-4be0-86e8-2532ae468f5d
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:44:02 error: [Cake\Http\Exception\MissingControllerException] Controller class Usud could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Usud',
+  'plugin' => NULL,
+  'prefix' => 'Admin',
+  '_ext' => NULL,
+  'class' => 'Usud',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:48:27 error: [Cake\Http\Exception\MissingControllerException] Controller class Usud could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Usud',
+  'plugin' => NULL,
+  'prefix' => 'Admin',
+  '_ext' => NULL,
+  'class' => 'Usud',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:48:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Usud could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Usud',
+  'plugin' => NULL,
+  'prefix' => 'Admin',
+  '_ext' => NULL,
+  'class' => 'Usud',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:50:14 error: [Cake\Http\Exception\MissingControllerException] Controller class Usud could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Usud',
+  'plugin' => NULL,
+  'prefix' => 'Admin',
+  '_ext' => NULL,
+  'class' => 'Usud',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+2023-06-08 00:50:22 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:51:04 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:51:45 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:55:29 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:55:30 error: [Error] Call to undefined method Cake\Http\Response::getRequest() in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php on line 20
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /debug-kit/toolbar/e97738ba-311d-4e70-9591-708206868595
+Referer URL: http://localhost:8765/dad
+Client IP: 127.0.0.1
+2023-06-08 00:55:37 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:55:37 error: [Error] Call to undefined method Cake\Http\Response::getRequest() in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php on line 20
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /debug-kit/toolbar/8687017f-af4d-4b1b-80ae-0b43a29d7365
+Referer URL: http://localhost:8765/dad
+Client IP: 127.0.0.1
+2023-06-08 00:56:25 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:56:26 error: [BadMethodCallException] Method "getApplication()" does not exist in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ServerRequest.php on line 474
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:25
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /debug-kit/toolbar/2bc502f0-681c-44ef-8349-4c6483727fe2
+Referer URL: http://localhost:8765/dad
+Client IP: 127.0.0.1
+2023-06-08 00:57:31 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:57:44 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:57:59 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:58:15 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:58:33 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:59:08 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:59:09 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:59:51 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 00:59:54 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 01:00:06 error: [Cake\Http\Exception\MissingControllerException] Controller class Dad could not be found. in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 348
+Exception Attributes: array (
+  'controller' => 'Dad',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'Dad',
+)
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:318
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Middleware/NotFoundRedirectMiddleware.php:17
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /dad
+Client IP: 127.0.0.1
+2023-06-08 01:03:53 error: [Error] Class 'App\NoEncontradoRedirectMiddleware' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Application.php on line 124
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:83
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+2023-06-08 01:04:30 error: [Error] Class 'App\Middleware\NoEncontradoRedirectMiddleware' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Application.php on line 124
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:83
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+2023-06-08 01:04:32 error: [Error] Class 'App\Middleware\NoEncontradoRedirectMiddleware' not found in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Application.php on line 124
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:83
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+2023-06-10 01:07:51 error: [Cake\Core\Exception\CakeException] Could not send email: unknown in /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php on line 94
+Stack Trace:
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Transport/MailTransport.php:64
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Mailer/Transport/DebugKitTransport.php:78
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php:406
+- /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:270
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1

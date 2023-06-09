@@ -34612,3 +34612,158 @@ Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cak
 Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
 [main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
 
+2023-06-08 00:44:02 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 36
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 36
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:02 notice: `Router::connect()` is deprecated, use the non-static method `RouteBuilder::connect()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 39
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 214
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:02 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line: 220
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Routing/Router.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 220
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 36
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 36
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::connect()` is deprecated, use the non-static method `RouteBuilder::connect()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 39
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 214
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line: 220
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Routing/Router.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 220
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+

@@ -99,12 +99,14 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'host' => 'localhost',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
-            'client' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+            'class' => 'Smtp',
+            'host' => 'smtp.gmail.com',
+            'port' => 465,
+            'username' => 'ncortijod01@iesalbarregas.es',
+            'password' => 'ofrscyaminyfpfws',
+            //'client' => null,
+            //'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+            'tls' => true
         ],
     ],
 ];
