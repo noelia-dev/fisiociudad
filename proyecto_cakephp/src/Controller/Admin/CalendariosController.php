@@ -75,19 +75,25 @@ class CalendariosController extends AppController
             if ($this->request->getData('periodo')) {
                 $fecha = new Chronos($this->request->getData('fecha'));
                 $fecha_fin = new Chronos($this->request->getData('fecha_fin'));
-                // dd($fecha->diff($fecha_fin)->days);
                 //Validamos la fecha
-                if ($fecha->diff($fecha_fin)->days == 0) {
-                    $this->Flash->error(__('Las fechas del periodo no son correcta.'));
+                if ($fecha->diff($fecha_fin)->days == 0 || $fecha>$fecha_fin) {
+                    $this->Flash->error(__('Las fechas del periodo no son correctas.'));
                 } else {
                     $rango = $fecha->diff($fecha_fin)->days;
                     $descripcion = $this->request->getData('descripcion');
                     $fechas_creadas = array();
                     for ($i = 0; $i <= $rango; $i++) {
                         $fecha->addDays($i);
-                        $fechas_creadas[] = $this->Calendarios->newEntity(['fecha' => $fecha->addDays($i)->toDateString(), 'descripcion' => $descripcion]);
+                        $fecha_final = $this->Calendarios->newEntity(['fecha' => $fecha->addDays($i)->toDateString(), 'descripcion' => $descripcion]);
+                        //Las fechas son valores únicos, por lo tanto si tiene un error no se debe añadir,
+                        //pues significa que ya existe.
+                        if(empty($fecha_final->getErrors())){
+                            $fechas_creadas[] = $fecha_final;
+                        }
                     }
-                    //dd($fechas_creadas);
+                    if(count($fechas_creadas)==0){
+                        $this->Flash->error(__('El periodo seleccionado ya se encuentra completamente en el calendario.'));
+                    }
                     //Permite guardar todas las fechas, en caso de alguna duplicada se añadirán el resto
                     $respuesta_gaurdado = $this->Calendarios->saveMany($fechas_creadas);
                     if ($respuesta_gaurdado) {
@@ -122,7 +128,6 @@ class CalendariosController extends AppController
                 $calendario = $this->Calendarios->patchEntity($calendario, $this->request->getData());
                 if ($this->Calendarios->save($calendario)) {
                     $this->Flash->success(__('La fecha ha sido añadida.'));
-
                     return $this->redirect(['action' => 'index']);
                 }
             }

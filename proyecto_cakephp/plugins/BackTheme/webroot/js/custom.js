@@ -32,27 +32,36 @@ $(document).ready(function () {
    $("#check_periodo").click(function (e) {
       //Ocultamos/mostramos la fecha final para el periodo.
       $('#fecha_fin').toggleClass('d-none');
-
+      $('#fecha_finlabel').toggleClass('d-none');
    });
 
-   document.addEventListener('DOMContentLoaded', function() {
+   document.addEventListener('DOMContentLoaded', function () {
       var deleteLinks = document.getElementsByClassName('delete-link');
       var deleteConfirmButton = document.getElementsByClassName('delete-confirm')[0];
-      Array.from(deleteLinks).forEach(function(link) {
-          link.addEventListener('click', function(event) {
-              event.preventDefault();
-              var postId = this.getAttribute('data-id');
-              deleteConfirmButton.setAttribute('data-id', postId);
-          });
+      Array.from(deleteLinks).forEach(function (link) {
+         link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var postId = this.getAttribute('data-id');
+            deleteConfirmButton.setAttribute('data-id', postId);
+         });
       });
-      deleteConfirmButton.addEventListener('click', function() {
-          var postId = this.getAttribute('data-id');
-          // Aquí puedes hacer una petición AJAX para eliminar el post utilizando el ID
-          // o redireccionar al controlador para eliminar el post
-          console.log('Eliminar post con ID: ' + postId);
-          // Cierra el modal de confirmación
-          var deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
-          deleteModal.hide();
+      deleteConfirmButton.addEventListener('click', function () {
+         var postId = this.getAttribute('data-id');
+         // Aquí puedes hacer una petición AJAX para eliminar el post utilizando el ID
+         // o redireccionar al controlador para eliminar el post
+         console.log('Eliminar post con ID: ' + postId);
+         // Cierra el modal de confirmación
+         var deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+         deleteModal.hide();
       });
-  });
+   });
+   //Comprobamos si estaba seleccionada la opción periodo
+   //Ocultar o mostrar la fecha final
+   if ($('#check_periodo').prop('checked')==false) {
+      $('#fecha_fin').addClass('d-none');
+      $('#fecha_finlabel').addClass('d-none');
+   } else {
+      $('#fecha_fin').removeClass('d-none');
+      $('#fecha_finlabel').removeClass('d-none');
+   }
 });

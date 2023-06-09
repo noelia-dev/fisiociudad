@@ -43,7 +43,7 @@
                      <?= $this->Form->control('fecha_fin', [
                             'type' => 'date',
                             'id'=>'fecha_fin',
-                            'label' => 'Fecha fin perido:',
+                            'label' => ['Fecha fin perido:','id'=> 'fecha_finlabel','class' => 'd-none'],
                             'required' => true,
                             'class' => 'form-control d-none',
                             'value' => $this->request->getData('fecha_fin') ? $this->request->getData('fecha_fin') : $fecha_periodo, //Cargamos la fecha actual

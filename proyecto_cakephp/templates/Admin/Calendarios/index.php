@@ -38,13 +38,13 @@
                         $i = 0;
                         if ($month % 3 == 0) { //Meses divisibles por 3
                     ?>
-                         <div class="col-4 col-sm-12">
+                         <div class="col">
                          <?php } elseif (($month + 1) % 3 == 0) { //NO divisibles
                             ?>
-                             <div class="col-4 col-sm-12">
+                             <div class="col">
                              <?php } else { ?>
                                  <div class="row">
-                                     <div class="col-4 col-sm-12">
+                                     <div class="col">
                                      <?php } ?>
                                      <div class="table-responsive">
                                      <p class="h2"><?= $this->nombres_mesesES[$month - 1]; ?></p>
