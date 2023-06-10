@@ -45,7 +45,7 @@ class UsuariosController extends AppController
         if ($resultado->isValid()) {
             if($resultado->getData()->correo=='admin@admin.com'){
                 //Redirigimos al usuario a la edición de su perfil, para que establezca sus datos correctamente.
-                return $this->redirect(['controller' => 'Usuarios', 'action' => 'edit',$resultado->getData()->id]);
+                return $this->redirect(['controller' => 'Usuarios', 'action' => 'editadmin',$resultado->getData()->id]);
             }else{
                 return $this->redirect(['controller' => 'Usuarios', 'action' => 'index']);
             }
