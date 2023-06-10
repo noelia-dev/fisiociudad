@@ -97,6 +97,15 @@ class UsuariosTable extends Table
             ->dateTime('eliminado')
             ->allowEmptyDateTime('eliminado');
 
+        $validator
+            ->scalar('reset_token')
+            ->maxLength('reset_token', 255)
+            ->allowEmptyString('reset_token');
+
+        $validator
+            ->dateTime('caducidad_token')
+            ->allowEmptyDateTime('caducidad_token');
+
         return $validator;
     }
 }
