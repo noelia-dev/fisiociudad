@@ -99,9 +99,9 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'class' => 'Smtp',
+            'className' => 'Smtp',
             'host' => 'smtp.gmail.com',
-            'port' => 465,
+            'port' => 587,
             'username' => 'ncortijod01@iesalbarregas.es',
             'password' => 'ofrscyaminyfpfws',
             //'client' => null,
