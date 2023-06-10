@@ -8,6 +8,10 @@ use App\Controller\Admin\AppController;
 use Cake\Event\EventInterface;
 use Cake\Datasource\Pagination\NumericPaginator;
 use Cake\Mailer\Mailer;
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\Utility\Security;
+use Cake\Routing\Router;
+
 
 /**
  * Usuarios Controller
@@ -23,6 +27,7 @@ class UsuariosController extends AppController
             'Usuarios.nombre' => 'asc'
         ]
     ];
+    protected $token;
 
     public function initialize(): void
     {
@@ -43,20 +48,20 @@ class UsuariosController extends AppController
         $this->getRequest()->allowMethod(['get', 'post']);
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
-            if($resultado->getData()->correo=='admin@admin.com'){
+            if ($resultado->getData()->correo == 'admin@admin.com') {
                 //Redirigimos al usuario a la edición de su perfil, para que establezca sus datos correctamente.
-                return $this->redirect(['controller' => 'Usuarios', 'action' => 'editadmin',$resultado->getData()->id]);
-            }else{
+                return $this->redirect(['controller' => 'Usuarios', 'action' => 'editadmin', $resultado->getData()->id]);
+            } else {
                 return $this->redirect(['controller' => 'Usuarios', 'action' => 'index']);
             }
         }
-        if ($this->getRequest()->is('post')){
-            if( !$resultado->isValid()) {
+        if ($this->getRequest()->is('post')) {
+            if (!$resultado->isValid()) {
                 $this->Flash->error('Conexión no establecida');
             } else {
                 $this->Flash->success('Conexión establecida, datos incorrectos. Vuelva a intentarlo.');
             }
-        } 
+        }
         //Cambiamos el theme a utilizar
         $this->viewBuilder()->setLayout('BackTheme.login');
     }
@@ -84,9 +89,6 @@ class UsuariosController extends AppController
      */
     public function index()
     {
-        
-       // $resultado->getData('Usuario')['correo']
-
         //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
         $usuarios = $this->paginate(
             $this->Usuarios->find()
@@ -182,8 +184,8 @@ class UsuariosController extends AppController
         $usuario = $this->Usuarios->get($id);
         if ($this->Usuarios->delete($usuario)) {
 
-        //$usuario = $this->Usuarios->patchEntity($usuario, ['eliminado' => date('Y-m-d H:i:s')]);
-        //if ($this->Usuarios->save($usuario)) {
+            //$usuario = $this->Usuarios->patchEntity($usuario, ['eliminado' => date('Y-m-d H:i:s')]);
+            //if ($this->Usuarios->save($usuario)) {
             $this->Flash->success(__('El pacinete ha sido eliminado correctamente.'));
         } else {
             $this->Flash->error(__('El pacinete NO ha podido ser eliminado. Por favor, intentelo de nuevo.'));
@@ -260,16 +262,109 @@ class UsuariosController extends AppController
 
     public function passwordRecup()
     {
-        $this->viewBuilder()->setLayout('BackTheme.login');
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $email = new Mailer('default');
-         //   dd($this->request->getData('correo'));
-            $email->setFrom(['me@example.com' => 'My Site'])
-                ->setTo($this->request->getData('correo'))
-                ->setSubject('Prueba de correo electrónico')
-                ->deliver('Contenido del correo electrónico');
-            $this->Flash->success(__('Correo enviado correctamente.'));
+        if ($this->request->getQuery('token') != null) {
+            //Hay que recuperar la contraseña
+            $this->resetearPass();
+        } else {
+            $this->viewBuilder()->setLayout('BackTheme.login');
+            if ($this->request->is(['patch', 'post', 'put'])) {
+                $destinatario = $this->request->getData('correo');
+                //Buscamos si existe dicho correo electrónico y es admin
+                $resultado_admin = $this->Usuarios->find()
+                    ->where(
+                        [
+                            'es_admin' => '1',
+                            'correo' => $destinatario
+                        ]
+                    )
+                    ->first();
+                if ($resultado_admin != null) {
+                    $url_recuperacion = Router::url($this->request->getAttribute('here'), true);
+                    $token = Security::hash(Security::randomBytes(32));
+                    //Creamos la url para que el usuario acceda
+                    $url_recuperacion = $url_recuperacion . '?token=' . $token;
+                    // Guardar el token en la tabla de usuarios
+                    $resultado_admin->reset_token = $token;
+                    $resultado_admin->caducidad_token = date('Y-m-d H:i:s', strtotime('+1 hour'));
+                    $this->Usuarios->save($resultado_admin);
+                    //dd($url_recuperacion);
+                    //existe admin, enviar recuperación
+                    $email = new Mailer('default');
+                    //   dd($this->request->getData('correo'));
+                    $email->setFrom(['ncortijod01@iesalbarregas.es' => 'Fisiociudad'])
+                        ->setTo($this->request->getData('correo'))
+                        ->setSubject('Prueba de correo')
+                        ->setEmailFormat('html');
+                    $email->viewBuilder()
+                        ->setTemplate('default')
+                        ->setLayout('confirmacion')
+                        ->setVars(['url_recuperacion' => $url_recuperacion]);
+                    $email->deliver();
+                    $this->Flash->success(__('Correo enviado correctamente. Compruebe su bandeja de entrada.'));
+                } else {
+                    // No existe ese usuario como admin
+                    $this->Flash->error(__('El correo de administrador no existe.'));
+                }
+            }
         }
+
         //$this->viewBuilder()->setLayout('BackTheme.password_recup');
+    }
+    public function resetearPass()
+    {
+        //Obtenemos el token recibido y lo buscamos en la base de datos
+        $token = $this->request->getQuery('token');
+        $resultado_admin = $this->Usuarios->find('all')
+            ->where([
+                'reset_token' => $token,
+                'es_admin' => '1'
+            ])
+            ->first();
+        if (
+            $resultado_admin != null
+            && $resultado_admin->caducidad_token->format('Y-m-d H:i:s') < date('Y-m-d H:i:s')
+        ) {
+            // El token no es válido o ha expirado
+            $this->Flash->error('El token no es válido o ha expirado.');
+            return $this->redirect(['action' => 'login']);
+        }
+        //Establecemos el token como identificador de reseteo
+        $this->set('token', $token);
+        return $this->redirect(['action' => 'recuperarConToken', '?' => ['token' => $token]]);
+    }
+
+    public function recuperarConToken()
+    {
+        if ($this->request->is(['get'])) {
+            $this->viewBuilder()->setLayout('BackTheme.login');
+            $token = $this->request->getQuery('token');
+            $this->set(compact('token'));
+            $usuario = $this->Usuarios->find('all')
+                ->where([
+                    'reset_token' => $token,
+                    'es_admin' => '1'
+                ])
+                ->first();
+
+            $this->set(compact('usuario'));
+        } else if ($this->request->is(['post', 'put'])) {
+            $token = $this->request->getData('token');
+            $usuario = $this->Usuarios->find('all')
+                ->where([
+                    'reset_token' => $token,
+                    'es_admin' => '1'
+                ])
+                ->first();
+            if (isset($usuario)) {
+                $usuario->reset_token = null;
+                $usuario->caducidad_token = null;
+                $usuario->password = $this->request->getData('password');
+                $this->Usuarios->save($usuario);
+                $this->Flash->success(__('Contraseña restablecida correctamente. Ya puede iniciar sesión.'));
+            }
+            return $this->redirect(['action' => 'login']);
+        } else {
+            //   return $this->redirect(['action' => 'login']);
+        }
     }
 }

@@ -65,6 +65,11 @@ class UsuariosTable extends Table
             ->scalar('correo')
             ->maxLength('correo', 45)
             ->allowEmptyString('correo');
+        
+        $validator
+            ->email('correo', true, 'Ingrese un correo electrónico válido')
+            ->requirePresence('correo', 'create', 'Ingrese un correo electrónico')
+            ->notEmptyString('correo', 'Ingrese un correo electrónico');;
 
         $validator
             ->scalar('telefono')
