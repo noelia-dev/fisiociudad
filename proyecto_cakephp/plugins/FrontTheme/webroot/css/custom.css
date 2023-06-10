@@ -25,3 +25,20 @@
   margin: 10px;
   color: #fff;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary{
+  background-color: #26577b;
+}
+
+.btn-primary:hover{
+  background-color: #3273a2;
+}
+
+.navbar-expand {
+  padding: 1%;
+}
