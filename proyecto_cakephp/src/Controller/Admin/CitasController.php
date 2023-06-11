@@ -136,11 +136,6 @@ class CitasController extends AppController
         $this->paginate = [
             'contain' => ['Usuarios', 'Calendarios'],
         ];
-        /*  $cita = $this->Citas->get($id, [
-            //'contain' => ['Usuarios', 'Calendarios'],
-        ]);*/
-        //dd($fecha_selecionada);
-
         $resultado_citas = $this->Citas->find()
             ->where([
                 'Citas.fecha' => $fecha_selecionada
@@ -151,7 +146,8 @@ class CitasController extends AppController
                     $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora
                     return $row;
                 });
-            });
+            })
+            ->order(['hora' => 'asc']);
         $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '5']);
         // Verificar si se encontraron registros
         if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
@@ -160,15 +156,7 @@ class CitasController extends AppController
                 $nombre_usuario = $result->usuario->nombre . ' ' . $result->usuario->apellidos;
                 break;
             }
-        } else {
-
-            // @TODO para mostrar ingualmente el usuario
-            //No se encontraron registros
-            /* $resultado_citas = $this->Usuarios->find()->where([
-                    'id' => $id
-                ]);
-                dd($resultado_citas);*/
-        }
+        } 
 
         $fecha_mostrar = $fecha->format('d-m-Y');
 
