@@ -1,6 +1,6 @@
 CREATE DATABASE `app_nco` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci */;
-
 CREATE DATABASE `debug_kit` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
 USE debug_kit;
 CREATE TABLE debug_kit.panels (
   `id` char(36) NOT NULL,
@@ -14,7 +14,6 @@ CREATE TABLE debug_kit.panels (
   UNIQUE KEY `unique_panel` (`request_id`,`panel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE DATABASE `app_nco` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE app_nco;
 CREATE TABLE `usuarios` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -31,7 +30,6 @@ CREATE TABLE `usuarios` (
   `caducidad_token` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 
 CREATE TABLE  app_nco.`citas` (
   `id` int NOT NULL AUTO_INCREMENT,
