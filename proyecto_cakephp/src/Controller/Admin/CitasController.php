@@ -23,6 +23,10 @@ use Cake\View\View;
  */
 class CitasController extends AppController
 {
+    public $lista_horario = [
+        '10:00:00', '11:00:00', '12:00:00', '13:00:00',
+        '16:00:00', '17:00:00', '18:00:00', '19:00:00'
+    ];
 
     public $paginate = [
         'limit' => '1',
@@ -231,6 +235,10 @@ class CitasController extends AppController
         $cita = $this->Citas->newEmptyEntity();
         if ($this->request->is('post')) {
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
+            if(!in_array($cita->hora,$this->lista_horario)){
+                $this->Flash->error('El horario debe ser el establecido por la aplicación.', ['escape' => false]);
+                return $this->redirect(['action' => 'add']);
+            }
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita añadida correctamente.'));
                 return $this->redirect(['action' => 'index']);
@@ -258,7 +266,8 @@ class CitasController extends AppController
         //Establece una array con todos los pacientes, sin incluir al administrador
         $this->get_usuario_usuarios();
         $calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'calendarios'));
+        $lista_horario = str_replace('00:00','00',implode(' // ',$this->lista_horario));
+        $this->set(compact('cita', 'calendarios','lista_horario'));
     }
 
     /**
@@ -310,7 +319,7 @@ class CitasController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+        $this->request->allowMethod(['post', 'delete','get']);
         $cita = $this->Citas->get($id);
         if ($this->Citas->delete($cita)) {
             $this->Flash->success(__('Cita eliminada correctamente.'));
