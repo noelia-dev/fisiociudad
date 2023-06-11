@@ -45,6 +45,8 @@ class UsuariosTable extends Table
 
         $this->hasMany('Citas', [
             'foreignKey' => 'usuario_id',
+            'dependent' => true, 
+            'cascadeCallbacks' => true,
         ]);
     }
 
