@@ -50,7 +50,7 @@
                         ]); ?>
                  </div>
              </div>
-             <div class="form-group">
+             <div class="form-group row">
                  <div class="col-sm-6">
                      <?= $this->Form->textarea('nota_profesional', [
                             'class' => 'form-control',
