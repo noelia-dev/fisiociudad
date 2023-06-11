@@ -286,8 +286,11 @@ class CitasController extends AppController
         $usuario_nombre = $cita->usuario->nombre . ' ' . $cita->usuario->apellidos;
 
         if ($this->request->is(['patch', 'post', 'put'])) {
-            // dd($this->request->getData());
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
+            if(!in_array($cita->hora,$this->lista_horario)){
+                $this->Flash->error('El horario debe ser el establecido por la aplicación.', ['escape' => false]);
+                return $this->redirect(['action' => 'edit',$id]);
+            }
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita guardado correctamente.'));
                 return $this->redirect(['action' => 'index']);
@@ -304,10 +307,8 @@ class CitasController extends AppController
             $this->getRequest()->getData()['nota_profesional'] = $cita->nota_profesional;
             //$this->Form->setValue('nota_profesional',);
         }
-
-        //  $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
-        //$calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'usuario_nombre'));
+        $lista_horario = str_replace('00:00','00',implode(' // ',$this->lista_horario));
+        $this->set(compact('cita', 'usuario_nombre','lista_horario'));
     }
 
     /**
