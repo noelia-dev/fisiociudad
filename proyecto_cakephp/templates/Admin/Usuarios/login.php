@@ -28,7 +28,7 @@
                                 <div style="display: flex;" class="justify-content-center">
                                     <?= $this->Form->submit('Acceder', ['class' => 'btn btn-primary btn-user btn-block']); ?>
                                     <div class="submit">
-                                        <?= $this->Form->reset('Cancelar', ['class' => 'btn btn-secondary btn-user btn-block ml-2']); ?>
+                                        <?= $this->Form->button('Cancelar', ['class' => 'btn btn-secondary btn-user btn-block ml-2', 'onClick' => 'history.back()']); ?>
                                     </div>
                                 </div>
                             </div>
