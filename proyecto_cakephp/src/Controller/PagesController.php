@@ -22,6 +22,7 @@ use App\Model\Entity\Calendario;
 use Cake\Chronos\Chronos;
 
 use Cake\ORM\TableRegistry;
+use Cake\Mailer\Mailer;
 
 use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
@@ -82,6 +83,7 @@ class PagesController extends AppController
 
         if ($this->request->is('post')) {
             $this->fetchTable('Citas');
+            $this->fetchTable('Usuarios');
             $citasTable = TableRegistry::getTableLocator()->get('Citas');
 
             //Comprobamos que exista el usuario
@@ -104,7 +106,8 @@ class PagesController extends AppController
                     $datos = $this->request->withData('usuario_id', $exite_usuario->id);
                     $cita = $this->Citas->patchEntity($cita, $datos->getData());
                     if ($this->Citas->save($cita)) {
-                        $this->Flash->success(__('Cita se ha registrado correctamente.'));
+                        $this->enviarMail($cita,$exite_usuario);
+                        $this->Flash->success(__('Cita se ha registrado correctamente. Le hemos enviado un correo electrónico con la confirmación de la cita.'));
                     }
                 }
             }
@@ -156,5 +159,23 @@ class PagesController extends AppController
             }
         }
         $this->Calendarios->saveMany($datos_alta2);
+    }
+    public function enviarMail($cita,$usuario)
+    {
+        $email = new Mailer('default');
+        $fecha =$cita->fecha; 
+        $hora =$cita->hora;
+        $paciente =  $usuario->nombre.' '. $usuario->apellidos;
+        $email->setFrom(['ncortijod01@iesalbarregas.es' => 'Fisiociudad'])
+            ->setTo($this->request->getData('correo'))
+            ->setSubject('Prueba de correo')
+            ->setEmailFormat('html');
+        $email->viewBuilder()
+            ->setTemplate('default')
+            ->setLayout('cita_confirmada')
+            ->setVars(['fecha' => $fecha])
+            ->setVars(['hora' => $hora])
+            ->setVars(['paciente' => $paciente]);
+        $email->deliver();
     }
 }
