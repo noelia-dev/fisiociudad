@@ -1,5 +1,7 @@
-CREATE DATABASE `debug_kit` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE `app_nco` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci */;
+CREATE DATABASE `debug_kit` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
+USE debug_kit;
 CREATE TABLE debug_kit.panels (
   `id` char(36) NOT NULL,
   `request_id` char(36) NOT NULL,
@@ -10,11 +12,10 @@ CREATE TABLE debug_kit.panels (
   `content` longblob,
   PRIMARY KEY (`id`),
   UNIQUE KEY `unique_panel` (`request_id`,`panel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 USE app_nco;
-CREATE TABLE app_nco.`usuarios` (
+CREATE TABLE `usuarios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `password` varchar(255) DEFAULT NULL,
   `correo` varchar(45) DEFAULT NULL,
@@ -25,8 +26,10 @@ CREATE TABLE app_nco.`usuarios` (
   `alta` datetime DEFAULT CURRENT_TIMESTAMP,
   `modificado` datetime DEFAULT NULL,
   `eliminado` datetime DEFAULT NULL,
+  `reset_token` varchar(255) DEFAULT NULL,
+  `caducidad_token` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE  app_nco.`citas` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -50,4 +53,6 @@ CREATE TABLE  app_nco.`calendarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb3;
 
 
-
+ALTER TABLE `app_nco`.`usuarios` 
+ADD COLUMN `reset_token` VARCHAR(255) NULL DEFAULT NULL AFTER `eliminado`,
+ADD COLUMN `caducidad_token` DATETIME NULL DEFAULT NULL AFTER `reset_token`;

@@ -3,8 +3,7 @@
      <div class="row">
          <div class="col">
              <h1 class="h3 mb-2 text-gray-800">Citas</h1>
-             <!--   <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-         -->
+             <p class="mb-4">Los horarios disponibles para citas son los siguientes: <?= $lista_horario?></p>
          </div>
      </div>
      <!-- Page Heading -->

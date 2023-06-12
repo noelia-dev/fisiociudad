@@ -79,7 +79,7 @@ class AppController extends ControllerPrincipal
     {
         parent::beforeFilter($event);
         //Permite al usuario no autenticado acceder al apartado login
-        $this->Authentication->allowUnauthenticated(['login','passwordRecup']);
+        $this->Authentication->allowUnauthenticated(['login','passwordRecup','adminpass','recuperarConToken']);
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
             $login_nombre = $resultado->getData()->nombre;

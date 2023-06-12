@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-    <title>Calendar 04</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +20,7 @@
     <?= $this->Html->css([
         'FrontTheme./css/style',
         'FrontTheme./css/custom',
-        'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+        'BackTheme./css/fontawesome.min',
         'https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap'
     ]); ?>
 </head>

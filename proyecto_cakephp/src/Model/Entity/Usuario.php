@@ -19,6 +19,8 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime|null $alta
  * @property \Cake\I18n\FrozenTime|null $modificado
  * @property \Cake\I18n\FrozenTime|null $eliminado
+ * @property string|null $reset_token
+ * @property \Cake\I18n\FrozenTime|null $caducidad_token
  *
  * @property \App\Model\Entity\Cita[] $citas
  */
@@ -43,6 +45,8 @@ class Usuario extends Entity
         'alta' => true,
         'modificado' => true,
         'eliminado' => true,
+        'reset_token' => true,
+        'caducidad_token' => true,
         'citas' => true,
     ];
 

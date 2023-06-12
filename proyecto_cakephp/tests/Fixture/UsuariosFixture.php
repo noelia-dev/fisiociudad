@@ -26,9 +26,11 @@ class UsuariosFixture extends TestFixture
                 'nombre' => 'Lorem ipsum dolor sit amet',
                 'apellidos' => 'Lorem ipsum dolor sit amet',
                 'es_admin' => 1,
-                'alta' => '2023-05-14 21:13:37',
-                'modificado' => '2023-05-14 21:13:37',
-                'eliminado' => '2023-05-14 21:13:37',
+                'alta' => '2023-06-10 16:40:23',
+                'modificado' => '2023-06-10 16:40:23',
+                'eliminado' => '2023-06-10 16:40:23',
+                'reset_token' => 'Lorem ipsum dolor sit amet',
+                'caducidad_token' => '2023-06-10 16:40:23',
             ],
         ];
         parent::init();

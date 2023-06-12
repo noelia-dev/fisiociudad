@@ -36,7 +36,7 @@ use Authentication\AuthenticationServiceProviderInterface;
 use Authentication\Identifier\IdentifierInterface;
 use Authentication\Middleware\AuthenticationMiddleware;
 use Psr\Http\Message\ServerRequestInterface;
-use App\Middleware\NoEncontradoRedirectMiddleware;
+
 
 /**
  * Application setup class.
@@ -118,9 +118,6 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
             // Add the AuthenticationMiddleware. It should be
             // after routing and body parser.
             ->add(new AuthenticationMiddleware($this));
-        //Control de url con acciones no disponibles. Redirigimos al index
-        $middlewareQueue
-            ->add(new NoEncontradoRedirectMiddleware());
 
         return $middlewareQueue;
     }

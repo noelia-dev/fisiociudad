@@ -15,6 +15,7 @@ use Cake\Http\Response;
 use Cake\Database\Expression\QueryExpression;
 use Cake\View\View;
 
+
 /**
  * Citas Controller
  *
@@ -23,6 +24,10 @@ use Cake\View\View;
  */
 class CitasController extends AppController
 {
+    public $lista_horario = [
+        '10:00:00', '11:00:00', '12:00:00', '13:00:00',
+        '16:00:00', '17:00:00', '18:00:00', '19:00:00'
+    ];
 
     public $paginate = [
         'limit' => '1',
@@ -131,11 +136,6 @@ class CitasController extends AppController
         $this->paginate = [
             'contain' => ['Usuarios', 'Calendarios'],
         ];
-        /*  $cita = $this->Citas->get($id, [
-            //'contain' => ['Usuarios', 'Calendarios'],
-        ]);*/
-        //dd($fecha_selecionada);
-
         $resultado_citas = $this->Citas->find()
             ->where([
                 'Citas.fecha' => $fecha_selecionada
@@ -146,7 +146,8 @@ class CitasController extends AppController
                     $row['alta'] =  $row['alta']->format('d-m-Y, H:i'); // Formateo de la hora
                     return $row;
                 });
-            });
+            })
+            ->order(['hora' => 'asc']);
         $citas_por_usuario = $this->paginate($resultado_citas, ['limit' => '5']);
         // Verificar si se encontraron registros
         if (!empty($resultado_citas) && $resultado_citas->count() != 0) {
@@ -155,15 +156,7 @@ class CitasController extends AppController
                 $nombre_usuario = $result->usuario->nombre . ' ' . $result->usuario->apellidos;
                 break;
             }
-        } else {
-
-            // @TODO para mostrar ingualmente el usuario
-            //No se encontraron registros
-            /* $resultado_citas = $this->Usuarios->find()->where([
-                    'id' => $id
-                ]);
-                dd($resultado_citas);*/
-        }
+        } 
 
         $fecha_mostrar = $fecha->format('d-m-Y');
 
@@ -231,6 +224,10 @@ class CitasController extends AppController
         $cita = $this->Citas->newEmptyEntity();
         if ($this->request->is('post')) {
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
+            if(!in_array($cita->hora,$this->lista_horario)){
+                $this->Flash->error('El horario debe ser el establecido por la aplicación.', ['escape' => false]);
+                return $this->redirect(['action' => 'add']);
+            }
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita añadida correctamente.'));
                 return $this->redirect(['action' => 'index']);
@@ -258,7 +255,8 @@ class CitasController extends AppController
         //Establece una array con todos los pacientes, sin incluir al administrador
         $this->get_usuario_usuarios();
         $calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'calendarios'));
+        $lista_horario = str_replace('00:00','00',implode(' // ',$this->lista_horario));
+        $this->set(compact('cita', 'calendarios','lista_horario'));
     }
 
     /**
@@ -277,8 +275,11 @@ class CitasController extends AppController
         $usuario_nombre = $cita->usuario->nombre . ' ' . $cita->usuario->apellidos;
 
         if ($this->request->is(['patch', 'post', 'put'])) {
-            // dd($this->request->getData());
             $cita = $this->Citas->patchEntity($cita, $this->request->getData());
+            if(!in_array($cita->hora,$this->lista_horario)){
+                $this->Flash->error('El horario debe ser el establecido por la aplicación.', ['escape' => false]);
+                return $this->redirect(['action' => 'edit',$id]);
+            }
             if ($this->Citas->save($cita)) {
                 $this->Flash->success(__('Cita guardado correctamente.'));
                 return $this->redirect(['action' => 'index']);
@@ -295,10 +296,8 @@ class CitasController extends AppController
             $this->getRequest()->getData()['nota_profesional'] = $cita->nota_profesional;
             //$this->Form->setValue('nota_profesional',);
         }
-
-        //  $usuarios = $this->Citas->Usuarios->find('list', ['limit' => 200])->all();
-        //$calendarios = $this->Citas->Calendarios->find('list', ['limit' => 200])->all();
-        $this->set(compact('cita', 'usuario_nombre'));
+        $lista_horario = str_replace('00:00','00',implode(' // ',$this->lista_horario));
+        $this->set(compact('cita', 'usuario_nombre','lista_horario'));
     }
 
     /**
@@ -310,7 +309,7 @@ class CitasController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+        $this->request->allowMethod(['post', 'delete','get']);
         $cita = $this->Citas->get($id);
         if ($this->Citas->delete($cita)) {
             $this->Flash->success(__('Cita eliminada correctamente.'));

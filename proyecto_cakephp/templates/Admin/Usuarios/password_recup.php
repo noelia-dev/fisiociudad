@@ -1,4 +1,4 @@
-<!--================Cuadro de login =================-->
+<!--================Cuadro de recuperar contraseña =================-->
 <div class="row justify-content-center">
     <div class="col-xl-10 col-lg-12 col-md-9">
         <div class="card o-hidden border-0 shadow-lg my-5">
@@ -21,7 +21,9 @@
                             
                             <div class="form-group">
                                 <div style="display: flex;" class="justify-content-center">
-                                    <?= $this->Form->submit('Enviar', ['class' => 'btn btn-primary btn-user btn-block']); ?>
+                                    <?= $this->Form->submit('Enviar', ['class' => 'btn btn-primary btn-user']); ?>
+                                    <?= $this->Form->button('Cancelar', ['class' => 'btn btn-secondary btn-user', 'onClick' => 'history.back()']); ?>
+
                                 </div>
                             </div>
                             <?= $this->Form->end(); ?>

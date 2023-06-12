@@ -45,6 +45,8 @@ class UsuariosTable extends Table
 
         $this->hasMany('Citas', [
             'foreignKey' => 'usuario_id',
+            'dependent' => true, 
+            'cascadeCallbacks' => true,
         ]);
     }
 
@@ -65,6 +67,11 @@ class UsuariosTable extends Table
             ->scalar('correo')
             ->maxLength('correo', 45)
             ->allowEmptyString('correo');
+        
+        $validator
+            ->email('correo', true, 'Ingrese un correo electrónico válido')
+            ->requirePresence('correo', 'create', 'Ingrese un correo electrónico')
+            ->notEmptyString('correo', 'Ingrese un correo electrónico');;
 
         $validator
             ->scalar('telefono')
@@ -96,6 +103,15 @@ class UsuariosTable extends Table
         $validator
             ->dateTime('eliminado')
             ->allowEmptyDateTime('eliminado');
+
+        $validator
+            ->scalar('reset_token')
+            ->maxLength('reset_token', 255)
+            ->allowEmptyString('reset_token');
+
+        $validator
+            ->dateTime('caducidad_token')
+            ->allowEmptyDateTime('caducidad_token');
 
         return $validator;
     }

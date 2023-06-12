@@ -17,9 +17,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-    < title>< ?= $this->fetch('title') ? ></title>
+    <title><?= $this->fetch('title') ?></title>
 </head>
 <body>
-    < ?= $this->fetch('content') ? >
+    Hola,
+    Se ha enviado este correo para restablecer su contraseña de adminsitrador.
+    Pincha en el siguiente enlace para restablecer la contraseña.
+    <?= $this->Html->link('Restablecer contraseña', $url_recuperacion, ['target' => '_blank']) ?>
+    PD: Este enlace sólo será valido durante 1 hora.
+
+    Un saludo,
+    Soporte Técnico FISIOCIUDAD
 </body>
 </html>

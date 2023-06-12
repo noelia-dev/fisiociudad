@@ -34612,3 +34612,1168 @@ Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cak
 Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
 [main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
 
+2023-06-08 00:44:02 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 36
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 36
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:02 notice: `Router::connect()` is deprecated, use the non-static method `RouteBuilder::connect()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 39
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 214
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:02 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line: 220
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Routing/Router.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 220
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 36
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 36
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::connect()` is deprecated, use the non-static method `RouteBuilder::connect()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line: 39
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `config/routes.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 214
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-08 00:44:03 notice: `Router::scope()` is deprecated, use the non-static method `RouteBuilder::scope()` instead.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line: 220
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Routing/Router.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /debug-kit/toolbar/07524dd7-c37a-491d-abbd-2ca257aac774
+Referer URL: http://localhost:8765/admin/usud
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Routing\Router::scope() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 841
+Cake\Routing\Router::connect() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Router.php, line 220
+require /srv/project_nco/fisiociudad/proyecto_cakephp/config/routes.php, line 39
+Cake\Http\BaseApplication::routes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 198
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 135
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 124
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 95
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 155
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 16:55:56 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 1148
+Cake\ORM\Query::_all() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php, line 288
+Cake\ORM\Query::all() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 1096
+Cake\ORM\Query::toArray() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php, line 305
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 270
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:01:16 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_performCount() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 978
+Cake\ORM\Query::count() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 928
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 272
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:02:54 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_performCount() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 978
+Cake\ORM\Query::count() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 928
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 272
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:02:56 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_performCount() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 978
+Cake\ORM\Query::count() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 928
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 272
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:03:55 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_performCount() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 978
+Cake\ORM\Query::count() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 928
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 271
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:05:10 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Query::_execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 1148
+Cake\ORM\Query::_all() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php, line 288
+Cake\ORM\Query::all() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Query.php, line 1096
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 271
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:45:29 notice: Undefined variable: token
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/layout/email/html/confirmacion.php, line 25
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Mailer\Renderer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php, line 86
+Cake\Mailer\Mailer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 387
+Cake\Mailer\Mailer::deliver() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 404
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 297
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:48:37 notice: Undefined variable: token
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/layout/email/html/confirmacion.php, line 25
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Mailer\Renderer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php, line 86
+Cake\Mailer\Mailer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 387
+Cake\Mailer\Mailer::deliver() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 404
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 298
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:49:08 notice: Undefined variable: url_recuperacion
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/layout/email/html/confirmacion.php, line 25
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Mailer\Renderer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php, line 86
+Cake\Mailer\Mailer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 387
+Cake\Mailer\Mailer::deliver() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 404
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 298
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:53:00 notice: Undefined variable: url_recuperacion
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/layout/email/html/confirmacion.php, line 24
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Mailer\Renderer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php, line 86
+Cake\Mailer\Mailer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 387
+Cake\Mailer\Mailer::deliver() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 404
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 298
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 17:53:00 notice: Undefined variable: url_recuperacion
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/layout/email/html/confirmacion.php, line 25
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Mailer\Renderer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Renderer.php, line 86
+Cake\Mailer\Mailer::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 387
+Cake\Mailer\Mailer::deliver() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Mailer/Mailer.php, line 404
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 298
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:13:18 notice: Undefined property: UsuariosController::$Users in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 318
+Request URL: /admin/usuarios/password-recup?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\Admin\UsuariosController::resetearPass() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 318
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 267
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:15:10 notice: Trying to get property 'caducidad_token' of non-object
+Request URL: /admin/usuarios/password-recup?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+App\Controller\Admin\UsuariosController::resetearPass() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 325
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 267
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:16:08 notice: Trying to get property 'caducidad_token' of non-object
+Request URL: /admin/usuarios/password-recup?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+App\Controller\Admin\UsuariosController::resetearPass() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 324
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 267
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:16:28 notice: Trying to access array offset on value of type null
+Request URL: /admin/usuarios/password-recup?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+App\Controller\Admin\UsuariosController::resetearPass() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 324
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 267
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:21:46 notice: Undefined property: UsuariosController::$token in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 247
+Request URL: /admin/usuarios/adminpass
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\Admin\UsuariosController::adminpass() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 247
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:10 notice: Undefined variable: token
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 12
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:10 notice: Undefined variable: usuario
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 13
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:10 notice: Undefined variable: login_nombre
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/element/layout/topbar.php, line 38
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::_renderElement() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1710
+Cake\View\View::element() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 699
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/layout/default.php, line 43
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:10 notice: Undefined variable: id_login
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/element/layout/topbar.php, line 46
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::_renderElement() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1710
+Cake\View\View::element() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 699
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/layout/default.php, line 43
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:10 notice: Undefined variable: id_login
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/element/layout/topbar.php, line 52
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::_renderElement() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1710
+Cake\View\View::element() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 699
+include /srv/project_nco/fisiociudad/proyecto_cakephp/plugins/BackTheme/templates/layout/default.php, line 43
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::renderLayout() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 860
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 819
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:50 notice: Undefined variable: token
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 12
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:32:50 notice: Undefined variable: usuario
+Request URL: /admin/usuarios/recuperar-con-token
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 13
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:36:18 notice: Undefined variable: token
+Request URL: /admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 12
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:36:18 notice: Undefined variable: usuario
+Request URL: /admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 13
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:37:23 notice: Undefined variable: usuario
+Request URL: /admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 13
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:37:27 notice: Undefined variable: usuario
+Request URL: /admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+include /srv/project_nco/fisiociudad/proyecto_cakephp/templates/Admin/Usuarios/recuperar_con_token.php, line 13
+Cake\View\View::_evaluate() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 773
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 18:53:49 notice: 4.4.12 - Having queryString set on exceptions is deprecated.If you are not using this attribute there is no action to take.Otherwise, enable Error.convertStatementToDatabaseException.
+/srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line: 360
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Database/Connection.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Referer URL: http://localhost:8765/admin/usuarios/recuperar-con-token?token=ff69af524c6154116810352a92cc89f8948378a6
+Client IP: 127.0.0.1
+Trace:
+deprecationWarning /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Database\Log\LoggingStatement::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php, line 99
+Cake\Database\Connection::Cake\Database\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 360
+Cake\Core\Retry\CommandRetry::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php, line 70
+Cake\Database\Connection::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 363
+Cake\Database\Query::execute() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Query.php, line 255
+Cake\ORM\Table::_update() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 2160
+Cake\ORM\Table::_processSave() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 1972
+Cake\ORM\Table::Cake\ORM\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 1869
+Cake\ORM\Table::Cake\ORM\{closure}() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 1556
+Cake\Database\Connection::transactional() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Database/Connection.php, line 709
+Cake\ORM\Table::_executeTransaction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 1557
+Cake\ORM\Table::save() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php, line 1870
+App\Controller\Admin\UsuariosController::recuperarConToken() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 362
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 19:02:15 notice: Undefined property: UsuariosController::$Url in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 295
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 295
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 19:02:34 notice: Undefined property: UsuariosController::$Url in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 295
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 295
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-10 19:04:54 notice: Undefined property: UsuariosController::$Url in /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 295
+Request URL: /admin/usuarios/password-recup
+Referer URL: http://localhost:8765/admin/usuarios/password-recup
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\Admin\UsuariosController::passwordRecup() /srv/project_nco/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 295
+Cake\Controller\Controller::invokeAction() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Authentication\Middleware\AuthenticationMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
