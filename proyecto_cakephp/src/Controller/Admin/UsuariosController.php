@@ -43,7 +43,12 @@ class UsuariosController extends AppController
         $this->getRequest()->allowMethod(['get', 'post']);
         $resultado = $this->Authentication->getResult();
         if ($resultado->isValid()) {
-            return $this->redirect(['controller' => 'Usuarios', 'action' => 'index']);
+            if($resultado->getData()->correo=='admin@admin.com'){
+                //Redirigimos al usuario a la edición de su perfil, para que establezca sus datos correctamente.
+                return $this->redirect(['controller' => 'Usuarios', 'action' => 'edit',$resultado->getData()->id]);
+            }else{
+                return $this->redirect(['controller' => 'Usuarios', 'action' => 'index']);
+            }
         }
         if ($this->getRequest()->is('post')){
             if( !$resultado->isValid()) {
@@ -79,6 +84,9 @@ class UsuariosController extends AppController
      */
     public function index()
     {
+        
+       // $resultado->getData('Usuario')['correo']
+
         //Condiciones AND sobre la condición where. Sólo se mostrarán que no son administradores.
         $usuarios = $this->paginate(
             $this->Usuarios->find()

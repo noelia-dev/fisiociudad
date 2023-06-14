@@ -34612,3 +34612,171 @@ Cake\Http\Runner::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cak
 Cake\Http\Server::run() /srv/project_nco/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
 [main] /srv/project_nco/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
 
+2023-06-09 00:02:02 notice: Undefined property: Authentication\Authenticator\Result::$Usuario
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+App\Controller\Admin\UsuariosController::login() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 46
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:38 notice: Undefined property: Authentication\Authenticator\Result::$Usuario
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+App\Controller\Admin\UsuariosController::login() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 46
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:38 notice: Trying to get property 'correo' of non-object
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+App\Controller\Admin\UsuariosController::login() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 46
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:52 notice: Undefined property: Authentication\Authenticator\Result::$Usuario
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+App\Controller\Admin\UsuariosController::login() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 46
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:37:07 notice: Undefined property: Cake\Datasource\ResultSetDecorator::$correo
+Request URL: /admin/usuarios
+Referer URL: http://localhost:8888/
+Trace:
+App\Controller\Admin\UsuariosController::index() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 97
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:39:56 notice: Undefined variable: usuarios
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+App\Controller\Admin\UsuariosController::login() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php, line 46
+Cake\Controller\Controller::invokeAction() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+App\Middleware\NoEncontradoRedirectMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php, line 19
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+

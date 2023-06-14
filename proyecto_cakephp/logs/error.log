@@ -24449,3 +24449,383 @@ Stack Trace:
 Request URL: /admin/usuarios/delete
 Referer URL: http://localhost:8765/admin/usuarios
 Client IP: 127.0.0.1
+2023-06-09 00:02:02 error: [Error] Call to a member function getData() on null in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 46
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+2023-06-09 00:02:02 warning: Unable to emit headers. Headers sent in file=/Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php line=36
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:02 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:02 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:02:02 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:04:38 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:154
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/admin/usuarios/login
+2023-06-09 00:05:25 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:154
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/
+2023-06-09 00:06:59 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:154
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/
+2023-06-09 00:07:07 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:154
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/
+2023-06-09 00:07:30 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:154
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/
+2023-06-09 00:19:26 error: [Error] Call to undefined method Cake\ORM\ResultSet::getData() in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 97
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios
+Referer URL: http://localhost:8888/admin/usuarios/login
+2023-06-09 00:24:42 error: [Error] Call to undefined method Cake\ORM\ResultSet::getData() in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 97
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios
+Referer URL: http://localhost:8888/
+2023-06-09 00:39:56 error: [Error] Call to a member function getData() on null in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php on line 46
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+2023-06-09 00:39:56 warning: Unable to emit headers. Headers sent in file=/Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php line=36
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:39:56 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:39:56 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:39:56 warning: Cannot modify header information - headers already sent by (output started at /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Renderer/HtmlErrorRenderer.php:36)
+Request URL: /admin/usuarios/login
+Referer URL: http://localhost:8888/admin/usuarios/login
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php, line 128
+[main] /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php, line 40
+
+2023-06-09 00:40:10 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/admin/usuarios/login
+2023-06-09 00:40:26 error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL] in /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/ORM/Table.php on line 1494
+Stack Trace:
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Controller/Admin/UsuariosController.php:158
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php:547
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/src/Middleware/NoEncontradoRedirectMiddleware.php:19
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /Users/Noelia/Sites/localhost/fisiociudad/proyecto_cakephp/webroot/index.php:40
+
+Request URL: /admin/usuarios/edit
+Referer URL: http://localhost:8888/admin/usuarios/login

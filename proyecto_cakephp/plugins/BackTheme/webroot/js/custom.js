@@ -32,6 +32,7 @@ $(document).ready(function () {
    $("#check_periodo").click(function (e) {
       //Ocultamos/mostramos la fecha final para el periodo.
       $('#fecha_fin').toggleClass('d-none');
+      $('#fecha_finlabel').toggleClass('d-none');
 
    });
 

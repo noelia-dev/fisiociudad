@@ -47,6 +47,7 @@ return [
             'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
+            'port'=> '8889'
             /*
              * If not using the default 'public' schema with the PostgreSQL driver
              * set it here.
@@ -74,6 +75,8 @@ return [
             'timezone' => 'UTC',
             'cacheMetadata' => true,
             'quoteIdentifiers' => false,
+            'port'=> '8889'
+            
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
         ],
         /*
