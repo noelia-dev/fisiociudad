@@ -1,0 +1,93 @@
+.selected {
+    background-color: #66dcd7;
+}
+
+.table-date.active-date a {
+    color: #fff;
+    width: 100%;
+    /*hace que toda la celda sea link, no sólo el texto*/
+    display: block;
+}
+
+#dataTable .active-date {
+    background: #66dcd7;
+}
+
+.top-barra {
+    background-color: #26577b;
+}
+
+#dataTable {
+    width: 100%;
+    /*   table-layout: fixed;*/
+}
+
+#dataTable th,
+#dataTable td {
+    text-align: center;
+    /* font-size: 1vw;*/
+}
+
+/* Mostramos las fuentes acordes al tamaño de visualización*/
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Tamaño de fuente por defecto para dispositivos móviles */
+    }
+
+    h3 {
+        font-size: smaller;
+    }
+
+    .nav-item .nav-link span {
+        display: none !important;
+    }
+
+    .nav-item .nav-link {
+        font-size: xx-large;
+    }
+
+    .navbar .nav-logo {
+        display: none !important;
+    }
+
+
+    .menu_titulo {
+        display: none;
+    }
+
+    #dataTable th,
+    #dataTable td {
+        font-size: 12px;
+        padding: 0 !important;
+    }
+
+    .container-fluid {
+        all: unset;
+        /* Revierte todos los estilos aplicados */
+    }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
